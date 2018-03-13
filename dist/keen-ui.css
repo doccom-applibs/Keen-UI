@@ -1,6 +1,6 @@
 /*!
  * Keen UI v1.0.1 (https://github.com/JosephusPaye/keen-ui)
- * (c) 2017 Josephus Paye II
+ * (c) 2018 Josephus Paye II
  * Released under the MIT License.
  */
 
@@ -3788,6 +3788,10 @@ body[modality="keyboard"] .ui-tabs--background-color-primary .ui-tab-header-item
       -webkit-transform: translateY(0) scale(1);
               transform: translateY(0) scale(1);
 }
+.ui-textbox.has-floating-label .ui-textbox__label > input:-webkit-autofill + .ui-textbox__label-text.is-inline {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+}
 .ui-textbox.is-invalid:not(.is-disabled) .ui-textbox__label-text,
   .ui-textbox.is-invalid:not(.is-disabled) .ui-textbox__icon-wrapper .ui-icon,
   .ui-textbox.is-invalid:not(.is-disabled) .ui-textbox__counter {
@@ -3813,7 +3817,13 @@ body[modality="keyboard"] .ui-tabs--background-color-primary .ui-tab-header-item
     opacity: 0.8;
 }
 .ui-textbox__label {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   margin: 0;
   padding: 0;
   width: 100%;
