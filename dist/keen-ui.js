@@ -5274,7 +5274,7 @@ exports.default = {
             return this.value.length === 0 && !this.isActive;
         },
         hasFeedback: function hasFeedback() {
-            return Boolean(this.help) || Boolean(this.error) || Boolean(this.$slots.error);
+            return Boolean(this.help) || Boolean(this.error) || +Boolean(this.$slots.error) || Boolean(this.$slots.help);
         },
         showError: function showError() {
             return this.invalid && (Boolean(this.error) || Boolean(this.$slots.error));
