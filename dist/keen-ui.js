@@ -4510,8 +4510,12 @@ exports.default = {
     },
 
     mounted: function mounted() {
+        var _this = this;
+
         if (this.triggerEl) {
-            this.initializeDropdown();
+            setTimeout(function () {
+                _this.initializeDropdown();
+            }, 0);
         }
     },
     beforeDestroy: function beforeDestroy() {
