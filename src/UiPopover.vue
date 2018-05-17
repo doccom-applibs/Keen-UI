@@ -59,7 +59,10 @@ export default {
 
     mounted() {
         if (this.triggerEl) {
-            this.initializeDropdown();
+            setTimeout(() => {//Fixes issue where dropdown does not scroll in certain situations                              
+                this.initializeDropdown();
+            },0)
+           
         }
     },
 
