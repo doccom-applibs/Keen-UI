@@ -279,7 +279,7 @@ export default {
         },
 
         hasFeedback() {
-           return Boolean(this.help) || Boolean(this.error) || 
+           return Boolean(this.help) || Boolean(this.error) ||
 +                Boolean(this.$slots.error) || Boolean(this.$slots.help);
         },
 
@@ -420,6 +420,10 @@ export default {
         },
 
         selectOption(option, index, options = { autoClose: true }) {
+
+	        //Added option to 'disable' inputs - 08-08-2018
+			if (option.hasOwnProperty('isDisabled') && option.isDisabled) return;
+
             const shouldSelect = this.multiple && !this.isOptionSelected(option);
 
             if (this.multiple) {
