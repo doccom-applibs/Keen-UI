@@ -5413,6 +5413,8 @@ exports.default = {
         selectOption: function selectOption(option, index) {
             var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : { autoClose: true };
 
+            if (option.hasOwnProperty('isDisabled') && option.isDisabled) return;
+
             var shouldSelect = this.multiple && !this.isOptionSelected(option);
 
             if (this.multiple) {
