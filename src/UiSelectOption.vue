@@ -73,7 +73,8 @@ export default {
             return [
                 `ui-select-option--type-${this.type}`,
                 { 'is-highlighted': this.highlighted },
-                { 'is-selected': this.selected }
+                { 'is-selected': this.selected },
+                { 'is-disabled' :this.option.hasOwnProperty('isDisabled') && this.option.isDisabled}
             ];
         },
 
