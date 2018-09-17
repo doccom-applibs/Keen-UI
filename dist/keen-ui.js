@@ -5623,7 +5623,7 @@ exports.default = {
 
     computed: {
         classes: function classes() {
-            return ['ui-select-option--type-' + this.type, { 'is-highlighted': this.highlighted }, { 'is-selected': this.selected }];
+            return ['ui-select-option--type-' + this.type, { 'is-highlighted': this.highlighted }, { 'is-selected': this.selected }, { 'is-disabled': this.option.hasOwnProperty('isDisabled') && this.option.isDisabled }];
         },
         imageStyle: function imageStyle() {
             return { 'background-image': 'url(' + this.option[this.keys.image] + ')' };
