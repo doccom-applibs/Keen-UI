@@ -28,7 +28,7 @@
                             <h1 class="ui-modal__header-text">{{ title }}</h1>
                         </slot>
 
-                        <div ref="ui-modal-close-btn" class="ui-modal__close-button">
+                        <div class="ui-modal__close-button">
                             <ui-close-button
                                 @click="closeModal"
                                 v-if="dismissOnCloseButton && !removeCloseButton && dismissible"
@@ -37,11 +37,17 @@
                     </div>
 
                     <div class="ui-modal__body">
-                        <slot></slot>
+                        <slot>
+							<div>Are you sure you want to close this modal?</div>
+							<div>Any unsaved changes will be lost.</div>
+						</slot>
                     </div>
 
-                    <div class="ui-modal__footer" v-if="hasFooter">
-                        <slot name="footer"></slot>
+					<div class="ui-modal__footer">
+                        <slot name="footer">
+							<ui-button @click="()=>{this.$emit('action-triggered', true); close()}" color="primary">Confirm</ui-button>
+							<ui-button type="secondary" @click="()=>{this.$emit('action-triggered', false); close()}">Cancel</ui-button>
+						</slot>
                     </div>
 
                     <div
@@ -53,7 +59,7 @@
                 </div>
             </div>
 
-          <UiConfirmClosePrompt :key="triggerCloseConfirmPromptAlertKey" @action-triggered="promptModalActionTriggered" v-if="triggerCloseConfirmPromptAlertKey"></UiConfirmClosePrompt>
+
 
         </div>
     </transition>
@@ -61,7 +67,7 @@
 
 <script>
 import UiCloseButton from './UiCloseButton.vue';
-import UiConfirmClosePrompt from './UiConfirmClosePrompt.vue';
+import UiButton from './UiButton.vue';
 
 
 import classlist from './helpers/classlist';
@@ -72,15 +78,15 @@ export default {
     props: {
         title: {
             type: String,
-            default: 'UiModal title'
+            default: 'Confirm modal close'
         },
         size: {
             type: String,
-            default: 'normal' // 'small', 'normal', or 'large'
+            default: 'small' // 'small', 'normal', or 'large'
         },
         role: {
             type: String,
-            default: 'dialog' // 'dialog' or 'alertdialog'
+            default: 'alertdialog' // 'dialog' or 'alertdialog'
         },
         transition: {
             type: String,
@@ -92,7 +98,7 @@ export default {
         },
         removeCloseButton: {
             type: Boolean,
-            default: false
+            default: true
         },
         preventShift: {
             type: Boolean,
@@ -100,24 +106,18 @@ export default {
         },
         dismissible: {
             type: Boolean,
-            default: true
+            default: false
         },
         dismissOn: {
             type: String,
             default: 'backdrop esc close-button'
-        },
-        promptBeforeClose: { //Allow a close prompt to be activated
-            type: Boolean,
-            required: false,
-            default: false
         }
     },
 
     data() {
         return {
             isOpen: false,
-            lastfocusedElement: null,
-            triggerCloseConfirmPromptAlertKey: null
+            lastfocusedElement: null
         };
     },
 
@@ -125,13 +125,9 @@ export default {
         classes() {
             return [
                 `ui-modal--size-${this.size}`,
-                { 'has-footer': this.hasFooter },
+                { 'has-footer': true },
                 { 'is-open': this.isOpen }
             ];
-        },
-
-        hasFooter() {
-            return Boolean(this.$slots.footer);
         },
 
         toggleTransition() {
@@ -175,20 +171,7 @@ export default {
         },
 
         closeModal(e) {
-
-            this.triggerCloseConfirmPromptAlertKey = null;
-
             if (!this.dismissible) {
-                return;
-            }
-
-            if (this.promptBeforeClose) {
-                return this.triggerCloseConfirmPromptAlertKey = Date.now(); //If prop set to confirm close!
-            }
-
-            // Make sure the element clicked was the backdrop and not a child whose click
-            // event has bubbled up
-            if (e.currentTarget === this.$refs.backdrop && e.target !== e.currentTarget) {
                 return;
             }
 
@@ -200,14 +183,14 @@ export default {
             this.$refs.container.focus();
 
             classlist.add(document.body, 'ui-modal--is-open');
-            document.addEventListener('focus', this.restrictFocus, true);
+            //document.addEventListener('focus', this.restrictFocus, true);
 
             this.$emit('open');
         },
 
         onClose() {
             this.teardownModal();
-            this.$emit('close');
+            //this.$emit('close');
         },
 
         redirectFocus() {
@@ -215,15 +198,15 @@ export default {
         },
 
         restrictFocus(e) {
-            if (!this.$refs.container.contains(e.target)) {
-                e.stopPropagation();
-                this.$refs.container.focus();
-            }
+            // if (!this.$refs.container.contains(e.target)) {
+            //     e.stopPropagation();
+            //     this.$refs.container.focus();
+            // }
         },
 
         teardownModal() {
             // classlist.remove(document.body, 'ui-modal--is-open');
-            document.removeEventListener('focus', this.restrictFocus, true);
+            //document.removeEventListener('focus', this.restrictFocus, true);
 
             if (this.lastfocusedElement) {
                 this.lastfocusedElement.focus();
@@ -238,24 +221,15 @@ export default {
             this.$emit('hide');
 
             classlist.remove(document.body, 'ui-modal--is-open');
-        },
-
-        promptModalActionTriggered(val) {
-            this.triggerCloseConfirmPromptAlertKey = null;
-
-            if (!val) return;
-
-            if (val) {//Confirmed close
-                return this.isOpen = false;
-            }
-
-            return false;
         }
-    },
+	},
+
+	created() {
+		this.open();
+	},
 
     components: {
-        UiCloseButton,
-        UiConfirmClosePrompt
+        UiCloseButton
     }
 };
 </script>
