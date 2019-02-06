@@ -59,10 +59,12 @@ export default {
 
     mounted() {
         if (this.triggerEl) {
-            setTimeout(() => {//Fixes issue where dropdown does not scroll in certain situations                              
+            //setTimeout(() => {
+            this.$nextTick(() => {//Fixes issue where dropdown does not scroll in certain situations
                 this.initializeDropdown();
-            },0)
-           
+            });
+           // },0)
+
         }
     },
 
