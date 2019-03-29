@@ -16424,7 +16424,7 @@ var render = function() {
                   ) {
                     return null
                   }
-                  return _vm.closeDropdown($event)
+                  return _vm.selectHighlighted(_vm.highlightedIndex, $event)
                 },
                 function($event) {
                   if (
