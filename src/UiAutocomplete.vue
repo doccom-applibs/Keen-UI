@@ -44,10 +44,11 @@
                     @change="onChange"
                     @focus="onFocus"
                     @input="updateValue($event.target.value)"
+
                     @keydown.down.prevent="highlightSuggestion(highlightedIndex + 1)"
                     @keydown.enter="selectHighlighted(highlightedIndex, $event)"
                     @keydown.esc="closeDropdown"
-                    @keydown.tab="closeDropdown"
+                    @keydown.tab="selectHighlighted(highlightedIndex, $event)"
                     @keydown.up.prevent="highlightSuggestion(highlightedIndex - 1)"
 
                     v-autofocus="autofocus"
@@ -62,7 +63,6 @@
                         :keys="keys"
                         :suggestion="suggestion"
                         :type="type"
-
                         @click.native="selectSuggestion(suggestion)"
 
                         v-for="(suggestion, index) in matchingSuggestions"
