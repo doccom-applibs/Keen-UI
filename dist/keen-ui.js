@@ -2011,6 +2011,11 @@ exports.default = {
         invalid: {
             type: Boolean,
             default: false
+        },
+        maxlength: Number,
+        enforceMaxlength: {
+            type: Boolean,
+            default: false
         }
     },
 
@@ -6875,6 +6880,10 @@ exports.default = {
         enforceMaxlength: {
             type: Boolean,
             default: false
+        },
+        showCharCounterLabel: {
+            type: Boolean,
+            default: true
         },
         required: {
             type: Boolean,
@@ -16372,7 +16381,8 @@ var render = function() {
               disabled: _vm.disabled,
               name: _vm.name,
               placeholder: _vm.hasFloatingLabel ? null : _vm.placeholder,
-              readonly: _vm.readonly ? _vm.readonly : null
+              readonly: _vm.readonly ? _vm.readonly : null,
+              maxlength: _vm.enforceMaxlength ? _vm.maxlength : null
             },
             domProps: { value: _vm.value },
             on: {
@@ -16888,7 +16898,7 @@ var render = function() {
                 )
               : _vm._e(),
             _vm._v(" "),
-            _vm.maxlength
+            _vm.maxlength && _vm.showCharCounterLabel
               ? _c("div", { staticClass: "ui-textbox__counter" }, [
                   _vm._v(
                     "\n                " +
