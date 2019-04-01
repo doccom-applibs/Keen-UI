@@ -80,7 +80,7 @@
                     <slot name="help">{{ help }}</slot>
                 </div>
 
-                <div class="ui-textbox__counter" v-if="maxlength">
+                <div class="ui-textbox__counter" v-if="maxlength && showCharCounterLabel">
                     {{ valueLength + '/' + maxlength }}
                 </div>
             </div>
@@ -145,6 +145,10 @@ export default {
         enforceMaxlength: {
             type: Boolean,
             default: false
+        },
+        showCharCounterLabel: {
+            type: Boolean,
+            default: true
         },
         required: {
             type: Boolean,

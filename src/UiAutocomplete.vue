@@ -39,6 +39,7 @@
                     :placeholder="hasFloatingLabel ? null : placeholder"
                     :readonly="readonly ? readonly : null"
                     :value="value"
+                    :maxlength="enforceMaxlength ? maxlength : null"
 
                     @blur="onBlur"
                     @change="onChange"
@@ -181,7 +182,12 @@ export default {
         invalid: {
             type: Boolean,
             default: false
-        }
+        },
+        maxlength: Number,
+        enforceMaxlength: {
+            type: Boolean,
+            default: false
+        },
     },
 
     data() {
