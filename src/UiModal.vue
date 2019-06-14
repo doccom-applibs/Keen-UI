@@ -13,7 +13,7 @@
             </div>
           </div>
 
-          <div :v-dragscroll="dragScroll" class="ui-modal__body">
+          <div v-dragscroll="dragScroll" class="ui-modal__body">
             <slot></slot>
           </div>
 
