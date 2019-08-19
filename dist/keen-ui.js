@@ -2231,44 +2231,42 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = {
-  name: "ui-autocomplete-suggestion",
+    name: 'ui-autocomplete-suggestion',
 
-  props: {
-    suggestion: {
-      type: [String, Object],
-      required: true
+    props: {
+        suggestion: {
+            type: [String, Object],
+            required: true
+        },
+        type: {
+            type: String,
+            default: 'simple' },
+        highlighted: {
+            type: Boolean,
+            default: false
+        },
+        keys: {
+            type: Object,
+            default: function _default() {
+                return {
+                    label: 'label',
+                    image: 'image'
+                };
+            }
+        }
     },
-    type: {
-      type: String,
-      default: "simple" },
-    highlighted: {
-      type: Boolean,
-      default: false
-    },
-    keys: {
-      type: Object,
-      default: function _default() {
-        return {
-          label: "label",
-          image: "image"
-        };
-      }
-    }
-  },
 
-  computed: {
-    classes: function classes() {
-      return ["ui-autocomplete-suggestion--type-" + this.type, { "is-highlighted": this.highlighted }];
-    },
-    imageStyle: function imageStyle() {
-      return {
-        "background-image": "url(" + this.suggestion[this.keys.image] + ")"
-      };
+    computed: {
+        classes: function classes() {
+            return ['ui-autocomplete-suggestion--type-' + this.type, { 'is-highlighted': this.highlighted }];
+        },
+        imageStyle: function imageStyle() {
+            return { 'background-image': 'url(' + this.suggestion[this.keys.image] + ')' };
+        }
     }
-  }
 };
 
 /***/ }),
@@ -13992,9 +13990,9 @@ var render = function() {
         _vm.type === "simple"
           ? _c("div", { staticClass: "ui-autocomplete-suggestion__simple" }, [
               _vm._v(
-                "\n      " +
+                "\n            " +
                   _vm._s(_vm.suggestion[_vm.keys.label] || _vm.suggestion) +
-                  "\n    "
+                  "\n        "
               )
             ])
           : _vm._e(),
@@ -15226,6 +15224,8 @@ var render = function() {
                       )
                     : _vm._e(),
                   _vm._v(" "),
+                  _vm._t("body-head"),
+                  _vm._v(" "),
                   _c(
                     "div",
                     {
@@ -15262,7 +15262,8 @@ var render = function() {
                       }
                     }
                   })
-                ]
+                ],
+                2
               )
             ]
           ),
