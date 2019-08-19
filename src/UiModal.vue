@@ -12,7 +12,7 @@
               <ui-close-button @click="closeModal" v-if="dismissOnCloseButton && !removeCloseButton && dismissible"></ui-close-button>
             </div>
           </div>
-
+          <slot name="body-head"></slot>
           <div v-dragscroll="dragScroll" class="ui-modal__body">
             <slot></slot>
           </div>
