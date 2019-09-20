@@ -702,6 +702,19 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
     color: #f44336;
 }
 
+.tippy-tooltip.custom-theme {
+  background-color: none;
+  padding-top: 0;
+  height: 100%;
+  background: none;
+}
+.tippy-tooltip.custom-theme[data-animatefill] {
+  background-color: transparent;
+}
+.tippy-tooltip.custom-theme .tippy-backdrop {
+  background-color: none;
+  background: none;
+}
 .ui-popover {
   background-color: white;
   outline: none;
@@ -711,6 +724,7 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
 }
 .ui-popover .ui-menu {
     border: none;
+    max-height: 98vh;
 }
 .ui-popover__focus-redirector {
   opacity: 0;
