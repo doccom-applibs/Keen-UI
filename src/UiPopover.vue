@@ -117,26 +117,27 @@
             distance: 0,
             delay: [0, 0], //show,hide
             duration: [0, 0], //show,hide
-            interactiveBorder: 3,
+            interactiveBorder: 15,
             flipOnUpdate: true,
             showOnInit: false,
             onMount({ reference }) {
               reference.setAttribute("aria-expanded", "true");
-              classlist.add(this.triggerEl, "has-dropdown-open");
+              classlist.add($this.triggerEl, "has-dropdown-open");
               $this.$emit("open");
             },
             onHide({ reference }) {
               reference.setAttribute("aria-expanded", "false");
-              classlist.remove(this.triggerEl, "has-dropdown-open");
+              classlist.remove($this.triggerEl, "has-dropdown-open");
               if (
-                this.onHideCallback &&
-                typeof this.onHideCallback === "function"
+                $this.onHideCallback &&
+                typeof $this.onHideCallback === "function"
               ) {
-                this.onHideCallback();
+                $this.onHideCallback();
               }
+            },
+            onHidden({ reference }) {
               $this.$emit("close");
             }
-            //onHide(instance) {}
           });
         } catch (e) {
           console.error(e);

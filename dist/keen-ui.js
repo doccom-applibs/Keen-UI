@@ -4825,24 +4825,28 @@ exports.default = {
           distance: 0,
           delay: [0, 0],
           duration: [0, 0],
-          interactiveBorder: 3,
+          interactiveBorder: 15,
           flipOnUpdate: true,
           showOnInit: false,
           onMount: function onMount(_ref) {
             var reference = _ref.reference;
 
             reference.setAttribute("aria-expanded", "true");
-            _classlist2.default.add(this.triggerEl, "has-dropdown-open");
+            _classlist2.default.add($this.triggerEl, "has-dropdown-open");
             $this.$emit("open");
           },
           onHide: function onHide(_ref2) {
             var reference = _ref2.reference;
 
             reference.setAttribute("aria-expanded", "false");
-            _classlist2.default.remove(this.triggerEl, "has-dropdown-open");
-            if (this.onHideCallback && typeof this.onHideCallback === "function") {
-              this.onHideCallback();
+            _classlist2.default.remove($this.triggerEl, "has-dropdown-open");
+            if ($this.onHideCallback && typeof $this.onHideCallback === "function") {
+              $this.onHideCallback();
             }
+          },
+          onHidden: function onHidden(_ref3) {
+            var reference = _ref3.reference;
+
             $this.$emit("close");
           }
         });
