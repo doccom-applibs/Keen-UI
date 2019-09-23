@@ -4825,7 +4825,7 @@ exports.default = {
           distance: 0,
           delay: [0, 0],
           duration: [0, 0],
-          interactiveBorder: 15,
+          interactiveBorder: 2,
           flipOnUpdate: true,
           showOnInit: false,
           onMount: function onMount(_ref) {
