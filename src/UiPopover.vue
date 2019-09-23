@@ -117,7 +117,7 @@
             distance: 0,
             delay: [0, 0], //show,hide
             duration: [0, 0], //show,hide
-            interactiveBorder: 15,
+            interactiveBorder: 3,
             flipOnUpdate: true,
             showOnInit: false,
             onMount({ reference }) {
