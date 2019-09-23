@@ -37,7 +37,7 @@
       },
       placement: {
         type: String,
-        default: "top"
+        default: "bottom"
       },
       onHideCallback: Function,
       raised: {
