@@ -107,7 +107,7 @@
             //animation: "fade",
             trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
             theme: "custom",
-            boundary: "window",
+            boundary: "viewport",
             animateFill: false,
             //appendTo: "parent",
             content: this.$el,

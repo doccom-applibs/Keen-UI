@@ -4815,7 +4815,7 @@ exports.default = {
 
           trigger: this.transformOpenOn(),
           theme: "custom",
-          boundary: "window",
+          boundary: "viewport",
           animateFill: false,
 
           content: this.$el,
