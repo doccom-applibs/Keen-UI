@@ -3668,7 +3668,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _stringify = __webpack_require__(20);
@@ -3702,222 +3702,228 @@ var _date2 = _interopRequireDefault(_date);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    name: 'ui-datepicker',
+  name: "ui-datepicker",
 
-    props: {
-        name: String,
-        value: Date,
-        minDate: Date,
-        maxDate: Date,
-        yearRange: Array,
-        lang: {
-            type: Object,
-            default: function _default() {
-                return _date2.default.defaultLang;
-            }
-        },
-        customFormatter: Function,
-        dateFilter: Function,
-        color: {
-            type: String,
-            default: 'primary' },
-        orientation: {
-            type: String,
-            default: 'portrait' },
-        pickerType: {
-            type: String,
-            default: 'popover' },
-        okButtonText: {
-            type: String,
-            default: 'OK'
-        },
-        cancelButtonText: {
-            type: String,
-            default: 'Cancel'
-        },
-        placeholder: String,
-        icon: String,
-        iconPosition: {
-            type: String,
-            default: 'left' },
-        label: String,
-        floatingLabel: {
-            type: Boolean,
-            default: false
-        },
-        invalid: {
-            type: Boolean,
-            default: false
-        },
-        help: String,
-        error: String,
-        disabled: {
-            type: Boolean,
-            default: false
-        }
+  props: {
+    name: String,
+    value: Date,
+    minDate: Date,
+    maxDate: Date,
+    yearRange: Array,
+    lang: {
+      type: Object,
+      default: function _default() {
+        return _date2.default.defaultLang;
+      }
     },
-
-    data: function data() {
-        return {
-            isActive: false,
-            isTouched: false,
-            valueAtModalOpen: null,
-            initialValue: (0, _stringify2.default)(this.value)
-        };
+    customFormatter: Function,
+    dateFilter: Function,
+    color: {
+      type: String,
+      default: "primary" },
+    orientation: {
+      type: String,
+      default: "portrait" },
+    pickerType: {
+      type: String,
+      default: "popover" },
+    okButtonText: {
+      type: String,
+      default: "OK"
     },
-
-
-    computed: {
-        classes: function classes() {
-            return ['ui-datepicker--icon-position-' + this.iconPosition, 'ui-datepicker--orientation-' + this.orientation, { 'is-active': this.isActive }, { 'is-invalid': this.invalid }, { 'is-touched': this.isTouched }, { 'is-disabled': this.disabled }, { 'has-label': this.hasLabel }, { 'has-floating-label': this.hasFloatingLabel }];
-        },
-        labelClasses: function labelClasses() {
-            return {
-                'is-inline': this.hasFloatingLabel && this.isLabelInline,
-                'is-floating': this.hasFloatingLabel && !this.isLabelInline
-            };
-        },
-        hasLabel: function hasLabel() {
-            return Boolean(this.label) || Boolean(this.$slots.default);
-        },
-        hasFloatingLabel: function hasFloatingLabel() {
-            return this.hasLabel && this.floatingLabel;
-        },
-        isLabelInline: function isLabelInline() {
-            return !this.value && !this.isActive;
-        },
-        hasFeedback: function hasFeedback() {
-            return Boolean(this.help) || Boolean(this.error) || Boolean(this.$slots.error);
-        },
-        showError: function showError() {
-            return this.invalid && (Boolean(this.error) || Boolean(this.$slots.error));
-        },
-        showHelp: function showHelp() {
-            return !this.showError && (Boolean(this.help) || Boolean(this.$slots.help));
-        },
-        displayText: function displayText() {
-            if (!this.value) {
-                return '';
-            }
-
-            return this.customFormatter ? this.customFormatter(this.value, this.lang) : _date2.default.humanize(this.value, this.lang);
-        },
-        hasDisplayText: function hasDisplayText() {
-            return Boolean(this.displayText.length);
-        },
-        submittedValue: function submittedValue() {
-            return this.value ? this.value.getFullYear() + '-' + this.value.getMonth() + '-' + this.value.getDate() : '';
-        },
-        usesPopover: function usesPopover() {
-            return this.pickerType === 'popover';
-        },
-        usesModal: function usesModal() {
-            return this.pickerType === 'modal';
-        }
+    cancelButtonText: {
+      type: String,
+      default: "Cancel"
     },
-
-    mounted: function mounted() {
-        document.addEventListener('click', this.onExternalClick);
+    placeholder: String,
+    icon: String,
+    iconPosition: {
+      type: String,
+      default: "left" },
+    label: String,
+    floatingLabel: {
+      type: Boolean,
+      default: false
     },
-    beforeDestroy: function beforeDestroy() {
-        document.removeEventListener('click', this.onExternalClick);
+    invalid: {
+      type: Boolean,
+      default: false
     },
-
-
-    methods: {
-        onDateSelect: function onDateSelect(date) {
-            this.$emit('input', date);
-            this.closePicker();
-        },
-        openPicker: function openPicker() {
-            if (this.disabled) {
-                return;
-            }
-
-            this.$refs[this.usesModal ? 'modal' : 'popover'].open();
-        },
-        closePicker: function closePicker() {
-            var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { autoBlur: false };
-
-            if (this.usesPopover) {
-                this.$refs.popover.close();
-            }
-
-            if (options.autoBlur) {
-                this.isActive = false;
-            } else {
-                this.$refs.label.focus();
-            }
-        },
-        onClick: function onClick() {
-            if (this.usesModal && !this.disabled) {
-                this.$refs.modal.open();
-            }
-        },
-        onFocus: function onFocus(e) {
-            this.isActive = true;
-            this.$emit('focus', e);
-        },
-        onBlur: function onBlur(e) {
-            this.isActive = false;
-            this.$emit('blur', e);
-
-            if (this.usesPopover && this.$refs.popover.dropInstance.isOpened()) {
-                this.closePicker({ autoBlur: true });
-            }
-        },
-        onPickerOpen: function onPickerOpen() {
-            if (this.usesModal) {
-                this.valueAtModalOpen = this.value ? _date2.default.clone(this.value) : null;
-            }
-
-            this.isActive = true;
-            this.$emit('open');
-        },
-        onPickerClose: function onPickerClose() {
-            this.$emit('close');
-
-            if (!this.isTouched) {
-                this.isTouched = true;
-                this.$emit('touch');
-            }
-        },
-        onPickerCancel: function onPickerCancel() {
-            this.$emit('input', this.valueAtModalOpen);
-            this.$refs.modal.close();
-        },
-        onExternalClick: function onExternalClick(e) {
-            if (this.disabled) {
-                return;
-            }
-
-            var clickWasInternal = this.$el.contains(e.target) || this.$refs[this.usesPopover ? 'popover' : 'modal'].$el.contains(e.target);
-
-            if (clickWasInternal) {
-                return;
-            }
-
-            if (this.isActive) {
-                this.isActive = false;
-            }
-        },
-        reset: function reset() {
-            this.$emit('input', JSON.parse(this.initialValue));
-        },
-        resetTouched: function resetTouched() {
-            var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { touched: false };
-
-            this.isTouched = options.touched;
-        }
+    help: String,
+    error: String,
+    disabled: {
+      type: Boolean,
+      default: false
     },
-
-    components: {
-        UiButton: _UiButton2.default,
-        UiCalendar: _UiCalendar2.default,
-        UiIcon: _UiIcon2.default,
-        UiModal: _UiModal2.default,
-        UiPopover: _UiPopover2.default
+    appendPopoverTo: {
+      type: [String, Function],
+      default: function _default() {
+        return document.body;
+      }
     }
+  },
+
+  data: function data() {
+    return {
+      isActive: false,
+      isTouched: false,
+      valueAtModalOpen: null,
+      initialValue: (0, _stringify2.default)(this.value)
+    };
+  },
+
+
+  computed: {
+    classes: function classes() {
+      return ["ui-datepicker--icon-position-" + this.iconPosition, "ui-datepicker--orientation-" + this.orientation, { "is-active": this.isActive }, { "is-invalid": this.invalid }, { "is-touched": this.isTouched }, { "is-disabled": this.disabled }, { "has-label": this.hasLabel }, { "has-floating-label": this.hasFloatingLabel }];
+    },
+    labelClasses: function labelClasses() {
+      return {
+        "is-inline": this.hasFloatingLabel && this.isLabelInline,
+        "is-floating": this.hasFloatingLabel && !this.isLabelInline
+      };
+    },
+    hasLabel: function hasLabel() {
+      return Boolean(this.label) || Boolean(this.$slots.default);
+    },
+    hasFloatingLabel: function hasFloatingLabel() {
+      return this.hasLabel && this.floatingLabel;
+    },
+    isLabelInline: function isLabelInline() {
+      return !this.value && !this.isActive;
+    },
+    hasFeedback: function hasFeedback() {
+      return Boolean(this.help) || Boolean(this.error) || Boolean(this.$slots.error);
+    },
+    showError: function showError() {
+      return this.invalid && (Boolean(this.error) || Boolean(this.$slots.error));
+    },
+    showHelp: function showHelp() {
+      return !this.showError && (Boolean(this.help) || Boolean(this.$slots.help));
+    },
+    displayText: function displayText() {
+      if (!this.value) {
+        return "";
+      }
+
+      return this.customFormatter ? this.customFormatter(this.value, this.lang) : _date2.default.humanize(this.value, this.lang);
+    },
+    hasDisplayText: function hasDisplayText() {
+      return Boolean(this.displayText.length);
+    },
+    submittedValue: function submittedValue() {
+      return this.value ? this.value.getFullYear() + "-" + this.value.getMonth() + "-" + this.value.getDate() : "";
+    },
+    usesPopover: function usesPopover() {
+      return this.pickerType === "popover";
+    },
+    usesModal: function usesModal() {
+      return this.pickerType === "modal";
+    }
+  },
+
+  mounted: function mounted() {
+    document.addEventListener("click", this.onExternalClick);
+  },
+  beforeDestroy: function beforeDestroy() {
+    document.removeEventListener("click", this.onExternalClick);
+  },
+
+
+  methods: {
+    onDateSelect: function onDateSelect(date) {
+      this.$emit("input", date);
+      this.closePicker();
+    },
+    openPicker: function openPicker() {
+      if (this.disabled) {
+        return;
+      }
+
+      this.$refs[this.usesModal ? "modal" : "popover"].open();
+    },
+    closePicker: function closePicker() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { autoBlur: false };
+
+      if (this.usesPopover) {
+        this.$refs.popover.close();
+      }
+
+      if (options.autoBlur) {
+        this.isActive = false;
+      } else {
+        this.$refs.label.focus();
+      }
+    },
+    onClick: function onClick() {
+      if (this.usesModal && !this.disabled) {
+        this.$refs.modal.open();
+      }
+    },
+    onFocus: function onFocus(e) {
+      this.isActive = true;
+      this.$emit("focus", e);
+    },
+    onBlur: function onBlur(e) {
+      this.isActive = false;
+      this.$emit("blur", e);
+
+      if (this.usesPopover && this.$refs.popover.dropInstance.isOpened()) {
+        this.closePicker({ autoBlur: true });
+      }
+    },
+    onPickerOpen: function onPickerOpen() {
+      if (this.usesModal) {
+        this.valueAtModalOpen = this.value ? _date2.default.clone(this.value) : null;
+      }
+
+      this.isActive = true;
+      this.$emit("open");
+    },
+    onPickerClose: function onPickerClose() {
+      this.$emit("close");
+
+      if (!this.isTouched) {
+        this.isTouched = true;
+        this.$emit("touch");
+      }
+    },
+    onPickerCancel: function onPickerCancel() {
+      this.$emit("input", this.valueAtModalOpen);
+      this.$refs.modal.close();
+    },
+    onExternalClick: function onExternalClick(e) {
+      if (this.disabled) {
+        return;
+      }
+
+      var clickWasInternal = this.$el.contains(e.target) || this.$refs[this.usesPopover ? "popover" : "modal"].$el.contains(e.target);
+
+      if (clickWasInternal) {
+        return;
+      }
+
+      if (this.isActive) {
+        this.isActive = false;
+      }
+    },
+    reset: function reset() {
+      this.$emit("input", JSON.parse(this.initialValue));
+    },
+    resetTouched: function resetTouched() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { touched: false };
+
+      this.isTouched = options.touched;
+    }
+  },
+
+  components: {
+    UiButton: _UiButton2.default,
+    UiCalendar: _UiCalendar2.default,
+    UiIcon: _UiIcon2.default,
+    UiModal: _UiModal2.default,
+    UiPopover: _UiPopover2.default
+  }
 };
 
 /***/ }),
@@ -4749,6 +4755,10 @@ exports.default = {
       type: String,
       default: "bottom"
     },
+    appendTo: {
+      type: [String, Boolean],
+      default: false
+    },
     onHideCallback: Function
   }, "raised", {
     type: Boolean,
@@ -4817,7 +4827,7 @@ exports.default = {
           theme: "custom",
           boundary: "viewport",
           animateFill: false,
-
+          appendTo: this.appendTo ? this.appendTo : document.body,
           content: this.$el,
           interactive: true,
           maxWidth: 400,
@@ -18993,7 +19003,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n                    " +
+                      "\n          " +
                         _vm._s(
                           _vm.hasDisplayText
                             ? _vm.displayText
@@ -19001,7 +19011,7 @@ var render = function() {
                             ? null
                             : _vm.placeholder
                         ) +
-                        "\n                "
+                        "\n        "
                     )
                   ]
                 ),
@@ -19125,7 +19135,11 @@ var render = function() {
             "ui-popover",
             {
               ref: "popover",
-              attrs: { "contain-focus": "", trigger: "label" },
+              attrs: {
+                "contain-focus": "",
+                trigger: "label",
+                appendTo: _vm.appendPopoverTo
+              },
               on: { close: _vm.onPickerClose, open: _vm.onPickerOpen }
             },
             [

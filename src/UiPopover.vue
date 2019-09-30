@@ -39,6 +39,10 @@
         type: String,
         default: "bottom"
       },
+      appendTo: {
+        type: [String, Boolean],
+        default: false
+      },
       onHideCallback: Function,
       raised: {
         type: Boolean,
@@ -109,7 +113,7 @@
             theme: "custom",
             boundary: "viewport",
             animateFill: false,
-            //appendTo: "parent",
+            appendTo: this.appendTo ? this.appendTo : document.body,
             content: this.$el,
             interactive: true,
             maxWidth: 400,
