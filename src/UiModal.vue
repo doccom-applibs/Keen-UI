@@ -202,13 +202,21 @@
       },
 
       redirectFocus() {
-        this.$refs.container.focus();
+        if (this.$refs.container) this.$refs.container.focus();
       },
 
       restrictFocus(e) {
-        if (!this.$refs.container.contains(e.target)) {
-          e.stopPropagation();
-          this.$refs.container.focus();
+        try {
+          if (
+            this.$refs.container &&
+            e.target &&
+            !this.$refs.container.contains(e.target)
+          ) {
+            e.stopPropagation();
+            this.$refs.container.focus();
+          }
+        } catch (e) {
+          console.error(e);
         }
       },
 
