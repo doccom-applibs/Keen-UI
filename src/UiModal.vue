@@ -178,6 +178,14 @@
         this.isOpen = false;
       },
 
+      destroyModal() {
+        this.dismissible = true;
+        this.triggerCloseConfirmPromptAlertKey = null;
+        this.promptBeforeClose = false;
+        this.isOpen = false;
+        this.$emit("close");
+      },
+
       onOpen() {
         this.lastfocusedElement = document.activeElement;
         this.$refs.container.focus();
@@ -234,6 +242,21 @@
         }
 
         return false;
+      }
+    },
+
+    mounted() {
+      try {
+        VueEventBus.$on("Application.SessionEnded", this.destroyModal);
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    beforeDestroy() {
+      try {
+        VueEventBus.$off("Application.SessionEnded", this.destroyModal);
+      } catch (e) {
+        console.error(e);
       }
     },
 

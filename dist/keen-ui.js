@@ -196,10 +196,10 @@ module.exports = function normalizeComponent (
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIcon_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c4c9b034_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiIcon_vue__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c4c9b034_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiIcon_vue__ = __webpack_require__(254);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -353,10 +353,10 @@ exports.default = new KeenUiConfig();
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRippleInk_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61413a0e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRippleInk_vue__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_61413a0e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRippleInk_vue__ = __webpack_require__(245);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -443,7 +443,7 @@ module.exports = function (it, key) {
 
 var anObject = __webpack_require__(21);
 var IE8_DOM_DEFINE = __webpack_require__(97);
-var toPrimitive = __webpack_require__(42);
+var toPrimitive = __webpack_require__(43);
 var dP = Object.defineProperty;
 
 exports.f = __webpack_require__(5) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
@@ -470,7 +470,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _typeof2 = __webpack_require__(31);
+var _typeof2 = __webpack_require__(32);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
@@ -578,7 +578,7 @@ module.exports = __webpack_require__(5) ? function (object, key, value) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
 var IObject = __webpack_require__(145);
-var defined = __webpack_require__(32);
+var defined = __webpack_require__(33);
 module.exports = function (it) {
   return IObject(defined(it));
 };
@@ -588,7 +588,7 @@ module.exports = function (it) {
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var store = __webpack_require__(40)('wks');
+var store = __webpack_require__(41)('wks');
 var uid = __webpack_require__(25);
 var Symbol = __webpack_require__(4).Symbol;
 var USE_SYMBOL = typeof Symbol == 'function';
@@ -607,10 +607,10 @@ $exports.store = store;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiButton_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15640cdf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiButton_vue__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15640cdf_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiButton_vue__ = __webpack_require__(226);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -806,10 +806,10 @@ module.exports = function (it) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCloseButton_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_86d88426_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCloseButton_vue__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_86d88426_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCloseButton_vue__ = __webpack_require__(250);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -864,10 +864,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPopover_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0ffc9d48_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiPopover_vue__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0ffc9d48_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiPopover_vue__ = __webpack_require__(223);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -922,10 +922,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressCircular_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_60945259_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiProgressCircular_vue__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_60945259_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiProgressCircular_vue__ = __webpack_require__(244);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -989,7 +989,7 @@ var _stringify = __webpack_require__(20);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
-var _typeof2 = __webpack_require__(31);
+var _typeof2 = __webpack_require__(32);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
@@ -1092,10 +1092,10 @@ module.exports = function (key) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiIconButton_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4dde8fb8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiIconButton_vue__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4dde8fb8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiIconButton_vue__ = __webpack_require__(238);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1150,10 +1150,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiModal_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_26c1c7e0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiModal_vue__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_26c1c7e0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiModal_vue__ = __webpack_require__(230);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1208,10 +1208,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTooltip_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_34922fa6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTooltip_vue__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_34922fa6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTooltip_vue__ = __webpack_require__(234);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1351,6 +1351,36 @@ exports.default = {
 
 exports.__esModule = true;
 
+var _defineProperty = __webpack_require__(94);
+
+var _defineProperty2 = _interopRequireDefault(_defineProperty);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (obj, key, value) {
+  if (key in obj) {
+    (0, _defineProperty2.default)(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
 var _iterator = __webpack_require__(132);
 
 var _iterator2 = _interopRequireDefault(_iterator);
@@ -1370,7 +1400,7 @@ exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.d
 };
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 // 7.2.1 RequireObjectCoercible(argument)
@@ -1381,7 +1411,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 // IE 8- don't enum bug keys
@@ -1391,7 +1421,7 @@ module.exports = (
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(4);
@@ -1459,19 +1489,19 @@ module.exports = $export;
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
 var $keys = __webpack_require__(102);
-var enumBugKeys = __webpack_require__(33);
+var enumBugKeys = __webpack_require__(34);
 
 module.exports = Object.keys || function keys(O) {
   return $keys(O, enumBugKeys);
@@ -1479,14 +1509,14 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(7).f;
@@ -1499,10 +1529,10 @@ module.exports = function (it, tag, stat) {
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(40)('keys');
+var shared = __webpack_require__(41)('keys');
 var uid = __webpack_require__(25);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
@@ -1510,7 +1540,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var core = __webpack_require__(9);
@@ -1528,7 +1558,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -1540,7 +1570,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -1558,13 +1588,13 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(4);
 var core = __webpack_require__(9);
 var LIBRARY = __webpack_require__(23);
-var wksExt = __webpack_require__(44);
+var wksExt = __webpack_require__(45);
 var defineProperty = __webpack_require__(7).f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -1573,22 +1603,22 @@ module.exports = function (name) {
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports.f = __webpack_require__(12);
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendar_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3de949ab_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendar_vue__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3de949ab_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendar_vue__ = __webpack_require__(236);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1638,15 +1668,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckbox_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1f30c0a0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCheckbox_vue__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1f30c0a0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCheckbox_vue__ = __webpack_require__(228);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1696,15 +1726,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiProgressLinear_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cba42f42_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiProgressLinear_vue__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_cba42f42_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiProgressLinear_vue__ = __webpack_require__(256);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1754,15 +1784,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadio_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3175de5e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRadio_vue__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3175de5e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRadio_vue__ = __webpack_require__(232);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1812,15 +1842,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbar_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0100081c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSnackbar_vue__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0100081c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSnackbar_vue__ = __webpack_require__(219);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -1870,7 +1900,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1926,7 +1956,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1936,11 +1966,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _autofocus = __webpack_require__(91);
+var _autofocus = __webpack_require__(92);
 
 var _autofocus2 = _interopRequireDefault(_autofocus);
 
-var _UiAutocompleteSuggestion = __webpack_require__(214);
+var _UiAutocompleteSuggestion = __webpack_require__(211);
 
 var _UiAutocompleteSuggestion2 = _interopRequireDefault(_UiAutocompleteSuggestion);
 
@@ -2251,7 +2281,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2297,7 +2327,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2456,7 +2486,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2466,11 +2496,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _UiCalendarControls = __webpack_require__(215);
+var _UiCalendarControls = __webpack_require__(212);
 
 var _UiCalendarControls2 = _interopRequireDefault(_UiCalendarControls);
 
-var _UiCalendarMonth = __webpack_require__(216);
+var _UiCalendarMonth = __webpack_require__(213);
 
 var _UiCalendarMonth2 = _interopRequireDefault(_UiCalendarMonth);
 
@@ -2478,7 +2508,7 @@ var _date = __webpack_require__(14);
 
 var _date2 = _interopRequireDefault(_date);
 
-var _elementScroll = __webpack_require__(92);
+var _elementScroll = __webpack_require__(93);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2625,7 +2655,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2714,7 +2744,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2724,11 +2754,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _defineProperty2 = __webpack_require__(94);
+var _defineProperty2 = __webpack_require__(31);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-var _UiCalendarWeek = __webpack_require__(217);
+var _UiCalendarWeek = __webpack_require__(214);
 
 var _UiCalendarWeek2 = _interopRequireDefault(_UiCalendarWeek);
 
@@ -2832,7 +2862,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2920,7 +2950,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3013,7 +3043,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3027,7 +3057,7 @@ var _stringify = __webpack_require__(20);
 
 var _stringify2 = _interopRequireDefault(_stringify);
 
-var _UiCheckbox = __webpack_require__(46);
+var _UiCheckbox = __webpack_require__(47);
 
 var _UiCheckbox2 = _interopRequireDefault(_UiCheckbox);
 
@@ -3160,7 +3190,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3223,7 +3253,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3361,7 +3391,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3498,7 +3528,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3661,7 +3691,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3679,7 +3709,7 @@ var _UiButton = __webpack_require__(13);
 
 var _UiButton2 = _interopRequireDefault(_UiButton);
 
-var _UiCalendar = __webpack_require__(45);
+var _UiCalendar = __webpack_require__(46);
 
 var _UiCalendar2 = _interopRequireDefault(_UiCalendar);
 
@@ -3927,7 +3957,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3996,7 +4026,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4161,7 +4191,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4192,7 +4222,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4333,7 +4363,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4343,7 +4373,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _UiMenuOption = __webpack_require__(219);
+var _UiMenuOption = __webpack_require__(216);
 
 var _UiMenuOption2 = _interopRequireDefault(_UiMenuOption);
 
@@ -4426,7 +4456,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4493,7 +4523,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4503,15 +4533,21 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _defineProperty2 = __webpack_require__(31);
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _name$props$data$dire;
+
 var _UiCloseButton = __webpack_require__(16);
 
 var _UiCloseButton2 = _interopRequireDefault(_UiCloseButton);
 
-var _UiConfirmClosePrompt = __webpack_require__(218);
+var _UiConfirmClosePrompt = __webpack_require__(215);
 
 var _UiConfirmClosePrompt2 = _interopRequireDefault(_UiConfirmClosePrompt);
 
-var _vueDragscroll = __webpack_require__(213);
+var _vueDragscroll = __webpack_require__(210);
 
 var _classlist = __webpack_require__(8);
 
@@ -4519,7 +4555,7 @@ var _classlist2 = _interopRequireDefault(_classlist);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
+exports.default = (_name$props$data$dire = {
   name: "ui-modal",
 
   props: {
@@ -4642,6 +4678,13 @@ exports.default = {
 
       this.isOpen = false;
     },
+    destroyModal: function destroyModal() {
+      this.dismissible = true;
+      this.triggerCloseConfirmPromptAlertKey = null;
+      this.promptBeforeClose = false;
+      this.isOpen = false;
+      this.$emit("close");
+    },
     onOpen: function onOpen() {
       this.lastfocusedElement = document.activeElement;
       this.$refs.container.focus();
@@ -4692,14 +4735,26 @@ exports.default = {
     }
   },
 
-  components: {
-    UiCloseButton: _UiCloseButton2.default,
-    UiConfirmClosePrompt: _UiConfirmClosePrompt2.default
+  mounted: function mounted() {
+    try {
+      VueEventBus.$on("Application.SessionEnded", this.destroyModal);
+    } catch (e) {
+      console.error(e);
+    }
   }
-};
+}, (0, _defineProperty3.default)(_name$props$data$dire, "beforeDestroy", function beforeDestroy() {
+  try {
+    VueEventBus.$off("Application.SessionEnded", this.destroyModal);
+  } catch (e) {
+    console.error(e);
+  }
+}), (0, _defineProperty3.default)(_name$props$data$dire, "components", {
+  UiCloseButton: _UiCloseButton2.default,
+  UiConfirmClosePrompt: _UiConfirmClosePrompt2.default
+}), _name$props$data$dire);
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4709,11 +4764,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _typeof2 = __webpack_require__(31);
+var _typeof2 = __webpack_require__(32);
 
 var _typeof3 = _interopRequireDefault(_typeof2);
 
-var _defineProperty2 = __webpack_require__(94);
+var _defineProperty2 = __webpack_require__(31);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
@@ -4721,7 +4776,7 @@ var _classlist = __webpack_require__(8);
 
 var _classlist2 = _interopRequireDefault(_classlist);
 
-var _tippy = __webpack_require__(212);
+var _tippy = __webpack_require__(106);
 
 var _tippy2 = _interopRequireDefault(_tippy);
 
@@ -4906,7 +4961,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4927,7 +4982,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5013,7 +5068,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5057,7 +5112,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5140,7 +5195,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5150,7 +5205,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _UiRadio = __webpack_require__(48);
+var _UiRadio = __webpack_require__(49);
 
 var _UiRadio2 = _interopRequireDefault(_UiRadio);
 
@@ -5262,7 +5317,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5414,7 +5469,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5436,7 +5491,7 @@ var _UiProgressCircular = __webpack_require__(18);
 
 var _UiProgressCircular2 = _interopRequireDefault(_UiProgressCircular);
 
-var _UiSelectOption = __webpack_require__(220);
+var _UiSelectOption = __webpack_require__(217);
 
 var _UiSelectOption2 = _interopRequireDefault(_UiSelectOption);
 
@@ -5450,7 +5505,7 @@ var _fuzzysearch2 = _interopRequireDefault(_fuzzysearch);
 
 var _util = __webpack_require__(19);
 
-var _elementScroll = __webpack_require__(92);
+var _elementScroll = __webpack_require__(93);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5855,7 +5910,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5920,7 +5975,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6188,7 +6243,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6245,7 +6300,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6255,7 +6310,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _UiSnackbar = __webpack_require__(49);
+var _UiSnackbar = __webpack_require__(50);
 
 var _UiSnackbar2 = _interopRequireDefault(_UiSnackbar);
 
@@ -6375,7 +6430,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6467,7 +6522,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6549,7 +6604,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6620,7 +6675,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6634,7 +6689,7 @@ var _RespondsToWindowResize = __webpack_require__(30);
 
 var _RespondsToWindowResize2 = _interopRequireDefault(_RespondsToWindowResize);
 
-var _UiTabHeaderItem = __webpack_require__(221);
+var _UiTabHeaderItem = __webpack_require__(218);
 
 var _UiTabHeaderItem2 = _interopRequireDefault(_UiTabHeaderItem);
 
@@ -6887,7 +6942,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6897,7 +6952,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _autofocus = __webpack_require__(91);
+var _autofocus = __webpack_require__(92);
 
 var _autofocus2 = _interopRequireDefault(_autofocus);
 
@@ -7120,7 +7175,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7134,7 +7189,7 @@ var _UiIconButton = __webpack_require__(26);
 
 var _UiIconButton2 = _interopRequireDefault(_UiIconButton);
 
-var _UiProgressLinear = __webpack_require__(47);
+var _UiProgressLinear = __webpack_require__(48);
 
 var _UiProgressLinear2 = _interopRequireDefault(_UiProgressLinear);
 
@@ -7202,98 +7257,111 @@ exports.default = {
 };
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-
-var _tetherTooltip = __webpack_require__(211);
-
-var _tetherTooltip2 = _interopRequireDefault(_tetherTooltip);
 
 var _uuid = __webpack_require__(29);
 
 var _uuid2 = _interopRequireDefault(_uuid);
 
+var _tippy = __webpack_require__(106);
+
+var _tippy2 = _interopRequireDefault(_tippy);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    name: 'ui-tooltip',
+  name: "ui-tooltip",
 
-    props: {
-        trigger: {
-            type: String,
-            required: true
-        },
-        position: {
-            type: String,
-            default: 'bottom center'
-        },
-        openOn: {
-            type: String,
-            default: 'hover focus'
-        },
-        openDelay: {
-            type: Number,
-            default: 0
-        }
+  props: {
+    trigger: {
+      type: String,
+      required: true
     },
-
-    data: function data() {
-        return {
-            tooltip: null,
-            id: _uuid2.default.short('ui-tooltip-')
-        };
+    position: {
+      type: String,
+      default: "right-middle"
     },
-
-
-    watch: {
-        trigger: function trigger() {
-            if (this.tooltip === null) {
-                this.initialize();
-            }
-        }
+    openOn: {
+      type: String,
+      default: "hover focus"
     },
-
-    mounted: function mounted() {
-        if (this.tooltip === null) {
-            this.initialize();
-        }
+    openDelay: {
+      type: Number,
+      default: 0
     },
-    beforeDestroy: function beforeDestroy() {
-        if (this.tooltip !== null) {
-            this.tooltip.destroy();
-        }
-    },
-
-
-    methods: {
-        initialize: function initialize() {
-            if (this.trigger !== undefined && this.$parent.$refs[this.trigger]) {
-                var triggerEl = this.$parent.$refs[this.trigger]._isVue ? this.$parent.$refs[this.trigger].$el : this.$parent.$refs[this.trigger];
-
-                this.tooltip = new _tetherTooltip2.default({
-                    target: triggerEl,
-                    content: this.$refs.tooltip,
-                    classes: 'ui-tooltip--theme-default',
-                    position: this.position,
-                    openOn: this.openOn,
-                    openDelay: this.openDelay
-                });
-
-                triggerEl.setAttribute('aria-describedby', this.id);
-            }
-        }
+    arrow: {
+      type: Boolean,
+      default: false
     }
+  },
+
+  data: function data() {
+    return {
+      tooltip: null,
+      tippyTooltip: null,
+      id: _uuid2.default.short("ui-tooltip-")
+    };
+  },
+
+
+  watch: {
+    trigger: function trigger() {
+      if (this.tippyTooltip === null) {
+        this.initialize();
+      }
+    }
+  },
+
+  mounted: function mounted() {
+    if (this.tippyTooltip === null) {
+      this.initialize();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    if (this.tippyTooltip) {
+      this.tippyTooltip.destroy();
+    }
+  },
+
+
+  methods: {
+    initialize: function initialize() {
+      if (this.trigger !== undefined && this.$parent.$refs[this.trigger]) {
+        var triggerEl = this.$parent.$refs[this.trigger]._isVue ? this.$parent.$refs[this.trigger].$el : this.$parent.$refs[this.trigger];
+
+        this.tippyTooltip = (0, _tippy2.default)(triggerEl, {
+          content: this.$refs.tooltip,
+
+          distance: 4,
+          delay: 0,
+          arrow: this.arrow,
+          placement: this.position,
+          boundary: "viewport",
+          popperOptions: {
+            modifiers: {
+              computeStyle: {
+                gpuAcceleration: !(window.devicePixelRatio < 1.5 && /Win/.test(navigator.platform))
+              }
+            }
+          }
+        });
+
+        triggerEl.setAttribute("aria-describedby", this.id);
+      }
+    }
+  }
 };
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7313,7 +7381,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7371,40 +7439,10 @@ exports.default = {
 };
 
 /***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(136), __esModule: true };
-
-/***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-exports.__esModule = true;
-
-var _defineProperty = __webpack_require__(93);
-
-var _defineProperty2 = _interopRequireDefault(_defineProperty);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (obj, key, value) {
-  if (key in obj) {
-    (0, _defineProperty2.default)(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-};
+module.exports = { "default": __webpack_require__(136), __esModule: true };
 
 /***/ }),
 /* 95 */
@@ -7446,12 +7484,12 @@ module.exports = !__webpack_require__(5) && !__webpack_require__(22)(function ()
 "use strict";
 
 var LIBRARY = __webpack_require__(23);
-var $export = __webpack_require__(34);
+var $export = __webpack_require__(35);
 var redefine = __webpack_require__(103);
 var hide = __webpack_require__(10);
-var Iterators = __webpack_require__(35);
+var Iterators = __webpack_require__(36);
 var $iterCreate = __webpack_require__(147);
-var setToStringTag = __webpack_require__(38);
+var setToStringTag = __webpack_require__(39);
 var getPrototypeOf = __webpack_require__(153);
 var ITERATOR = __webpack_require__(12)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
@@ -7522,8 +7560,8 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(21);
 var dPs = __webpack_require__(150);
-var enumBugKeys = __webpack_require__(33);
-var IE_PROTO = __webpack_require__(39)('IE_PROTO');
+var enumBugKeys = __webpack_require__(34);
+var IE_PROTO = __webpack_require__(40)('IE_PROTO');
 var Empty = function () { /* empty */ };
 var PROTOTYPE = 'prototype';
 
@@ -7568,7 +7606,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
 var $keys = __webpack_require__(102);
-var hiddenKeys = __webpack_require__(33).concat('length', 'prototype');
+var hiddenKeys = __webpack_require__(34).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   return $keys(O, hiddenKeys);
@@ -7589,7 +7627,7 @@ exports.f = Object.getOwnPropertySymbols;
 var has = __webpack_require__(6);
 var toIObject = __webpack_require__(11);
 var arrayIndexOf = __webpack_require__(141)(false);
-var IE_PROTO = __webpack_require__(39)('IE_PROTO');
+var IE_PROTO = __webpack_require__(40)('IE_PROTO');
 
 module.exports = function (object, names) {
   var O = toIObject(object);
@@ -7617,7 +7655,7 @@ module.exports = __webpack_require__(10);
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
-var defined = __webpack_require__(32);
+var defined = __webpack_require__(33);
 module.exports = function (it) {
   return Object(defined(it));
 };
@@ -7656,1831 +7694,1953 @@ module.exports = fuzzysearch;
 
 /***/ }),
 /* 106 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.7 */
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(209);
+/**!
+* tippy.js v4.3.5
+* (c) 2017-2019 atomiks
+* MIT License
+*/
 
-(function(root, factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  } else {
-    root.Tether = factory();
-  }
-}(this, function() {
 
-'use strict';
+var css = ".tippy-iOS{cursor:pointer!important;-webkit-tap-highlight-color:transparent}.tippy-popper{transition-timing-function:cubic-bezier(.165,.84,.44,1);max-width:calc(100% - 8px);pointer-events:none;outline:0}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-7px;bottom:-6.5px;-webkit-transform-origin:50% 0;transform-origin:50% 0;margin:0 3px}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;bottom:-7px;margin:0 3px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 25%;transform-origin:0 25%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%)}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%,-45%);transform:scale(.2) translate(-50%,-45%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(-10px);transform:perspective(700px) translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(60deg);transform:perspective(700px) rotateX(60deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=top] [data-animation=scale]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px) scale(.5);transform:translateY(-10px) scale(.5)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-7px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;margin:0 3px}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;top:-7px;margin:0 3px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%)}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%);transform:scale(.2) translate(-50%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(10px);transform:perspective(700px) translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(-60deg);transform:perspective(700px) rotateX(-60deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=scale]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px) scale(.5);transform:translateY(10px) scale(.5)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-12px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%;margin:3px 0}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-75%,-50%);transform:scale(.2) translate(-75%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(-10px);transform:perspective(700px) translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(-60deg);transform:perspective(700px) rotateY(-60deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=left] [data-animation=scale]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px) scale(.5);transform:translateX(-10px) scale(.5)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-12px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%;margin:3px 0}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-25%,-50%);transform:scale(.2) translate(-25%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(10px);transform:perspective(700px) translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(60deg);transform:perspective(700px) rotateY(60deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=right] [data-animation=scale]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px) scale(.5);transform:translateX(10px) scale(.5)}.tippy-tooltip{position:relative;color:#fff;border-radius:.25rem;font-size:.875rem;padding:.3125rem .5625rem;line-height:1.4;text-align:center;background-color:#333}.tippy-tooltip[data-size=small]{padding:.1875rem .375rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.375rem .75rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:initial}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] .tippy-roundarrow path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:18px;height:7px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;background-color:#333;border-radius:50%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:\"\";float:left;padding-top:100%}.tippy-backdrop+.tippy-content{transition-property:opacity;will-change:opacity}.tippy-backdrop+.tippy-content[data-state=hidden]{opacity:0}";
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
 
-var TetherBase = undefined;
-if (typeof TetherBase === 'undefined') {
-  TetherBase = { modules: [] };
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
 }
 
-var zeroElement = null;
+var version = "4.3.5";
 
-// Same as native getBoundingClientRect, except it takes into account parent <frame> offsets
-// if the element lies within a nested document (<frame> or <iframe>-like).
-function getActualBoundingClientRect(node) {
-  var boundingRect = node.getBoundingClientRect();
+var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+var ua = isBrowser ? navigator.userAgent : '';
+var isIE = /MSIE |Trident\//.test(ua);
+var isUCBrowser = /UCBrowser\//.test(ua);
+var isIOS = isBrowser && /iPhone|iPad|iPod/.test(navigator.platform) && !window.MSStream;
 
-  // The original object returned by getBoundingClientRect is immutable, so we clone it
-  // We can't use extend because the properties are not considered part of the object by hasOwnProperty in IE9
-  var rect = {};
-  for (var k in boundingRect) {
-    rect[k] = boundingRect[k];
+var defaultProps = {
+  a11y: true,
+  allowHTML: true,
+  animateFill: true,
+  animation: 'shift-away',
+  appendTo: function appendTo() {
+    return document.body;
+  },
+  aria: 'describedby',
+  arrow: false,
+  arrowType: 'sharp',
+  boundary: 'scrollParent',
+  content: '',
+  delay: 0,
+  distance: 10,
+  duration: [325, 275],
+  flip: true,
+  flipBehavior: 'flip',
+  flipOnUpdate: false,
+  followCursor: false,
+  hideOnClick: true,
+  ignoreAttributes: false,
+  inertia: false,
+  interactive: false,
+  interactiveBorder: 2,
+  interactiveDebounce: 0,
+  lazy: true,
+  maxWidth: 350,
+  multiple: false,
+  offset: 0,
+  onHidden: function onHidden() {},
+  onHide: function onHide() {},
+  onMount: function onMount() {},
+  onShow: function onShow() {},
+  onShown: function onShown() {},
+  onTrigger: function onTrigger() {},
+  placement: 'top',
+  popperOptions: {},
+  role: 'tooltip',
+  showOnInit: false,
+  size: 'regular',
+  sticky: false,
+  target: '',
+  theme: 'dark',
+  touch: true,
+  touchHold: false,
+  trigger: 'mouseenter focus',
+  triggerTarget: null,
+  updateDuration: 0,
+  wait: null,
+  zIndex: 9999
+  /**
+   * If the set() method encounters one of these, the popperInstance must be
+   * recreated
+   */
+
+};
+var POPPER_INSTANCE_DEPENDENCIES = ['arrow', 'arrowType', 'boundary', 'distance', 'flip', 'flipBehavior', 'flipOnUpdate', 'offset', 'placement', 'popperOptions'];
+
+var elementProto = isBrowser ? Element.prototype : {};
+var matches = elementProto.matches || elementProto.matchesSelector || elementProto.webkitMatchesSelector || elementProto.mozMatchesSelector || elementProto.msMatchesSelector;
+/**
+ * Ponyfill for Array.from - converts iterable values to an array
+ */
+
+function arrayFrom(value) {
+  return [].slice.call(value);
+}
+/**
+ * Ponyfill for Element.prototype.closest
+ */
+
+function closest(element, selector) {
+  return closestCallback(element, function (el) {
+    return matches.call(el, selector);
+  });
+}
+/**
+ * Works like Element.prototype.closest, but uses a callback instead
+ */
+
+function closestCallback(element, callback) {
+  while (element) {
+    if (callback(element)) {
+      return element;
+    }
+
+    element = element.parentElement;
+  }
+
+  return null;
+}
+
+// Passive event listener config
+var PASSIVE = {
+  passive: true // Popper `preventOverflow` padding
+
+};
+var PADDING = 4; // Popper attributes
+// In Popper v2 these will be `data-*` instead of `x-*` to adhere to HTML5 spec
+
+var PLACEMENT_ATTRIBUTE = 'x-placement';
+var OUT_OF_BOUNDARIES_ATTRIBUTE = 'x-out-of-boundaries'; // Classes
+
+var IOS_CLASS = "tippy-iOS";
+var ACTIVE_CLASS = "tippy-active";
+var POPPER_CLASS = "tippy-popper";
+var TOOLTIP_CLASS = "tippy-tooltip";
+var CONTENT_CLASS = "tippy-content";
+var BACKDROP_CLASS = "tippy-backdrop";
+var ARROW_CLASS = "tippy-arrow";
+var ROUND_ARROW_CLASS = "tippy-roundarrow"; // Selectors
+
+var POPPER_SELECTOR = ".".concat(POPPER_CLASS);
+var TOOLTIP_SELECTOR = ".".concat(TOOLTIP_CLASS);
+var CONTENT_SELECTOR = ".".concat(CONTENT_CLASS);
+var BACKDROP_SELECTOR = ".".concat(BACKDROP_CLASS);
+var ARROW_SELECTOR = ".".concat(ARROW_CLASS);
+var ROUND_ARROW_SELECTOR = ".".concat(ROUND_ARROW_CLASS);
+
+var isUsingTouch = false;
+function onDocumentTouch() {
+  if (isUsingTouch) {
+    return;
+  }
+
+  isUsingTouch = true;
+
+  if (isIOS) {
+    document.body.classList.add(IOS_CLASS);
+  }
+
+  if (window.performance) {
+    document.addEventListener('mousemove', onDocumentMouseMove);
+  }
+}
+var lastMouseMoveTime = 0;
+function onDocumentMouseMove() {
+  var now = performance.now(); // Chrome 60+ is 1 mousemove per animation frame, use 20ms time difference
+
+  if (now - lastMouseMoveTime < 20) {
+    isUsingTouch = false;
+    document.removeEventListener('mousemove', onDocumentMouseMove);
+
+    if (!isIOS) {
+      document.body.classList.remove(IOS_CLASS);
+    }
+  }
+
+  lastMouseMoveTime = now;
+}
+function onWindowBlur() {
+  var _document = document,
+      activeElement = _document.activeElement;
+
+  if (activeElement && activeElement.blur && activeElement._tippy) {
+    activeElement.blur();
+  }
+}
+/**
+ * Adds the needed global event listeners
+ */
+
+function bindGlobalEventListeners() {
+  document.addEventListener('touchstart', onDocumentTouch, PASSIVE);
+  window.addEventListener('blur', onWindowBlur);
+}
+
+var keys = Object.keys(defaultProps);
+/**
+ * Returns an object of optional props from data-tippy-* attributes
+ */
+
+function getDataAttributeOptions(reference) {
+  return keys.reduce(function (acc, key) {
+    var valueAsString = (reference.getAttribute("data-tippy-".concat(key)) || '').trim();
+
+    if (!valueAsString) {
+      return acc;
+    }
+
+    if (key === 'content') {
+      acc[key] = valueAsString;
+    } else {
+      try {
+        acc[key] = JSON.parse(valueAsString);
+      } catch (e) {
+        acc[key] = valueAsString;
+      }
+    }
+
+    return acc;
+  }, {});
+}
+/**
+ * Polyfills the virtual reference (plain object) with Element.prototype props
+ * Mutating because DOM elements are mutated, adds `_tippy` property
+ */
+
+function polyfillElementPrototypeProperties(virtualReference) {
+  var polyfills = {
+    isVirtual: true,
+    attributes: virtualReference.attributes || {},
+    contains: function contains() {},
+    setAttribute: function setAttribute(key, value) {
+      virtualReference.attributes[key] = value;
+    },
+    getAttribute: function getAttribute(key) {
+      return virtualReference.attributes[key];
+    },
+    removeAttribute: function removeAttribute(key) {
+      delete virtualReference.attributes[key];
+    },
+    hasAttribute: function hasAttribute(key) {
+      return key in virtualReference.attributes;
+    },
+    addEventListener: function addEventListener() {},
+    removeEventListener: function removeEventListener() {},
+    classList: {
+      classNames: {},
+      add: function add(key) {
+        virtualReference.classList.classNames[key] = true;
+      },
+      remove: function remove(key) {
+        delete virtualReference.classList.classNames[key];
+      },
+      contains: function contains(key) {
+        return key in virtualReference.classList.classNames;
+      }
+    }
+  };
+
+  for (var key in polyfills) {
+    virtualReference[key] = polyfills[key];
+  }
+}
+
+/**
+ * Determines if a value is a "bare" virtual element (before mutations done
+ * by `polyfillElementPrototypeProperties()`). JSDOM elements show up as
+ * [object Object], we can check if the value is "element-like" if it has
+ * `addEventListener`
+ */
+
+function isBareVirtualElement(value) {
+  return {}.toString.call(value) === '[object Object]' && !value.addEventListener;
+}
+/**
+ * Determines if the value is a reference element
+ */
+
+function isReferenceElement(value) {
+  return !!value._tippy && !matches.call(value, POPPER_SELECTOR);
+}
+/**
+ * Safe .hasOwnProperty check, for prototype-less objects
+ */
+
+function hasOwnProperty(obj, key) {
+  return {}.hasOwnProperty.call(obj, key);
+}
+/**
+ * Returns an array of elements based on the value
+ */
+
+function getArrayOfElements(value) {
+  if (isSingular(value)) {
+    // TODO: VirtualReference is not compatible to type Element
+    return [value];
+  }
+
+  if (value instanceof NodeList) {
+    return arrayFrom(value);
+  }
+
+  if (Array.isArray(value)) {
+    return value;
   }
 
   try {
-    if (node.ownerDocument !== document) {
-      var _frameElement = node.ownerDocument.defaultView.frameElement;
-      if (_frameElement) {
-        var frameRect = getActualBoundingClientRect(_frameElement);
-        rect.top += frameRect.top;
-        rect.bottom += frameRect.top;
-        rect.left += frameRect.left;
-        rect.right += frameRect.left;
-      }
-    }
-  } catch (err) {
-    // Ignore "Access is denied" in IE11/Edge
+    return arrayFrom(document.querySelectorAll(value));
+  } catch (e) {
+    return [];
   }
-
-  return rect;
 }
+/**
+ * Returns a value at a given index depending on if it's an array or number
+ */
 
-function getScrollParents(el) {
-  // In firefox if the el is inside an iframe with display: none; window.getComputedStyle() will return null;
-  // https://bugzilla.mozilla.org/show_bug.cgi?id=548397
-  var computedStyle = getComputedStyle(el) || {};
-  var position = computedStyle.position;
-  var parents = [];
-
-  if (position === 'fixed') {
-    return [el];
+function getValue(value, index, defaultValue) {
+  if (Array.isArray(value)) {
+    var v = value[index];
+    return v == null ? defaultValue : v;
   }
 
-  var parent = el;
-  while ((parent = parent.parentNode) && parent && parent.nodeType === 1) {
-    var style = undefined;
-    try {
-      style = getComputedStyle(parent);
-    } catch (err) {}
-
-    if (typeof style === 'undefined' || style === null) {
-      parents.push(parent);
-      return parents;
-    }
-
-    var _style = style;
-    var overflow = _style.overflow;
-    var overflowX = _style.overflowX;
-    var overflowY = _style.overflowY;
-
-    if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) {
-      if (position !== 'absolute' || ['relative', 'absolute', 'fixed'].indexOf(style.position) >= 0) {
-        parents.push(parent);
-      }
-    }
-  }
-
-  parents.push(el.ownerDocument.body);
-
-  // If the node is within a frame, account for the parent window scroll
-  if (el.ownerDocument !== document) {
-    parents.push(el.ownerDocument.defaultView);
-  }
-
-  return parents;
+  return value;
 }
+/**
+ * Debounce utility. To avoid bloating bundle size, we're only passing 1
+ * argument here, a more generic function would pass all arguments. Only
+ * `onMouseMove` uses this which takes the event object for now.
+ */
 
-var uniqueId = (function () {
-  var id = 0;
-  return function () {
-    return ++id;
+function debounce(fn, ms) {
+  // Avoid wrapping in `setTimeout` if ms is 0 anyway
+  if (ms === 0) {
+    return fn;
+  }
+
+  var timeout;
+  return function (arg) {
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      fn(arg);
+    }, ms);
   };
-})();
-
-var zeroPosCache = {};
-var getOrigin = function getOrigin() {
-  // getBoundingClientRect is unfortunately too accurate.  It introduces a pixel or two of
-  // jitter as the user scrolls that messes with our ability to detect if two positions
-  // are equivilant or not.  We place an element at the top left of the page that will
-  // get the same jitter, so we can cancel the two out.
-  var node = zeroElement;
-  if (!node || !document.body.contains(node)) {
-    node = document.createElement('div');
-    node.setAttribute('data-tether-id', uniqueId());
-    extend(node.style, {
-      top: 0,
-      left: 0,
-      position: 'absolute'
-    });
-
-    document.body.appendChild(node);
-
-    zeroElement = node;
-  }
-
-  var id = node.getAttribute('data-tether-id');
-  if (typeof zeroPosCache[id] === 'undefined') {
-    zeroPosCache[id] = getActualBoundingClientRect(node);
-
-    // Clear the cache when this position call is done
-    defer(function () {
-      delete zeroPosCache[id];
-    });
-  }
-
-  return zeroPosCache[id];
-};
-
-function removeUtilElements() {
-  if (zeroElement) {
-    document.body.removeChild(zeroElement);
-  }
-  zeroElement = null;
-};
-
-function getBounds(el) {
-  var doc = undefined;
-  if (el === document) {
-    doc = document;
-    el = document.documentElement;
-  } else {
-    doc = el.ownerDocument;
-  }
-
-  var docEl = doc.documentElement;
-
-  var box = getActualBoundingClientRect(el);
-
-  var origin = getOrigin();
-
-  box.top -= origin.top;
-  box.left -= origin.left;
-
-  if (typeof box.width === 'undefined') {
-    box.width = document.body.scrollWidth - box.left - box.right;
-  }
-  if (typeof box.height === 'undefined') {
-    box.height = document.body.scrollHeight - box.top - box.bottom;
-  }
-
-  box.top = box.top - docEl.clientTop;
-  box.left = box.left - docEl.clientLeft;
-  box.right = doc.body.clientWidth - box.width - box.left;
-  box.bottom = doc.body.clientHeight - box.height - box.top;
-
-  return box;
 }
+/**
+ * Prevents errors from being thrown while accessing nested modifier objects
+ * in `popperOptions`
+ */
 
-function getOffsetParent(el) {
-  return el.offsetParent || document.documentElement;
+function getModifier(obj, key) {
+  return obj && obj.modifiers && obj.modifiers[key];
 }
+/**
+ * Determines if an array or string includes a value
+ */
 
-var _scrollBarSize = null;
-function getScrollBarSize() {
-  if (_scrollBarSize) {
-    return _scrollBarSize;
-  }
-  var inner = document.createElement('div');
-  inner.style.width = '100%';
-  inner.style.height = '200px';
-
-  var outer = document.createElement('div');
-  extend(outer.style, {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    visibility: 'hidden',
-    width: '200px',
-    height: '150px',
-    overflow: 'hidden'
-  });
-
-  outer.appendChild(inner);
-
-  document.body.appendChild(outer);
-
-  var widthContained = inner.offsetWidth;
-  outer.style.overflow = 'scroll';
-  var widthScroll = inner.offsetWidth;
-
-  if (widthContained === widthScroll) {
-    widthScroll = outer.clientWidth;
-  }
-
-  document.body.removeChild(outer);
-
-  var width = widthContained - widthScroll;
-
-  _scrollBarSize = { width: width, height: width };
-  return _scrollBarSize;
+function includes(a, b) {
+  return a.indexOf(b) > -1;
 }
+/**
+ * Determines if the value is a real element
+ */
 
-function extend() {
-  var out = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+function isRealElement(value) {
+  return value instanceof Element;
+}
+/**
+ * Determines if the value is singular-like
+ */
 
-  var args = [];
+function isSingular(value) {
+  return !!(value && hasOwnProperty(value, 'isVirtual')) || isRealElement(value);
+}
+/**
+ * Firefox extensions don't allow setting .innerHTML directly, this will trick it
+ */
 
-  Array.prototype.push.apply(args, arguments);
+function innerHTML() {
+  return 'innerHTML';
+}
+/**
+ * Evaluates a function if one, or returns the value
+ */
 
-  args.slice(1).forEach(function (obj) {
-    if (obj) {
-      for (var key in obj) {
-        if (({}).hasOwnProperty.call(obj, key)) {
-          out[key] = obj[key];
-        }
-      }
+function invokeWithArgsOrReturn(value, args) {
+  return typeof value === 'function' ? value.apply(null, args) : value;
+}
+/**
+ * Sets a popperInstance `flip` modifier's enabled state
+ */
+
+function setFlipModifierEnabled(modifiers, value) {
+  modifiers.filter(function (m) {
+    return m.name === 'flip';
+  })[0].enabled = value;
+}
+/**
+ * Determines if an element can receive focus
+ * Always returns true for virtual objects
+ */
+
+function canReceiveFocus(element) {
+  return isRealElement(element) ? matches.call(element, 'a[href],area[href],button,details,input,textarea,select,iframe,[tabindex]') && !element.hasAttribute('disabled') : true;
+}
+/**
+ * Returns a new `div` element
+ */
+
+function div() {
+  return document.createElement('div');
+}
+/**
+ * Applies a transition duration to a list of elements
+ */
+
+function setTransitionDuration(els, value) {
+  els.forEach(function (el) {
+    if (el) {
+      el.style.transitionDuration = "".concat(value, "ms");
     }
   });
+}
+/**
+ * Sets the visibility state to elements so they can begin to transition
+ */
+
+function setVisibilityState(els, state) {
+  els.forEach(function (el) {
+    if (el) {
+      el.setAttribute('data-state', state);
+    }
+  });
+}
+/**
+ * Evaluates the props object by merging data attributes and
+ * disabling conflicting options where necessary
+ */
+
+function evaluateProps(reference, props) {
+  var out = _extends({}, props, {
+    content: invokeWithArgsOrReturn(props.content, [reference])
+  }, props.ignoreAttributes ? {} : getDataAttributeOptions(reference));
+
+  if (out.arrow || isUCBrowser) {
+    out.animateFill = false;
+  }
 
   return out;
 }
+/**
+ * Validates an object of options with the valid default props object
+ */
 
-function removeClass(el, name) {
-  if (typeof el.classList !== 'undefined') {
-    name.split(' ').forEach(function (cls) {
-      if (cls.trim()) {
-        el.classList.remove(cls);
-      }
-    });
-  } else {
-    var regex = new RegExp('(^| )' + name.split(' ').join('|') + '( |$)', 'gi');
-    var className = getClassName(el).replace(regex, ' ');
-    setClassName(el, className);
-  }
-}
-
-function addClass(el, name) {
-  if (typeof el.classList !== 'undefined') {
-    name.split(' ').forEach(function (cls) {
-      if (cls.trim()) {
-        el.classList.add(cls);
-      }
-    });
-  } else {
-    removeClass(el, name);
-    var cls = getClassName(el) + (' ' + name);
-    setClassName(el, cls);
-  }
-}
-
-function hasClass(el, name) {
-  if (typeof el.classList !== 'undefined') {
-    return el.classList.contains(name);
-  }
-  var className = getClassName(el);
-  return new RegExp('(^| )' + name + '( |$)', 'gi').test(className);
-}
-
-function getClassName(el) {
-  // Can't use just SVGAnimatedString here since nodes within a Frame in IE have
-  // completely separately SVGAnimatedString base classes
-  if (el.className instanceof el.ownerDocument.defaultView.SVGAnimatedString) {
-    return el.className.baseVal;
-  }
-  return el.className;
-}
-
-function setClassName(el, className) {
-  el.setAttribute('class', className);
-}
-
-function updateClasses(el, add, all) {
-  // Of the set of 'all' classes, we need the 'add' classes, and only the
-  // 'add' classes to be set.
-  all.forEach(function (cls) {
-    if (add.indexOf(cls) === -1 && hasClass(el, cls)) {
-      removeClass(el, cls);
-    }
-  });
-
-  add.forEach(function (cls) {
-    if (!hasClass(el, cls)) {
-      addClass(el, cls);
+function validateOptions(options, defaultProps) {
+  Object.keys(options).forEach(function (option) {
+    if (!hasOwnProperty(defaultProps, option)) {
+      throw new Error("[tippy]: `".concat(option, "` is not a valid option"));
     }
   });
 }
 
-var deferred = [];
+/**
+ * Sets the innerHTML of an element
+ */
 
-var defer = function defer(fn) {
-  deferred.push(fn);
-};
-
-var flush = function flush() {
-  var fn = undefined;
-  while (fn = deferred.pop()) {
-    fn();
-  }
-};
-
-var Evented = (function () {
-  function Evented() {
-    _classCallCheck(this, Evented);
-  }
-
-  _createClass(Evented, [{
-    key: 'on',
-    value: function on(event, handler, ctx) {
-      var once = arguments.length <= 3 || arguments[3] === undefined ? false : arguments[3];
-
-      if (typeof this.bindings === 'undefined') {
-        this.bindings = {};
-      }
-      if (typeof this.bindings[event] === 'undefined') {
-        this.bindings[event] = [];
-      }
-      this.bindings[event].push({ handler: handler, ctx: ctx, once: once });
-    }
-  }, {
-    key: 'once',
-    value: function once(event, handler, ctx) {
-      this.on(event, handler, ctx, true);
-    }
-  }, {
-    key: 'off',
-    value: function off(event, handler) {
-      if (typeof this.bindings === 'undefined' || typeof this.bindings[event] === 'undefined') {
-        return;
-      }
-
-      if (typeof handler === 'undefined') {
-        delete this.bindings[event];
-      } else {
-        var i = 0;
-        while (i < this.bindings[event].length) {
-          if (this.bindings[event][i].handler === handler) {
-            this.bindings[event].splice(i, 1);
-          } else {
-            ++i;
-          }
-        }
-      }
-    }
-  }, {
-    key: 'trigger',
-    value: function trigger(event) {
-      if (typeof this.bindings !== 'undefined' && this.bindings[event]) {
-        var i = 0;
-
-        for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-          args[_key - 1] = arguments[_key];
-        }
-
-        while (i < this.bindings[event].length) {
-          var _bindings$event$i = this.bindings[event][i];
-          var handler = _bindings$event$i.handler;
-          var ctx = _bindings$event$i.ctx;
-          var once = _bindings$event$i.once;
-
-          var context = ctx;
-          if (typeof context === 'undefined') {
-            context = this;
-          }
-
-          handler.apply(context, args);
-
-          if (once) {
-            this.bindings[event].splice(i, 1);
-          } else {
-            ++i;
-          }
-        }
-      }
-    }
-  }]);
-
-  return Evented;
-})();
-
-TetherBase.Utils = {
-  getActualBoundingClientRect: getActualBoundingClientRect,
-  getScrollParents: getScrollParents,
-  getBounds: getBounds,
-  getOffsetParent: getOffsetParent,
-  extend: extend,
-  addClass: addClass,
-  removeClass: removeClass,
-  hasClass: hasClass,
-  updateClasses: updateClasses,
-  defer: defer,
-  flush: flush,
-  uniqueId: uniqueId,
-  Evented: Evented,
-  getScrollBarSize: getScrollBarSize,
-  removeUtilElements: removeUtilElements
-};
-/* globals TetherBase, performance */
-
-'use strict';
-
-var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x6, _x7, _x8) { var _again = true; _function: while (_again) { var object = _x6, property = _x7, receiver = _x8; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x6 = parent; _x7 = property; _x8 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-if (typeof TetherBase === 'undefined') {
-  throw new Error('You must include the utils.js file before tether.js');
+function setInnerHTML(element, html) {
+  element[innerHTML()] = isRealElement(html) ? html[innerHTML()] : html;
 }
+/**
+ * Sets the content of a tooltip
+ */
 
-var _TetherBase$Utils = TetherBase.Utils;
-var getScrollParents = _TetherBase$Utils.getScrollParents;
-var getBounds = _TetherBase$Utils.getBounds;
-var getOffsetParent = _TetherBase$Utils.getOffsetParent;
-var extend = _TetherBase$Utils.extend;
-var addClass = _TetherBase$Utils.addClass;
-var removeClass = _TetherBase$Utils.removeClass;
-var updateClasses = _TetherBase$Utils.updateClasses;
-var defer = _TetherBase$Utils.defer;
-var flush = _TetherBase$Utils.flush;
-var getScrollBarSize = _TetherBase$Utils.getScrollBarSize;
-var removeUtilElements = _TetherBase$Utils.removeUtilElements;
-
-function within(a, b) {
-  var diff = arguments.length <= 2 || arguments[2] === undefined ? 1 : arguments[2];
-
-  return a + diff >= b && b >= a - diff;
+function setContent(contentEl, props) {
+  if (isRealElement(props.content)) {
+    setInnerHTML(contentEl, '');
+    contentEl.appendChild(props.content);
+  } else if (typeof props.content !== 'function') {
+    var key = props.allowHTML ? 'innerHTML' : 'textContent';
+    contentEl[key] = props.content;
+  }
 }
+/**
+ * Returns the child elements of a popper element
+ */
 
-var transformKey = (function () {
-  if (typeof document === 'undefined') {
-    return '';
-  }
-  var el = document.createElement('div');
-
-  var transforms = ['transform', 'WebkitTransform', 'OTransform', 'MozTransform', 'msTransform'];
-  for (var i = 0; i < transforms.length; ++i) {
-    var key = transforms[i];
-    if (el.style[key] !== undefined) {
-      return key;
-    }
-  }
-})();
-
-var tethers = [];
-
-var position = function position() {
-  tethers.forEach(function (tether) {
-    tether.position(false);
-  });
-  flush();
-};
-
-function now() {
-  if (typeof performance === 'object' && typeof performance.now === 'function') {
-    return performance.now();
-  }
-  return +new Date();
-}
-
-(function () {
-  var lastCall = null;
-  var lastDuration = null;
-  var pendingTimeout = null;
-
-  var tick = function tick() {
-    if (typeof lastDuration !== 'undefined' && lastDuration > 16) {
-      // We voluntarily throttle ourselves if we can't manage 60fps
-      lastDuration = Math.min(lastDuration - 16, 250);
-
-      // Just in case this is the last event, remember to position just once more
-      pendingTimeout = setTimeout(tick, 250);
-      return;
-    }
-
-    if (typeof lastCall !== 'undefined' && now() - lastCall < 10) {
-      // Some browsers call events a little too frequently, refuse to run more than is reasonable
-      return;
-    }
-
-    if (pendingTimeout != null) {
-      clearTimeout(pendingTimeout);
-      pendingTimeout = null;
-    }
-
-    lastCall = now();
-    position();
-    lastDuration = now() - lastCall;
+function getChildren(popper) {
+  return {
+    tooltip: popper.querySelector(TOOLTIP_SELECTOR),
+    backdrop: popper.querySelector(BACKDROP_SELECTOR),
+    content: popper.querySelector(CONTENT_SELECTOR),
+    arrow: popper.querySelector(ARROW_SELECTOR) || popper.querySelector(ROUND_ARROW_SELECTOR)
   };
+}
+/**
+ * Adds `data-inertia` attribute
+ */
 
-  if (typeof window !== 'undefined' && typeof window.addEventListener !== 'undefined') {
-    ['resize', 'scroll', 'touchmove'].forEach(function (event) {
-      window.addEventListener(event, tick);
-    });
-  }
-})();
+function addInertia(tooltip) {
+  tooltip.setAttribute('data-inertia', '');
+}
+/**
+ * Removes `data-inertia` attribute
+ */
 
-var MIRROR_LR = {
-  center: 'center',
-  left: 'right',
-  right: 'left'
-};
+function removeInertia(tooltip) {
+  tooltip.removeAttribute('data-inertia');
+}
+/**
+ * Creates an arrow element and returns it
+ */
 
-var MIRROR_TB = {
-  middle: 'middle',
-  top: 'bottom',
-  bottom: 'top'
-};
+function createArrowElement(arrowType) {
+  var arrow = div();
 
-var OFFSET_MAP = {
-  top: 0,
-  left: 0,
-  middle: '50%',
-  center: '50%',
-  bottom: '100%',
-  right: '100%'
-};
-
-var autoToFixedAttachment = function autoToFixedAttachment(attachment, relativeToAttachment) {
-  var left = attachment.left;
-  var top = attachment.top;
-
-  if (left === 'auto') {
-    left = MIRROR_LR[relativeToAttachment.left];
+  if (arrowType === 'round') {
+    arrow.className = ROUND_ARROW_CLASS;
+    setInnerHTML(arrow, '<svg viewBox="0 0 18 7" xmlns="http://www.w3.org/2000/svg"><path d="M0 7s2.021-.015 5.253-4.218C6.584 1.051 7.797.007 9 0c1.203-.007 2.416 1.035 3.761 2.782C16.012 7.005 18 7 18 7H0z"/></svg>');
+  } else {
+    arrow.className = ARROW_CLASS;
   }
 
-  if (top === 'auto') {
-    top = MIRROR_TB[relativeToAttachment.top];
-  }
+  return arrow;
+}
+/**
+ * Creates a backdrop element and returns it
+ */
 
-  return { left: left, top: top };
-};
+function createBackdropElement() {
+  var backdrop = div();
+  backdrop.className = BACKDROP_CLASS;
+  backdrop.setAttribute('data-state', 'hidden');
+  return backdrop;
+}
+/**
+ * Adds interactive-related attributes
+ */
 
-var attachmentToOffset = function attachmentToOffset(attachment) {
-  var left = attachment.left;
-  var top = attachment.top;
+function addInteractive(popper, tooltip) {
+  popper.setAttribute('tabindex', '-1');
+  tooltip.setAttribute('data-interactive', '');
+}
+/**
+ * Removes interactive-related attributes
+ */
 
-  if (typeof OFFSET_MAP[attachment.left] !== 'undefined') {
-    left = OFFSET_MAP[attachment.left];
-  }
+function removeInteractive(popper, tooltip) {
+  popper.removeAttribute('tabindex');
+  tooltip.removeAttribute('data-interactive');
+}
+/**
+ * Add/remove transitionend listener from tooltip
+ */
 
-  if (typeof OFFSET_MAP[attachment.top] !== 'undefined') {
-    top = OFFSET_MAP[attachment.top];
-  }
+function updateTransitionEndListener(tooltip, action, listener) {
+  // UC Browser hasn't adopted the `transitionend` event despite supporting
+  // unprefixed transitions...
+  var eventName = isUCBrowser && document.body.style.webkitTransition !== undefined ? 'webkitTransitionEnd' : 'transitionend';
+  tooltip[action + 'EventListener'](eventName, listener);
+}
+/**
+ * Returns the popper's placement, ignoring shifting (top-start, etc)
+ */
 
-  return { left: left, top: top };
-};
+function getBasicPlacement(popper) {
+  var fullPlacement = popper.getAttribute(PLACEMENT_ATTRIBUTE);
+  return fullPlacement ? fullPlacement.split('-')[0] : '';
+}
+/**
+ * Triggers reflow
+ */
 
-function addOffset() {
-  var out = { top: 0, left: 0 };
+function reflow(popper) {
+  void popper.offsetHeight;
+}
+/**
+ * Adds/removes theme from tooltip's classList
+ */
 
-  for (var _len = arguments.length, offsets = Array(_len), _key = 0; _key < _len; _key++) {
-    offsets[_key] = arguments[_key];
-  }
-
-  offsets.forEach(function (_ref) {
-    var top = _ref.top;
-    var left = _ref.left;
-
-    if (typeof top === 'string') {
-      top = parseFloat(top, 10);
-    }
-    if (typeof left === 'string') {
-      left = parseFloat(left, 10);
-    }
-
-    out.top += top;
-    out.left += left;
+function updateTheme(tooltip, action, theme) {
+  theme.split(' ').forEach(function (themeName) {
+    tooltip.classList[action](themeName + '-theme');
   });
-
-  return out;
 }
+/**
+ * Constructs the popper element and returns it
+ */
 
-function offsetToPx(offset, size) {
-  if (typeof offset.left === 'string' && offset.left.indexOf('%') !== -1) {
-    offset.left = parseFloat(offset.left, 10) / 100 * size.width;
-  }
-  if (typeof offset.top === 'string' && offset.top.indexOf('%') !== -1) {
-    offset.top = parseFloat(offset.top, 10) / 100 * size.height;
+function createPopperElement(id, props) {
+  var popper = div();
+  popper.className = POPPER_CLASS;
+  popper.id = "tippy-".concat(id);
+  popper.style.zIndex = '' + props.zIndex;
+  popper.style.position = 'absolute';
+  popper.style.top = '0';
+  popper.style.left = '0';
+
+  if (props.role) {
+    popper.setAttribute('role', props.role);
   }
 
-  return offset;
+  var tooltip = div();
+  tooltip.className = TOOLTIP_CLASS;
+  tooltip.style.maxWidth = props.maxWidth + (typeof props.maxWidth === 'number' ? 'px' : '');
+  tooltip.setAttribute('data-size', props.size);
+  tooltip.setAttribute('data-animation', props.animation);
+  tooltip.setAttribute('data-state', 'hidden');
+  updateTheme(tooltip, 'add', props.theme);
+  var content = div();
+  content.className = CONTENT_CLASS;
+  content.setAttribute('data-state', 'hidden');
+
+  if (props.interactive) {
+    addInteractive(popper, tooltip);
+  }
+
+  if (props.arrow) {
+    tooltip.appendChild(createArrowElement(props.arrowType));
+  }
+
+  if (props.animateFill) {
+    tooltip.appendChild(createBackdropElement());
+    tooltip.setAttribute('data-animatefill', '');
+  }
+
+  if (props.inertia) {
+    addInertia(tooltip);
+  }
+
+  setContent(content, props);
+  tooltip.appendChild(content);
+  popper.appendChild(tooltip);
+  return popper;
 }
+/**
+ * Updates the popper element based on the new props
+ */
 
-var parseOffset = function parseOffset(value) {
-  var _value$split = value.split(' ');
+function updatePopperElement(popper, prevProps, nextProps) {
+  var _getChildren = getChildren(popper),
+      tooltip = _getChildren.tooltip,
+      content = _getChildren.content,
+      backdrop = _getChildren.backdrop,
+      arrow = _getChildren.arrow;
 
-  var _value$split2 = _slicedToArray(_value$split, 2);
+  popper.style.zIndex = '' + nextProps.zIndex;
+  tooltip.setAttribute('data-size', nextProps.size);
+  tooltip.setAttribute('data-animation', nextProps.animation);
+  tooltip.style.maxWidth = nextProps.maxWidth + (typeof nextProps.maxWidth === 'number' ? 'px' : '');
 
-  var top = _value$split2[0];
-  var left = _value$split2[1];
-
-  return { top: top, left: left };
-};
-var parseAttachment = parseOffset;
-
-var TetherClass = (function (_Evented) {
-  _inherits(TetherClass, _Evented);
-
-  function TetherClass(options) {
-    var _this = this;
-
-    _classCallCheck(this, TetherClass);
-
-    _get(Object.getPrototypeOf(TetherClass.prototype), 'constructor', this).call(this);
-    this.position = this.position.bind(this);
-
-    tethers.push(this);
-
-    this.history = [];
-
-    this.setOptions(options, false);
-
-    TetherBase.modules.forEach(function (module) {
-      if (typeof module.initialize !== 'undefined') {
-        module.initialize.call(_this);
-      }
-    });
-
-    this.position();
+  if (nextProps.role) {
+    popper.setAttribute('role', nextProps.role);
+  } else {
+    popper.removeAttribute('role');
   }
 
-  _createClass(TetherClass, [{
-    key: 'getClass',
-    value: function getClass() {
-      var key = arguments.length <= 0 || arguments[0] === undefined ? '' : arguments[0];
-      var classes = this.options.classes;
+  if (prevProps.content !== nextProps.content) {
+    setContent(content, nextProps);
+  } // animateFill
 
-      if (typeof classes !== 'undefined' && classes[key]) {
-        return this.options.classes[key];
-      } else if (this.options.classPrefix) {
-        return this.options.classPrefix + '-' + key;
-      } else {
-        return key;
-      }
-    }
-  }, {
-    key: 'setOptions',
-    value: function setOptions(options) {
-      var _this2 = this;
 
-      var pos = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
+  if (!prevProps.animateFill && nextProps.animateFill) {
+    tooltip.appendChild(createBackdropElement());
+    tooltip.setAttribute('data-animatefill', '');
+  } else if (prevProps.animateFill && !nextProps.animateFill) {
+    tooltip.removeChild(backdrop);
+    tooltip.removeAttribute('data-animatefill');
+  } // arrow
 
-      var defaults = {
-        offset: '0 0',
-        targetOffset: '0 0',
-        targetAttachment: 'auto auto',
-        classPrefix: 'tether'
-      };
 
-      this.options = extend(defaults, options);
+  if (!prevProps.arrow && nextProps.arrow) {
+    tooltip.appendChild(createArrowElement(nextProps.arrowType));
+  } else if (prevProps.arrow && !nextProps.arrow) {
+    tooltip.removeChild(arrow);
+  } // arrowType
 
-      var _options = this.options;
-      var element = _options.element;
-      var target = _options.target;
-      var targetModifier = _options.targetModifier;
 
-      this.element = element;
-      this.target = target;
-      this.targetModifier = targetModifier;
+  if (prevProps.arrow && nextProps.arrow && prevProps.arrowType !== nextProps.arrowType) {
+    tooltip.replaceChild(createArrowElement(nextProps.arrowType), arrow);
+  } // interactive
 
-      if (this.target === 'viewport') {
-        this.target = document.body;
-        this.targetModifier = 'visible';
-      } else if (this.target === 'scroll-handle') {
-        this.target = document.body;
-        this.targetModifier = 'scroll-handle';
-      }
 
-      ['element', 'target'].forEach(function (key) {
-        if (typeof _this2[key] === 'undefined') {
-          throw new Error('Tether Error: Both element and target must be defined');
-        }
+  if (!prevProps.interactive && nextProps.interactive) {
+    addInteractive(popper, tooltip);
+  } else if (prevProps.interactive && !nextProps.interactive) {
+    removeInteractive(popper, tooltip);
+  } // inertia
 
-        if (typeof _this2[key].jquery !== 'undefined') {
-          _this2[key] = _this2[key][0];
-        } else if (typeof _this2[key] === 'string') {
-          _this2[key] = document.querySelector(_this2[key]);
-        }
-      });
 
-      addClass(this.element, this.getClass('element'));
-      if (!(this.options.addTargetClasses === false)) {
-        addClass(this.target, this.getClass('target'));
-      }
+  if (!prevProps.inertia && nextProps.inertia) {
+    addInertia(tooltip);
+  } else if (prevProps.inertia && !nextProps.inertia) {
+    removeInertia(tooltip);
+  } // theme
 
-      if (!this.options.attachment) {
-        throw new Error('Tether Error: You must provide an attachment');
-      }
 
-      this.targetAttachment = parseAttachment(this.options.targetAttachment);
-      this.attachment = parseAttachment(this.options.attachment);
-      this.offset = parseOffset(this.options.offset);
-      this.targetOffset = parseOffset(this.options.targetOffset);
-
-      if (typeof this.scrollParents !== 'undefined') {
-        this.disable();
-      }
-
-      if (this.targetModifier === 'scroll-handle') {
-        this.scrollParents = [this.target];
-      } else {
-        this.scrollParents = getScrollParents(this.target);
-      }
-
-      if (!(this.options.enabled === false)) {
-        this.enable(pos);
-      }
-    }
-  }, {
-    key: 'getTargetBounds',
-    value: function getTargetBounds() {
-      if (typeof this.targetModifier !== 'undefined') {
-        if (this.targetModifier === 'visible') {
-          if (this.target === document.body) {
-            return { top: pageYOffset, left: pageXOffset, height: innerHeight, width: innerWidth };
-          } else {
-            var bounds = getBounds(this.target);
-
-            var out = {
-              height: bounds.height,
-              width: bounds.width,
-              top: bounds.top,
-              left: bounds.left
-            };
-
-            out.height = Math.min(out.height, bounds.height - (pageYOffset - bounds.top));
-            out.height = Math.min(out.height, bounds.height - (bounds.top + bounds.height - (pageYOffset + innerHeight)));
-            out.height = Math.min(innerHeight, out.height);
-            out.height -= 2;
-
-            out.width = Math.min(out.width, bounds.width - (pageXOffset - bounds.left));
-            out.width = Math.min(out.width, bounds.width - (bounds.left + bounds.width - (pageXOffset + innerWidth)));
-            out.width = Math.min(innerWidth, out.width);
-            out.width -= 2;
-
-            if (out.top < pageYOffset) {
-              out.top = pageYOffset;
-            }
-            if (out.left < pageXOffset) {
-              out.left = pageXOffset;
-            }
-
-            return out;
-          }
-        } else if (this.targetModifier === 'scroll-handle') {
-          var bounds = undefined;
-          var target = this.target;
-          if (target === document.body) {
-            target = document.documentElement;
-
-            bounds = {
-              left: pageXOffset,
-              top: pageYOffset,
-              height: innerHeight,
-              width: innerWidth
-            };
-          } else {
-            bounds = getBounds(target);
-          }
-
-          var style = getComputedStyle(target);
-
-          var hasBottomScroll = target.scrollWidth > target.clientWidth || [style.overflow, style.overflowX].indexOf('scroll') >= 0 || this.target !== document.body;
-
-          var scrollBottom = 0;
-          if (hasBottomScroll) {
-            scrollBottom = 15;
-          }
-
-          var height = bounds.height - parseFloat(style.borderTopWidth) - parseFloat(style.borderBottomWidth) - scrollBottom;
-
-          var out = {
-            width: 15,
-            height: height * 0.975 * (height / target.scrollHeight),
-            left: bounds.left + bounds.width - parseFloat(style.borderLeftWidth) - 15
-          };
-
-          var fitAdj = 0;
-          if (height < 408 && this.target === document.body) {
-            fitAdj = -0.00011 * Math.pow(height, 2) - 0.00727 * height + 22.58;
-          }
-
-          if (this.target !== document.body) {
-            out.height = Math.max(out.height, 24);
-          }
-
-          var scrollPercentage = this.target.scrollTop / (target.scrollHeight - height);
-          out.top = scrollPercentage * (height - out.height - fitAdj) + bounds.top + parseFloat(style.borderTopWidth);
-
-          if (this.target === document.body) {
-            out.height = Math.max(out.height, 24);
-          }
-
-          return out;
-        }
-      } else {
-        return getBounds(this.target);
-      }
-    }
-  }, {
-    key: 'clearCache',
-    value: function clearCache() {
-      this._cache = {};
-    }
-  }, {
-    key: 'cache',
-    value: function cache(k, getter) {
-      // More than one module will often need the same DOM info, so
-      // we keep a cache which is cleared on each position call
-      if (typeof this._cache === 'undefined') {
-        this._cache = {};
-      }
-
-      if (typeof this._cache[k] === 'undefined') {
-        this._cache[k] = getter.call(this);
-      }
-
-      return this._cache[k];
-    }
-  }, {
-    key: 'enable',
-    value: function enable() {
-      var _this3 = this;
-
-      var pos = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
-
-      if (!(this.options.addTargetClasses === false)) {
-        addClass(this.target, this.getClass('enabled'));
-      }
-      addClass(this.element, this.getClass('enabled'));
-      this.enabled = true;
-
-      this.scrollParents.forEach(function (parent) {
-        if (parent !== _this3.target.ownerDocument) {
-          parent.addEventListener('scroll', _this3.position);
-        }
-      });
-
-      if (pos) {
-        this.position();
-      }
-    }
-  }, {
-    key: 'disable',
-    value: function disable() {
-      var _this4 = this;
-
-      removeClass(this.target, this.getClass('enabled'));
-      removeClass(this.element, this.getClass('enabled'));
-      this.enabled = false;
-
-      if (typeof this.scrollParents !== 'undefined') {
-        this.scrollParents.forEach(function (parent) {
-          parent.removeEventListener('scroll', _this4.position);
-        });
-      }
-    }
-  }, {
-    key: 'destroy',
-    value: function destroy() {
-      var _this5 = this;
-
-      this.disable();
-
-      tethers.forEach(function (tether, i) {
-        if (tether === _this5) {
-          tethers.splice(i, 1);
-        }
-      });
-
-      // Remove any elements we were using for convenience from the DOM
-      if (tethers.length === 0) {
-        removeUtilElements();
-      }
-    }
-  }, {
-    key: 'updateAttachClasses',
-    value: function updateAttachClasses(elementAttach, targetAttach) {
-      var _this6 = this;
-
-      elementAttach = elementAttach || this.attachment;
-      targetAttach = targetAttach || this.targetAttachment;
-      var sides = ['left', 'top', 'bottom', 'right', 'middle', 'center'];
-
-      if (typeof this._addAttachClasses !== 'undefined' && this._addAttachClasses.length) {
-        // updateAttachClasses can be called more than once in a position call, so
-        // we need to clean up after ourselves such that when the last defer gets
-        // ran it doesn't add any extra classes from previous calls.
-        this._addAttachClasses.splice(0, this._addAttachClasses.length);
-      }
-
-      if (typeof this._addAttachClasses === 'undefined') {
-        this._addAttachClasses = [];
-      }
-      var add = this._addAttachClasses;
-
-      if (elementAttach.top) {
-        add.push(this.getClass('element-attached') + '-' + elementAttach.top);
-      }
-      if (elementAttach.left) {
-        add.push(this.getClass('element-attached') + '-' + elementAttach.left);
-      }
-      if (targetAttach.top) {
-        add.push(this.getClass('target-attached') + '-' + targetAttach.top);
-      }
-      if (targetAttach.left) {
-        add.push(this.getClass('target-attached') + '-' + targetAttach.left);
-      }
-
-      var all = [];
-      sides.forEach(function (side) {
-        all.push(_this6.getClass('element-attached') + '-' + side);
-        all.push(_this6.getClass('target-attached') + '-' + side);
-      });
-
-      defer(function () {
-        if (!(typeof _this6._addAttachClasses !== 'undefined')) {
-          return;
-        }
-
-        updateClasses(_this6.element, _this6._addAttachClasses, all);
-        if (!(_this6.options.addTargetClasses === false)) {
-          updateClasses(_this6.target, _this6._addAttachClasses, all);
-        }
-
-        delete _this6._addAttachClasses;
-      });
-    }
-  }, {
-    key: 'position',
-    value: function position() {
-      var _this7 = this;
-
-      var flushChanges = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
-
-      // flushChanges commits the changes immediately, leave true unless you are positioning multiple
-      // tethers (in which case call Tether.Utils.flush yourself when you're done)
-
-      if (!this.enabled) {
-        return;
-      }
-
-      this.clearCache();
-
-      // Turn 'auto' attachments into the appropriate corner or edge
-      var targetAttachment = autoToFixedAttachment(this.targetAttachment, this.attachment);
-
-      this.updateAttachClasses(this.attachment, targetAttachment);
-
-      var elementPos = this.cache('element-bounds', function () {
-        return getBounds(_this7.element);
-      });
-
-      var width = elementPos.width;
-      var height = elementPos.height;
-
-      if (width === 0 && height === 0 && typeof this.lastSize !== 'undefined') {
-        var _lastSize = this.lastSize;
-
-        // We cache the height and width to make it possible to position elements that are
-        // getting hidden.
-        width = _lastSize.width;
-        height = _lastSize.height;
-      } else {
-        this.lastSize = { width: width, height: height };
-      }
-
-      var targetPos = this.cache('target-bounds', function () {
-        return _this7.getTargetBounds();
-      });
-      var targetSize = targetPos;
-
-      // Get an actual px offset from the attachment
-      var offset = offsetToPx(attachmentToOffset(this.attachment), { width: width, height: height });
-      var targetOffset = offsetToPx(attachmentToOffset(targetAttachment), targetSize);
-
-      var manualOffset = offsetToPx(this.offset, { width: width, height: height });
-      var manualTargetOffset = offsetToPx(this.targetOffset, targetSize);
-
-      // Add the manually provided offset
-      offset = addOffset(offset, manualOffset);
-      targetOffset = addOffset(targetOffset, manualTargetOffset);
-
-      // It's now our goal to make (element position + offset) == (target position + target offset)
-      var left = targetPos.left + targetOffset.left - offset.left;
-      var top = targetPos.top + targetOffset.top - offset.top;
-
-      for (var i = 0; i < TetherBase.modules.length; ++i) {
-        var _module2 = TetherBase.modules[i];
-        var ret = _module2.position.call(this, {
-          left: left,
-          top: top,
-          targetAttachment: targetAttachment,
-          targetPos: targetPos,
-          elementPos: elementPos,
-          offset: offset,
-          targetOffset: targetOffset,
-          manualOffset: manualOffset,
-          manualTargetOffset: manualTargetOffset,
-          scrollbarSize: scrollbarSize,
-          attachment: this.attachment
-        });
-
-        if (ret === false) {
-          return false;
-        } else if (typeof ret === 'undefined' || typeof ret !== 'object') {
-          continue;
-        } else {
-          top = ret.top;
-          left = ret.left;
-        }
-      }
-
-      // We describe the position three different ways to give the optimizer
-      // a chance to decide the best possible way to position the element
-      // with the fewest repaints.
-      var next = {
-        // It's position relative to the page (absolute positioning when
-        // the element is a child of the body)
-        page: {
-          top: top,
-          left: left
-        },
-
-        // It's position relative to the viewport (fixed positioning)
-        viewport: {
-          top: top - pageYOffset,
-          bottom: pageYOffset - top - height + innerHeight,
-          left: left - pageXOffset,
-          right: pageXOffset - left - width + innerWidth
-        }
-      };
-
-      var doc = this.target.ownerDocument;
-      var win = doc.defaultView;
-
-      var scrollbarSize = undefined;
-      if (win.innerHeight > doc.documentElement.clientHeight) {
-        scrollbarSize = this.cache('scrollbar-size', getScrollBarSize);
-        next.viewport.bottom -= scrollbarSize.height;
-      }
-
-      if (win.innerWidth > doc.documentElement.clientWidth) {
-        scrollbarSize = this.cache('scrollbar-size', getScrollBarSize);
-        next.viewport.right -= scrollbarSize.width;
-      }
-
-      if (['', 'static'].indexOf(doc.body.style.position) === -1 || ['', 'static'].indexOf(doc.body.parentElement.style.position) === -1) {
-        // Absolute positioning in the body will be relative to the page, not the 'initial containing block'
-        next.page.bottom = doc.body.scrollHeight - top - height;
-        next.page.right = doc.body.scrollWidth - left - width;
-      }
-
-      if (typeof this.options.optimizations !== 'undefined' && this.options.optimizations.moveElement !== false && !(typeof this.targetModifier !== 'undefined')) {
-        (function () {
-          var offsetParent = _this7.cache('target-offsetparent', function () {
-            return getOffsetParent(_this7.target);
-          });
-          var offsetPosition = _this7.cache('target-offsetparent-bounds', function () {
-            return getBounds(offsetParent);
-          });
-          var offsetParentStyle = getComputedStyle(offsetParent);
-          var offsetParentSize = offsetPosition;
-
-          var offsetBorder = {};
-          ['Top', 'Left', 'Bottom', 'Right'].forEach(function (side) {
-            offsetBorder[side.toLowerCase()] = parseFloat(offsetParentStyle['border' + side + 'Width']);
-          });
-
-          offsetPosition.right = doc.body.scrollWidth - offsetPosition.left - offsetParentSize.width + offsetBorder.right;
-          offsetPosition.bottom = doc.body.scrollHeight - offsetPosition.top - offsetParentSize.height + offsetBorder.bottom;
-
-          if (next.page.top >= offsetPosition.top + offsetBorder.top && next.page.bottom >= offsetPosition.bottom) {
-            if (next.page.left >= offsetPosition.left + offsetBorder.left && next.page.right >= offsetPosition.right) {
-              // We're within the visible part of the target's scroll parent
-              var scrollTop = offsetParent.scrollTop;
-              var scrollLeft = offsetParent.scrollLeft;
-
-              // It's position relative to the target's offset parent (absolute positioning when
-              // the element is moved to be a child of the target's offset parent).
-              next.offset = {
-                top: next.page.top - offsetPosition.top + scrollTop - offsetBorder.top,
-                left: next.page.left - offsetPosition.left + scrollLeft - offsetBorder.left
-              };
-            }
-          }
-        })();
-      }
-
-      // We could also travel up the DOM and try each containing context, rather than only
-      // looking at the body, but we're gonna get diminishing returns.
-
-      this.move(next);
-
-      this.history.unshift(next);
-
-      if (this.history.length > 3) {
-        this.history.pop();
-      }
-
-      if (flushChanges) {
-        flush();
-      }
-
-      return true;
-    }
-
-    // THE ISSUE
-  }, {
-    key: 'move',
-    value: function move(pos) {
-      var _this8 = this;
-
-      if (!(typeof this.element.parentNode !== 'undefined')) {
-        return;
-      }
-
-      var same = {};
-
-      for (var type in pos) {
-        same[type] = {};
-
-        for (var key in pos[type]) {
-          var found = false;
-
-          for (var i = 0; i < this.history.length; ++i) {
-            var point = this.history[i];
-            if (typeof point[type] !== 'undefined' && !within(point[type][key], pos[type][key])) {
-              found = true;
-              break;
-            }
-          }
-
-          if (!found) {
-            same[type][key] = true;
-          }
-        }
-      }
-
-      var css = { top: '', left: '', right: '', bottom: '' };
-
-      var transcribe = function transcribe(_same, _pos) {
-        var hasOptimizations = typeof _this8.options.optimizations !== 'undefined';
-        var gpu = hasOptimizations ? _this8.options.optimizations.gpu : null;
-        if (gpu !== false) {
-          var yPos = undefined,
-              xPos = undefined;
-          if (_same.top) {
-            css.top = 0;
-            yPos = _pos.top;
-          } else {
-            css.bottom = 0;
-            yPos = -_pos.bottom;
-          }
-
-          if (_same.left) {
-            css.left = 0;
-            xPos = _pos.left;
-          } else {
-            css.right = 0;
-            xPos = -_pos.right;
-          }
-
-          if (typeof window.devicePixelRatio === 'number' && devicePixelRatio % 1 === 0) {
-            xPos = Math.round(xPos * devicePixelRatio) / devicePixelRatio;
-            yPos = Math.round(yPos * devicePixelRatio) / devicePixelRatio;
-          }
-
-          css[transformKey] = 'translateX(' + xPos + 'px) translateY(' + yPos + 'px)';
-
-          if (transformKey !== 'msTransform') {
-            // The Z transform will keep this in the GPU (faster, and prevents artifacts),
-            // but IE9 doesn't support 3d transforms and will choke.
-            css[transformKey] += " translateZ(0)";
-          }
-        } else {
-          if (_same.top) {
-            css.top = _pos.top + 'px';
-          } else {
-            css.bottom = _pos.bottom + 'px';
-          }
-
-          if (_same.left) {
-            css.left = _pos.left + 'px';
-          } else {
-            css.right = _pos.right + 'px';
-          }
-        }
-      };
-
-      var moved = false;
-      if ((same.page.top || same.page.bottom) && (same.page.left || same.page.right)) {
-        css.position = 'absolute';
-        transcribe(same.page, pos.page);
-      } else if ((same.viewport.top || same.viewport.bottom) && (same.viewport.left || same.viewport.right)) {
-        css.position = 'fixed';
-        transcribe(same.viewport, pos.viewport);
-      } else if (typeof same.offset !== 'undefined' && same.offset.top && same.offset.left) {
-        (function () {
-          css.position = 'absolute';
-          var offsetParent = _this8.cache('target-offsetparent', function () {
-            return getOffsetParent(_this8.target);
-          });
-
-          if (getOffsetParent(_this8.element) !== offsetParent) {
-            defer(function () {
-              _this8.element.parentNode.removeChild(_this8.element);
-              offsetParent.appendChild(_this8.element);
-            });
-          }
-
-          transcribe(same.offset, pos.offset);
-          moved = true;
-        })();
-      } else {
-        css.position = 'absolute';
-        transcribe({ top: true, left: true }, pos.page);
-      }
-
-      if (!moved) {
-        if (this.options.bodyElement) {
-          if (this.element.parentNode !== this.options.bodyElement) {
-            this.options.bodyElement.appendChild(this.element);
-          }
-        } else {
-          var isFullscreenElement = function isFullscreenElement(e) {
-            var d = e.ownerDocument;
-            var fe = d.fullscreenElement || d.webkitFullscreenElement || d.mozFullScreenElement || d.msFullscreenElement;
-            return fe === e;
-          };
-
-          var offsetParentIsBody = true;
-
-          var currentNode = this.element.parentNode;
-          while (currentNode && currentNode.nodeType === 1 && currentNode.tagName !== 'BODY' && !isFullscreenElement(currentNode)) {
-            if (getComputedStyle(currentNode).position !== 'static') {
-              offsetParentIsBody = false;
-              break;
-            }
-
-            currentNode = currentNode.parentNode;
-          }
-
-          if (!offsetParentIsBody) {
-            this.element.parentNode.removeChild(this.element);
-            this.element.ownerDocument.body.appendChild(this.element);
-          }
-        }
-      }
-
-      // Any css change will trigger a repaint, so let's avoid one if nothing changed
-      var writeCSS = {};
-      var write = false;
-      for (var key in css) {
-        var val = css[key];
-        var elVal = this.element.style[key];
-
-        if (elVal !== val) {
-          write = true;
-          writeCSS[key] = val;
-        }
-      }
-
-      if (write) {
-        defer(function () {
-          extend(_this8.element.style, writeCSS);
-          _this8.trigger('repositioned');
-        });
-      }
-    }
-  }]);
-
-  return TetherClass;
-})(Evented);
-
-TetherClass.modules = [];
-
-TetherBase.position = position;
-
-var Tether = extend(TetherClass, TetherBase);
-/* globals TetherBase */
-
-'use strict';
-
-var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
-
-var _TetherBase$Utils = TetherBase.Utils;
-var getBounds = _TetherBase$Utils.getBounds;
-var extend = _TetherBase$Utils.extend;
-var updateClasses = _TetherBase$Utils.updateClasses;
-var defer = _TetherBase$Utils.defer;
-
-var BOUNDS_FORMAT = ['left', 'top', 'right', 'bottom'];
-
-function getBoundingRect(tether, to) {
-  if (to === 'scrollParent') {
-    to = tether.scrollParents[0];
-  } else if (to === 'window') {
-    to = [pageXOffset, pageYOffset, innerWidth + pageXOffset, innerHeight + pageYOffset];
+  if (prevProps.theme !== nextProps.theme) {
+    updateTheme(tooltip, 'remove', prevProps.theme);
+    updateTheme(tooltip, 'add', nextProps.theme);
   }
-
-  if (to === document) {
-    to = to.documentElement;
-  }
-
-  if (typeof to.nodeType !== 'undefined') {
-    (function () {
-      var node = to;
-      var size = getBounds(to);
-      var pos = size;
-      var style = getComputedStyle(to);
-
-      to = [pos.left, pos.top, size.width + pos.left, size.height + pos.top];
-
-      // Account any parent Frames scroll offset
-      if (node.ownerDocument !== document) {
-        var win = node.ownerDocument.defaultView;
-        to[0] += win.pageXOffset;
-        to[1] += win.pageYOffset;
-        to[2] += win.pageXOffset;
-        to[3] += win.pageYOffset;
-      }
-
-      BOUNDS_FORMAT.forEach(function (side, i) {
-        side = side[0].toUpperCase() + side.substr(1);
-        if (side === 'Top' || side === 'Left') {
-          to[i] += parseFloat(style['border' + side + 'Width']);
-        } else {
-          to[i] -= parseFloat(style['border' + side + 'Width']);
-        }
-      });
-    })();
-  }
-
-  return to;
 }
+/**
+ * Hides all visible poppers on the document
+ */
 
-TetherBase.modules.push({
-  position: function position(_ref) {
-    var _this = this;
+function hideAll() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      excludedReferenceOrInstance = _ref.exclude,
+      duration = _ref.duration;
 
-    var top = _ref.top;
-    var left = _ref.left;
-    var targetAttachment = _ref.targetAttachment;
+  arrayFrom(document.querySelectorAll(POPPER_SELECTOR)).forEach(function (popper) {
+    var instance = popper._tippy;
 
-    if (!this.options.constraints) {
-      return true;
+    if (instance) {
+      var isExcluded = false;
+
+      if (excludedReferenceOrInstance) {
+        isExcluded = isReferenceElement(excludedReferenceOrInstance) ? instance.reference === excludedReferenceOrInstance : popper === excludedReferenceOrInstance.popper;
+      }
+
+      if (!isExcluded) {
+        instance.hide(duration);
+      }
     }
-
-    var _cache = this.cache('element-bounds', function () {
-      return getBounds(_this.element);
-    });
-
-    var height = _cache.height;
-    var width = _cache.width;
-
-    if (width === 0 && height === 0 && typeof this.lastSize !== 'undefined') {
-      var _lastSize = this.lastSize;
-
-      // Handle the item getting hidden as a result of our positioning without glitching
-      // the classes in and out
-      width = _lastSize.width;
-      height = _lastSize.height;
-    }
-
-    var targetSize = this.cache('target-bounds', function () {
-      return _this.getTargetBounds();
-    });
-
-    var targetHeight = targetSize.height;
-    var targetWidth = targetSize.width;
-
-    var allClasses = [this.getClass('pinned'), this.getClass('out-of-bounds')];
-
-    this.options.constraints.forEach(function (constraint) {
-      var outOfBoundsClass = constraint.outOfBoundsClass;
-      var pinnedClass = constraint.pinnedClass;
-
-      if (outOfBoundsClass) {
-        allClasses.push(outOfBoundsClass);
-      }
-      if (pinnedClass) {
-        allClasses.push(pinnedClass);
-      }
-    });
-
-    allClasses.forEach(function (cls) {
-      ['left', 'top', 'right', 'bottom'].forEach(function (side) {
-        allClasses.push(cls + '-' + side);
-      });
-    });
-
-    var addClasses = [];
-
-    var tAttachment = extend({}, targetAttachment);
-    var eAttachment = extend({}, this.attachment);
-
-    this.options.constraints.forEach(function (constraint) {
-      var to = constraint.to;
-      var attachment = constraint.attachment;
-      var pin = constraint.pin;
-
-      if (typeof attachment === 'undefined') {
-        attachment = '';
-      }
-
-      var changeAttachX = undefined,
-          changeAttachY = undefined;
-      if (attachment.indexOf(' ') >= 0) {
-        var _attachment$split = attachment.split(' ');
-
-        var _attachment$split2 = _slicedToArray(_attachment$split, 2);
-
-        changeAttachY = _attachment$split2[0];
-        changeAttachX = _attachment$split2[1];
-      } else {
-        changeAttachX = changeAttachY = attachment;
-      }
-
-      var bounds = getBoundingRect(_this, to);
-
-      if (changeAttachY === 'target' || changeAttachY === 'both') {
-        if (top < bounds[1] && tAttachment.top === 'top') {
-          top += targetHeight;
-          tAttachment.top = 'bottom';
-        }
-
-        if (top + height > bounds[3] && tAttachment.top === 'bottom') {
-          top -= targetHeight;
-          tAttachment.top = 'top';
-        }
-      }
-
-      if (changeAttachY === 'together') {
-        if (tAttachment.top === 'top') {
-          if (eAttachment.top === 'bottom' && top < bounds[1]) {
-            top += targetHeight;
-            tAttachment.top = 'bottom';
-
-            top += height;
-            eAttachment.top = 'top';
-          } else if (eAttachment.top === 'top' && top + height > bounds[3] && top - (height - targetHeight) >= bounds[1]) {
-            top -= height - targetHeight;
-            tAttachment.top = 'bottom';
-
-            eAttachment.top = 'bottom';
-          }
-        }
-
-        if (tAttachment.top === 'bottom') {
-          if (eAttachment.top === 'top' && top + height > bounds[3]) {
-            top -= targetHeight;
-            tAttachment.top = 'top';
-
-            top -= height;
-            eAttachment.top = 'bottom';
-          } else if (eAttachment.top === 'bottom' && top < bounds[1] && top + (height * 2 - targetHeight) <= bounds[3]) {
-            top += height - targetHeight;
-            tAttachment.top = 'top';
-
-            eAttachment.top = 'top';
-          }
-        }
-
-        if (tAttachment.top === 'middle') {
-          if (top + height > bounds[3] && eAttachment.top === 'top') {
-            top -= height;
-            eAttachment.top = 'bottom';
-          } else if (top < bounds[1] && eAttachment.top === 'bottom') {
-            top += height;
-            eAttachment.top = 'top';
-          }
-        }
-      }
-
-      if (changeAttachX === 'target' || changeAttachX === 'both') {
-        if (left < bounds[0] && tAttachment.left === 'left') {
-          left += targetWidth;
-          tAttachment.left = 'right';
-        }
-
-        if (left + width > bounds[2] && tAttachment.left === 'right') {
-          left -= targetWidth;
-          tAttachment.left = 'left';
-        }
-      }
-
-      if (changeAttachX === 'together') {
-        if (left < bounds[0] && tAttachment.left === 'left') {
-          if (eAttachment.left === 'right') {
-            left += targetWidth;
-            tAttachment.left = 'right';
-
-            left += width;
-            eAttachment.left = 'left';
-          } else if (eAttachment.left === 'left') {
-            left += targetWidth;
-            tAttachment.left = 'right';
-
-            left -= width;
-            eAttachment.left = 'right';
-          }
-        } else if (left + width > bounds[2] && tAttachment.left === 'right') {
-          if (eAttachment.left === 'left') {
-            left -= targetWidth;
-            tAttachment.left = 'left';
-
-            left -= width;
-            eAttachment.left = 'right';
-          } else if (eAttachment.left === 'right') {
-            left -= targetWidth;
-            tAttachment.left = 'left';
-
-            left += width;
-            eAttachment.left = 'left';
-          }
-        } else if (tAttachment.left === 'center') {
-          if (left + width > bounds[2] && eAttachment.left === 'left') {
-            left -= width;
-            eAttachment.left = 'right';
-          } else if (left < bounds[0] && eAttachment.left === 'right') {
-            left += width;
-            eAttachment.left = 'left';
-          }
-        }
-      }
-
-      if (changeAttachY === 'element' || changeAttachY === 'both') {
-        if (top < bounds[1] && eAttachment.top === 'bottom') {
-          top += height;
-          eAttachment.top = 'top';
-        }
-
-        if (top + height > bounds[3] && eAttachment.top === 'top') {
-          top -= height;
-          eAttachment.top = 'bottom';
-        }
-      }
-
-      if (changeAttachX === 'element' || changeAttachX === 'both') {
-        if (left < bounds[0]) {
-          if (eAttachment.left === 'right') {
-            left += width;
-            eAttachment.left = 'left';
-          } else if (eAttachment.left === 'center') {
-            left += width / 2;
-            eAttachment.left = 'left';
-          }
-        }
-
-        if (left + width > bounds[2]) {
-          if (eAttachment.left === 'left') {
-            left -= width;
-            eAttachment.left = 'right';
-          } else if (eAttachment.left === 'center') {
-            left -= width / 2;
-            eAttachment.left = 'right';
-          }
-        }
-      }
-
-      if (typeof pin === 'string') {
-        pin = pin.split(',').map(function (p) {
-          return p.trim();
-        });
-      } else if (pin === true) {
-        pin = ['top', 'left', 'right', 'bottom'];
-      }
-
-      pin = pin || [];
-
-      var pinned = [];
-      var oob = [];
-
-      if (top < bounds[1]) {
-        if (pin.indexOf('top') >= 0) {
-          top = bounds[1];
-          pinned.push('top');
-        } else {
-          oob.push('top');
-        }
-      }
-
-      if (top + height > bounds[3]) {
-        if (pin.indexOf('bottom') >= 0) {
-          top = bounds[3] - height;
-          pinned.push('bottom');
-        } else {
-          oob.push('bottom');
-        }
-      }
-
-      if (left < bounds[0]) {
-        if (pin.indexOf('left') >= 0) {
-          left = bounds[0];
-          pinned.push('left');
-        } else {
-          oob.push('left');
-        }
-      }
-
-      if (left + width > bounds[2]) {
-        if (pin.indexOf('right') >= 0) {
-          left = bounds[2] - width;
-          pinned.push('right');
-        } else {
-          oob.push('right');
-        }
-      }
-
-      if (pinned.length) {
-        (function () {
-          var pinnedClass = undefined;
-          if (typeof _this.options.pinnedClass !== 'undefined') {
-            pinnedClass = _this.options.pinnedClass;
-          } else {
-            pinnedClass = _this.getClass('pinned');
-          }
-
-          addClasses.push(pinnedClass);
-          pinned.forEach(function (side) {
-            addClasses.push(pinnedClass + '-' + side);
-          });
-        })();
-      }
-
-      if (oob.length) {
-        (function () {
-          var oobClass = undefined;
-          if (typeof _this.options.outOfBoundsClass !== 'undefined') {
-            oobClass = _this.options.outOfBoundsClass;
-          } else {
-            oobClass = _this.getClass('out-of-bounds');
-          }
-
-          addClasses.push(oobClass);
-          oob.forEach(function (side) {
-            addClasses.push(oobClass + '-' + side);
-          });
-        })();
-      }
-
-      if (pinned.indexOf('left') >= 0 || pinned.indexOf('right') >= 0) {
-        eAttachment.left = tAttachment.left = false;
-      }
-      if (pinned.indexOf('top') >= 0 || pinned.indexOf('bottom') >= 0) {
-        eAttachment.top = tAttachment.top = false;
-      }
-
-      if (tAttachment.top !== targetAttachment.top || tAttachment.left !== targetAttachment.left || eAttachment.top !== _this.attachment.top || eAttachment.left !== _this.attachment.left) {
-        _this.updateAttachClasses(eAttachment, tAttachment);
-        _this.trigger('update', {
-          attachment: eAttachment,
-          targetAttachment: tAttachment
-        });
-      }
-    });
-
-    defer(function () {
-      if (!(_this.options.addTargetClasses === false)) {
-        updateClasses(_this.target, addClasses, allClasses);
-      }
-      updateClasses(_this.element, addClasses, allClasses);
-    });
-
-    return { top: top, left: left };
-  }
-});
-/* globals TetherBase */
-
-'use strict';
-
-var _TetherBase$Utils = TetherBase.Utils;
-var getBounds = _TetherBase$Utils.getBounds;
-var updateClasses = _TetherBase$Utils.updateClasses;
-var defer = _TetherBase$Utils.defer;
-
-TetherBase.modules.push({
-  position: function position(_ref) {
-    var _this = this;
-
-    var top = _ref.top;
-    var left = _ref.left;
-
-    var _cache = this.cache('element-bounds', function () {
-      return getBounds(_this.element);
-    });
-
-    var height = _cache.height;
-    var width = _cache.width;
-
-    var targetPos = this.getTargetBounds();
-
-    var bottom = top + height;
-    var right = left + width;
-
-    var abutted = [];
-    if (top <= targetPos.bottom && bottom >= targetPos.top) {
-      ['left', 'right'].forEach(function (side) {
-        var targetPosSide = targetPos[side];
-        if (targetPosSide === left || targetPosSide === right) {
-          abutted.push(side);
-        }
-      });
-    }
-
-    if (left <= targetPos.right && right >= targetPos.left) {
-      ['top', 'bottom'].forEach(function (side) {
-        var targetPosSide = targetPos[side];
-        if (targetPosSide === top || targetPosSide === bottom) {
-          abutted.push(side);
-        }
-      });
-    }
-
-    var allClasses = [];
-    var addClasses = [];
-
-    var sides = ['left', 'top', 'right', 'bottom'];
-    allClasses.push(this.getClass('abutted'));
-    sides.forEach(function (side) {
-      allClasses.push(_this.getClass('abutted') + '-' + side);
-    });
-
-    if (abutted.length) {
-      addClasses.push(this.getClass('abutted'));
-    }
-
-    abutted.forEach(function (side) {
-      addClasses.push(_this.getClass('abutted') + '-' + side);
-    });
-
-    defer(function () {
-      if (!(_this.options.addTargetClasses === false)) {
-        updateClasses(_this.target, addClasses, allClasses);
-      }
-      updateClasses(_this.element, addClasses, allClasses);
-    });
-
+  });
+}
+/**
+ * Determines if the mouse cursor is outside of the popper's interactive border
+ * region
+ */
+
+function isCursorOutsideInteractiveBorder(popperPlacement, popperRect, event, props) {
+  if (!popperPlacement) {
     return true;
   }
-});
-/* globals TetherBase */
 
-'use strict';
+  var x = event.clientX,
+      y = event.clientY;
+  var interactiveBorder = props.interactiveBorder,
+      distance = props.distance;
+  var exceedsTop = popperRect.top - y > (popperPlacement === 'top' ? interactiveBorder + distance : interactiveBorder);
+  var exceedsBottom = y - popperRect.bottom > (popperPlacement === 'bottom' ? interactiveBorder + distance : interactiveBorder);
+  var exceedsLeft = popperRect.left - x > (popperPlacement === 'left' ? interactiveBorder + distance : interactiveBorder);
+  var exceedsRight = x - popperRect.right > (popperPlacement === 'right' ? interactiveBorder + distance : interactiveBorder);
+  return exceedsTop || exceedsBottom || exceedsLeft || exceedsRight;
+}
+/**
+ * Returns the distance offset, taking into account the default offset due to
+ * the transform: translate() rule (10px) in CSS
+ */
 
-var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
+function getOffsetDistanceInPx(distance) {
+  return -(distance - 10) + 'px';
+}
 
-TetherBase.modules.push({
-  position: function position(_ref) {
-    var top = _ref.top;
-    var left = _ref.left;
+var idCounter = 1; // Workaround for IE11's lack of new MouseEvent constructor
 
-    if (!this.options.shift) {
+var mouseMoveListeners = [];
+/**
+ * Creates and returns a Tippy object. We're using a closure pattern instead of
+ * a class so that the exposed object API is clean without private members
+ * prefixed with `_`.
+ */
+
+function createTippy(reference, collectionProps) {
+  var props = evaluateProps(reference, collectionProps); // If the reference shouldn't have multiple tippys, return null early
+
+  if (!props.multiple && reference._tippy) {
+    return null;
+  }
+  /* ======================= 🔒 Private members 🔒 ======================= */
+
+
+  var lastTriggerEventType;
+  var lastMouseMoveEvent;
+  var showTimeoutId;
+  var hideTimeoutId;
+  var scheduleHideAnimationFrameId;
+  var isScheduledToShow = false;
+  var isBeingDestroyed = false;
+  var previousPlacement;
+  var wasVisibleDuringPreviousUpdate = false;
+  var hasMountCallbackRun = false;
+  var currentMountCallback;
+  var currentTransitionEndListener;
+  var listeners = [];
+  var currentComputedPadding;
+  var debouncedOnMouseMove = debounce(onMouseMove, props.interactiveDebounce);
+  /* ======================= 🔑 Public members 🔑 ======================= */
+
+  var id = idCounter++;
+  var popper = createPopperElement(id, props);
+  var popperChildren = getChildren(popper);
+  var popperInstance = null;
+  var state = {
+    // Is the instance currently enabled?
+    isEnabled: true,
+    // Is the tippy currently showing and not transitioning out?
+    isVisible: false,
+    // Has the instance been destroyed?
+    isDestroyed: false,
+    // Is the tippy currently mounted to the DOM?
+    isMounted: false,
+    // Has the tippy finished transitioning in?
+    isShown: false
+  };
+  var instance = {
+    // properties
+    id: id,
+    reference: reference,
+    popper: popper,
+    popperChildren: popperChildren,
+    popperInstance: popperInstance,
+    props: props,
+    state: state,
+    // methods
+    clearDelayTimeouts: clearDelayTimeouts,
+    set: set,
+    setContent: setContent,
+    show: show,
+    hide: hide,
+    enable: enable,
+    disable: disable,
+    destroy: destroy
+    /* ==================== Initial instance mutations =================== */
+
+  };
+  reference._tippy = instance;
+  popper._tippy = instance;
+  addTriggersToReference();
+
+  if (!props.lazy) {
+    createPopperInstance();
+  }
+
+  if (props.showOnInit) {
+    scheduleShow();
+  } // Ensure the event listeners target can receive focus
+
+
+  if (props.a11y && !props.target && !canReceiveFocus(getEventListenersTarget())) {
+    getEventListenersTarget().setAttribute('tabindex', '0');
+  } // Prevent a tippy with a delay from hiding if the cursor left then returned
+  // before it started hiding
+
+
+  popper.addEventListener('mouseenter', function (event) {
+    if (instance.props.interactive && instance.state.isVisible && lastTriggerEventType === 'mouseenter') {
+      // We don't want props.onTrigger() to be called here, since the `event`
+      // object is not related to the reference element
+      scheduleShow(event, true);
+    }
+  });
+  popper.addEventListener('mouseleave', function () {
+    if (instance.props.interactive && lastTriggerEventType === 'mouseenter') {
+      document.addEventListener('mousemove', debouncedOnMouseMove);
+    }
+  });
+  return instance;
+  /* ======================= 🔒 Private methods 🔒 ======================= */
+
+  /**
+   * Removes the follow cursor listener
+   */
+
+  function removeFollowCursorListener() {
+    document.removeEventListener('mousemove', positionVirtualReferenceNearCursor);
+  }
+  /**
+   * Cleans up interactive mouse listeners
+   */
+
+
+  function cleanupInteractiveMouseListeners() {
+    document.body.removeEventListener('mouseleave', scheduleHide);
+    document.removeEventListener('mousemove', debouncedOnMouseMove);
+    mouseMoveListeners = mouseMoveListeners.filter(function (listener) {
+      return listener !== debouncedOnMouseMove;
+    });
+  }
+  /**
+   * Returns correct target used for event listeners
+   */
+
+
+  function getEventListenersTarget() {
+    return instance.props.triggerTarget || reference;
+  }
+  /**
+   * Adds the document click event listener for the instance
+   */
+
+
+  function addDocumentClickListener() {
+    document.addEventListener('click', onDocumentClick, true);
+  }
+  /**
+   * Removes the document click event listener for the instance
+   */
+
+
+  function removeDocumentClickListener() {
+    document.removeEventListener('click', onDocumentClick, true);
+  }
+  /**
+   * Returns transitionable inner elements used in show/hide methods
+   */
+
+
+  function getTransitionableElements() {
+    return [instance.popperChildren.tooltip, instance.popperChildren.backdrop, instance.popperChildren.content];
+  }
+  /**
+   * Determines if the instance is in `followCursor` mode.
+   * NOTE: in v5, touch devices will use `initial` behavior no matter the value.
+   */
+
+
+  function getIsInLooseFollowCursorMode() {
+    var followCursor = instance.props.followCursor;
+    return followCursor && lastTriggerEventType !== 'focus' || isUsingTouch && followCursor === 'initial';
+  }
+  /**
+   * Updates the tooltip's position on each animation frame
+   */
+
+
+  function makeSticky() {
+    setTransitionDuration([popper], isIE ? 0 : instance.props.updateDuration);
+    var prevRefRect = reference.getBoundingClientRect();
+
+    function updatePosition() {
+      var currentRefRect = reference.getBoundingClientRect(); // Only schedule an update if the reference rect has changed
+
+      if (prevRefRect.top !== currentRefRect.top || prevRefRect.right !== currentRefRect.right || prevRefRect.bottom !== currentRefRect.bottom || prevRefRect.left !== currentRefRect.left) {
+        instance.popperInstance.scheduleUpdate();
+      }
+
+      prevRefRect = currentRefRect;
+
+      if (instance.state.isMounted) {
+        requestAnimationFrame(updatePosition);
+      }
+    }
+
+    updatePosition();
+  }
+  /**
+   * Invokes a callback once the tooltip has fully transitioned out
+   */
+
+
+  function onTransitionedOut(duration, callback) {
+    onTransitionEnd(duration, function () {
+      if (!instance.state.isVisible && popper.parentNode && popper.parentNode.contains(popper)) {
+        callback();
+      }
+    });
+  }
+  /**
+   * Invokes a callback once the tooltip has fully transitioned in
+   */
+
+
+  function onTransitionedIn(duration, callback) {
+    onTransitionEnd(duration, callback);
+  }
+  /**
+   * Invokes a callback once the tooltip's CSS transition ends
+   */
+
+
+  function onTransitionEnd(duration, callback) {
+    var tooltip = instance.popperChildren.tooltip;
+    /**
+     * Listener added as the `transitionend` handler
+     */
+
+    function listener(event) {
+      if (event.target === tooltip) {
+        updateTransitionEndListener(tooltip, 'remove', listener);
+        callback();
+      }
+    } // Make callback synchronous if duration is 0
+    // `transitionend` won't fire otherwise
+
+
+    if (duration === 0) {
+      return callback();
+    }
+
+    updateTransitionEndListener(tooltip, 'remove', currentTransitionEndListener);
+    updateTransitionEndListener(tooltip, 'add', listener);
+    currentTransitionEndListener = listener;
+  }
+  /**
+   * Adds an event listener to the reference and stores it in `listeners`
+   */
+
+
+  function on(eventType, handler) {
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    getEventListenersTarget().addEventListener(eventType, handler, options);
+    listeners.push({
+      eventType: eventType,
+      handler: handler,
+      options: options
+    });
+  }
+  /**
+   * Adds event listeners to the reference based on the `trigger` prop
+   */
+
+
+  function addTriggersToReference() {
+    if (instance.props.touchHold && !instance.props.target) {
+      on('touchstart', onTrigger, PASSIVE);
+      on('touchend', onMouseLeave, PASSIVE);
+    }
+
+    instance.props.trigger.trim().split(' ').forEach(function (eventType) {
+      if (eventType === 'manual') {
+        return;
+      } // Non-delegates
+
+
+      if (!instance.props.target) {
+        on(eventType, onTrigger);
+
+        switch (eventType) {
+          case 'mouseenter':
+            on('mouseleave', onMouseLeave);
+            break;
+
+          case 'focus':
+            on(isIE ? 'focusout' : 'blur', onBlur);
+            break;
+        }
+      } else {
+        // Delegates
+        switch (eventType) {
+          case 'mouseenter':
+            on('mouseover', onDelegateShow);
+            on('mouseout', onDelegateHide);
+            break;
+
+          case 'focus':
+            on('focusin', onDelegateShow);
+            on('focusout', onDelegateHide);
+            break;
+
+          case 'click':
+            on(eventType, onDelegateShow);
+            break;
+        }
+      }
+    });
+  }
+  /**
+   * Removes event listeners from the reference
+   */
+
+
+  function removeTriggersFromReference() {
+    listeners.forEach(function (_ref) {
+      var eventType = _ref.eventType,
+          handler = _ref.handler,
+          options = _ref.options;
+      getEventListenersTarget().removeEventListener(eventType, handler, options);
+    });
+    listeners = [];
+  }
+  /**
+   * Positions the virtual reference near the cursor
+   */
+
+
+  function positionVirtualReferenceNearCursor(event) {
+    var _lastMouseMoveEvent = lastMouseMoveEvent = event,
+        x = _lastMouseMoveEvent.clientX,
+        y = _lastMouseMoveEvent.clientY; // Gets set once popperInstance `onCreate` has been called
+
+
+    if (!currentComputedPadding) {
+      return;
+    } // If the instance is interactive, avoid updating the position unless it's
+    // over the reference element
+
+
+    var isCursorOverReference = closestCallback(event.target, function (el) {
+      return el === reference;
+    });
+    var rect = reference.getBoundingClientRect();
+    var followCursor = instance.props.followCursor;
+    var isHorizontal = followCursor === 'horizontal';
+    var isVertical = followCursor === 'vertical'; // The virtual reference needs some size to prevent itself from overflowing
+
+    var isVerticalPlacement = includes(['top', 'bottom'], getBasicPlacement(popper));
+    var fullPlacement = popper.getAttribute(PLACEMENT_ATTRIBUTE);
+    var isVariation = fullPlacement ? !!fullPlacement.split('-')[1] : false;
+    var size = isVerticalPlacement ? popper.offsetWidth : popper.offsetHeight;
+    var halfSize = size / 2;
+    var verticalIncrease = isVerticalPlacement ? 0 : isVariation ? size : halfSize;
+    var horizontalIncrease = isVerticalPlacement ? isVariation ? size : halfSize : 0;
+
+    if (isCursorOverReference || !instance.props.interactive) {
+      instance.popperInstance.reference = _extends({}, instance.popperInstance.reference, {
+        // This will exist in next Popper.js feature release to fix #532
+        // @ts-ignore
+        referenceNode: reference,
+        // These `client` values don't get used by Popper.js if they are 0
+        clientWidth: 0,
+        clientHeight: 0,
+        getBoundingClientRect: function getBoundingClientRect() {
+          return {
+            width: isVerticalPlacement ? size : 0,
+            height: isVerticalPlacement ? 0 : size,
+            top: (isHorizontal ? rect.top : y) - verticalIncrease,
+            bottom: (isHorizontal ? rect.bottom : y) + verticalIncrease,
+            left: (isVertical ? rect.left : x) - horizontalIncrease,
+            right: (isVertical ? rect.right : x) + horizontalIncrease
+          };
+        }
+      });
+      instance.popperInstance.update();
+    }
+
+    if (followCursor === 'initial' && instance.state.isVisible) {
+      removeFollowCursorListener();
+    }
+  }
+  /**
+   * Creates the tippy instance for a delegate when it's been triggered
+   */
+
+
+  function createDelegateChildTippy(event) {
+    if (event) {
+      var targetEl = closest(event.target, instance.props.target);
+
+      if (targetEl && !targetEl._tippy) {
+        createTippy(targetEl, _extends({}, instance.props, {
+          content: invokeWithArgsOrReturn(collectionProps.content, [targetEl]),
+          appendTo: collectionProps.appendTo,
+          target: '',
+          showOnInit: true
+        }));
+      }
+    }
+  }
+  /**
+   * Event listener invoked upon trigger
+   */
+
+
+  function onTrigger(event) {
+    if (!instance.state.isEnabled || isEventListenerStopped(event)) {
       return;
     }
 
-    var shift = this.options.shift;
-    if (typeof this.options.shift === 'function') {
-      shift = this.options.shift.call(this, { top: top, left: left });
-    }
+    if (!instance.state.isVisible) {
+      lastTriggerEventType = event.type;
 
-    var shiftTop = undefined,
-        shiftLeft = undefined;
-    if (typeof shift === 'string') {
-      shift = shift.split(' ');
-      shift[1] = shift[1] || shift[0];
+      if (event instanceof MouseEvent) {
+        lastMouseMoveEvent = event; // If scrolling, `mouseenter` events can be fired if the cursor lands
+        // over a new target, but `mousemove` events don't get fired. This
+        // causes interactive tooltips to get stuck open until the cursor is
+        // moved
 
-      var _shift = shift;
+        mouseMoveListeners.forEach(function (listener) {
+          return listener(event);
+        });
+      }
+    } // Toggle show/hide when clicking click-triggered tooltips
 
-      var _shift2 = _slicedToArray(_shift, 2);
 
-      shiftTop = _shift2[0];
-      shiftLeft = _shift2[1];
-
-      shiftTop = parseFloat(shiftTop, 10);
-      shiftLeft = parseFloat(shiftLeft, 10);
+    if (event.type === 'click' && instance.props.hideOnClick !== false && instance.state.isVisible) {
+      scheduleHide();
     } else {
-      shiftTop = shift.top;
-      shiftLeft = shift.left;
+      scheduleShow(event);
+    }
+  }
+  /**
+   * Event listener used for interactive tooltips to detect when they should
+   * hide
+   */
+
+
+  function onMouseMove(event) {
+    var isCursorOverPopper = closest(event.target, POPPER_SELECTOR) === popper;
+    var isCursorOverReference = closestCallback(event.target, function (el) {
+      return el === reference;
+    });
+
+    if (isCursorOverPopper || isCursorOverReference) {
+      return;
     }
 
-    top += shiftTop;
-    left += shiftLeft;
-
-    return { top: top, left: left };
+    if (isCursorOutsideInteractiveBorder(getBasicPlacement(popper), popper.getBoundingClientRect(), event, instance.props)) {
+      cleanupInteractiveMouseListeners();
+      scheduleHide();
+    }
   }
-});
-return Tether;
+  /**
+   * Event listener invoked upon mouseleave
+   */
 
-}));
+
+  function onMouseLeave(event) {
+    if (isEventListenerStopped(event)) {
+      return;
+    }
+
+    if (instance.props.interactive) {
+      document.body.addEventListener('mouseleave', scheduleHide);
+      document.addEventListener('mousemove', debouncedOnMouseMove);
+      mouseMoveListeners.push(debouncedOnMouseMove);
+      return;
+    }
+
+    scheduleHide();
+  }
+  /**
+   * Event listener invoked upon blur
+   */
+
+
+  function onBlur(event) {
+    if (event.target !== getEventListenersTarget()) {
+      return;
+    }
+
+    if (instance.props.interactive && event.relatedTarget && popper.contains(event.relatedTarget)) {
+      return;
+    }
+
+    scheduleHide();
+  }
+  /**
+   * Event listener invoked when a child target is triggered
+   */
+
+
+  function onDelegateShow(event) {
+    if (closest(event.target, instance.props.target)) {
+      scheduleShow(event);
+    }
+  }
+  /**
+   * Event listener invoked when a child target should hide
+   */
+
+
+  function onDelegateHide(event) {
+    if (closest(event.target, instance.props.target)) {
+      scheduleHide();
+    }
+  }
+  /**
+   * Determines if an event listener should stop further execution due to the
+   * `touchHold` option
+   */
+
+
+  function isEventListenerStopped(event) {
+    var supportsTouch = 'ontouchstart' in window;
+    var isTouchEvent = includes(event.type, 'touch');
+    var touchHold = instance.props.touchHold;
+    return supportsTouch && isUsingTouch && touchHold && !isTouchEvent || isUsingTouch && !touchHold && isTouchEvent;
+  }
+  /**
+   * Runs the mount callback
+   */
+
+
+  function runMountCallback() {
+    if (!hasMountCallbackRun && currentMountCallback) {
+      hasMountCallbackRun = true;
+      reflow(popper);
+      currentMountCallback();
+    }
+  }
+  /**
+   * Creates the popper instance for the instance
+   */
+
+
+  function createPopperInstance() {
+    var popperOptions = instance.props.popperOptions;
+    var _instance$popperChild = instance.popperChildren,
+        tooltip = _instance$popperChild.tooltip,
+        arrow = _instance$popperChild.arrow;
+    var preventOverflowModifier = getModifier(popperOptions, 'preventOverflow');
+
+    function applyMutations(data) {
+      if (instance.props.flip && !instance.props.flipOnUpdate) {
+        if (data.flipped) {
+          instance.popperInstance.options.placement = data.placement;
+        }
+
+        setFlipModifierEnabled(instance.popperInstance.modifiers, false);
+      } // Apply all of the popper's attributes to the tootip node as well.
+      // Allows users to avoid using the .tippy-popper selector for themes.
+
+
+      tooltip.setAttribute(PLACEMENT_ATTRIBUTE, data.placement);
+
+      if (data.attributes[OUT_OF_BOUNDARIES_ATTRIBUTE] !== false) {
+        tooltip.setAttribute(OUT_OF_BOUNDARIES_ATTRIBUTE, '');
+      } else {
+        tooltip.removeAttribute(OUT_OF_BOUNDARIES_ATTRIBUTE);
+      } // Prevents a transition when changing placements (while tippy is visible)
+      // for scroll/resize updates
+
+
+      if (previousPlacement && previousPlacement !== data.placement && wasVisibleDuringPreviousUpdate) {
+        tooltip.style.transition = 'none';
+        requestAnimationFrame(function () {
+          tooltip.style.transition = '';
+        });
+      }
+
+      previousPlacement = data.placement;
+      wasVisibleDuringPreviousUpdate = instance.state.isVisible;
+      var basicPlacement = getBasicPlacement(popper);
+      var styles = tooltip.style; // Account for the `distance` offset
+
+      styles.top = styles.bottom = styles.left = styles.right = '';
+      styles[basicPlacement] = getOffsetDistanceInPx(instance.props.distance);
+      var padding = preventOverflowModifier && preventOverflowModifier.padding !== undefined ? preventOverflowModifier.padding : PADDING;
+      var isPaddingNumber = typeof padding === 'number';
+
+      var computedPadding = _extends({
+        top: isPaddingNumber ? padding : padding.top,
+        bottom: isPaddingNumber ? padding : padding.bottom,
+        left: isPaddingNumber ? padding : padding.left,
+        right: isPaddingNumber ? padding : padding.right
+      }, !isPaddingNumber && padding);
+
+      computedPadding[basicPlacement] = isPaddingNumber ? padding + instance.props.distance : (padding[basicPlacement] || 0) + instance.props.distance;
+      instance.popperInstance.modifiers.filter(function (m) {
+        return m.name === 'preventOverflow';
+      })[0].padding = computedPadding;
+      currentComputedPadding = computedPadding;
+    }
+
+    var config = _extends({
+      eventsEnabled: false,
+      placement: instance.props.placement
+    }, popperOptions, {
+      modifiers: _extends({}, popperOptions ? popperOptions.modifiers : {}, {
+        preventOverflow: _extends({
+          boundariesElement: instance.props.boundary,
+          padding: PADDING
+        }, preventOverflowModifier),
+        arrow: _extends({
+          element: arrow,
+          enabled: !!arrow
+        }, getModifier(popperOptions, 'arrow')),
+        flip: _extends({
+          enabled: instance.props.flip,
+          // The tooltip is offset by 10px from the popper in CSS,
+          // we need to account for its distance
+          padding: instance.props.distance + PADDING,
+          behavior: instance.props.flipBehavior
+        }, getModifier(popperOptions, 'flip')),
+        offset: _extends({
+          offset: instance.props.offset
+        }, getModifier(popperOptions, 'offset'))
+      }),
+      onCreate: function onCreate(data) {
+        applyMutations(data);
+        runMountCallback();
+
+        if (popperOptions && popperOptions.onCreate) {
+          popperOptions.onCreate(data);
+        }
+      },
+      onUpdate: function onUpdate(data) {
+        applyMutations(data);
+        runMountCallback();
+
+        if (popperOptions && popperOptions.onUpdate) {
+          popperOptions.onUpdate(data);
+        }
+      }
+    });
+
+    instance.popperInstance = new __WEBPACK_IMPORTED_MODULE_0_popper_js__["a" /* default */](reference, popper, config);
+  }
+  /**
+   * Mounts the tooltip to the DOM
+   */
+
+
+  function mount() {
+    hasMountCallbackRun = false;
+    var isInLooseFollowCursorMode = getIsInLooseFollowCursorMode();
+
+    if (instance.popperInstance) {
+      setFlipModifierEnabled(instance.popperInstance.modifiers, instance.props.flip);
+
+      if (!isInLooseFollowCursorMode) {
+        instance.popperInstance.reference = reference;
+        instance.popperInstance.enableEventListeners();
+      }
+
+      instance.popperInstance.scheduleUpdate();
+    } else {
+      createPopperInstance();
+
+      if (!isInLooseFollowCursorMode) {
+        instance.popperInstance.enableEventListeners();
+      }
+    }
+
+    var appendTo = instance.props.appendTo;
+    var parentNode = appendTo === 'parent' ? reference.parentNode : invokeWithArgsOrReturn(appendTo, [reference]);
+
+    if (!parentNode.contains(popper)) {
+      parentNode.appendChild(popper);
+      instance.props.onMount(instance);
+      instance.state.isMounted = true;
+    }
+  }
+  /**
+   * Setup before show() is invoked (delays, etc.)
+   */
+
+
+  function scheduleShow(event, shouldAvoidCallingOnTrigger) {
+    clearDelayTimeouts();
+
+    if (instance.state.isVisible) {
+      return;
+    } // Is a delegate, create an instance for the child target
+
+
+    if (instance.props.target) {
+      return createDelegateChildTippy(event);
+    }
+
+    isScheduledToShow = true;
+
+    if (event && !shouldAvoidCallingOnTrigger) {
+      instance.props.onTrigger(instance, event);
+    }
+
+    if (instance.props.wait) {
+      return instance.props.wait(instance, event);
+    } // If the tooltip has a delay, we need to be listening to the mousemove as
+    // soon as the trigger event is fired, so that it's in the correct position
+    // upon mount.
+    // Edge case: if the tooltip is still mounted, but then scheduleShow() is
+    // called, it causes a jump.
+
+
+    if (getIsInLooseFollowCursorMode() && !instance.state.isMounted) {
+      if (!instance.popperInstance) {
+        createPopperInstance();
+      }
+
+      document.addEventListener('mousemove', positionVirtualReferenceNearCursor);
+    }
+
+    addDocumentClickListener();
+    var delay = getValue(instance.props.delay, 0, defaultProps.delay);
+
+    if (delay) {
+      showTimeoutId = setTimeout(function () {
+        show();
+      }, delay);
+    } else {
+      show();
+    }
+  }
+  /**
+   * Setup before hide() is invoked (delays, etc.)
+   */
+
+
+  function scheduleHide() {
+    clearDelayTimeouts();
+
+    if (!instance.state.isVisible) {
+      removeFollowCursorListener();
+      removeDocumentClickListener();
+      return;
+    }
+
+    isScheduledToShow = false;
+    var delay = getValue(instance.props.delay, 1, defaultProps.delay);
+
+    if (delay) {
+      hideTimeoutId = setTimeout(function () {
+        if (instance.state.isVisible) {
+          hide();
+        }
+      }, delay);
+    } else {
+      // Fixes a `transitionend` problem when it fires 1 frame too
+      // late sometimes, we don't want hide() to be called.
+      scheduleHideAnimationFrameId = requestAnimationFrame(function () {
+        hide();
+      });
+    }
+  }
+  /**
+   * Listener to handle clicks on the document to determine if the
+   * instance should hide
+   */
+
+
+  function onDocumentClick(event) {
+    // Clicked on interactive popper
+    if (instance.props.interactive && popper.contains(event.target)) {
+      return;
+    } // Clicked on the event listeners target
+
+
+    if (getEventListenersTarget().contains(event.target)) {
+      if (isUsingTouch) {
+        return;
+      }
+
+      if (instance.state.isVisible && includes(instance.props.trigger, 'click')) {
+        return;
+      }
+    }
+
+    if (instance.props.hideOnClick === true) {
+      clearDelayTimeouts();
+      hide();
+    }
+  }
+  /* ======================= 🔑 Public methods 🔑 ======================= */
+
+  /**
+   * Enables the instance to allow it to show or hide
+   */
+
+
+  function enable() {
+    instance.state.isEnabled = true;
+  }
+  /**
+   * Disables the instance to disallow it to show or hide
+   */
+
+
+  function disable() {
+    instance.state.isEnabled = false;
+  }
+  /**
+   * Clears pending timeouts related to the `delay` prop if any
+   */
+
+
+  function clearDelayTimeouts() {
+    clearTimeout(showTimeoutId);
+    clearTimeout(hideTimeoutId);
+    cancelAnimationFrame(scheduleHideAnimationFrameId);
+  }
+  /**
+   * Sets new props for the instance and redraws the tooltip
+   */
+
+
+  function set(options) {
+    // Backwards-compatible after TypeScript change
+    options = options || {};
+    validateOptions(options, defaultProps);
+    removeTriggersFromReference();
+    var prevProps = instance.props;
+    var nextProps = evaluateProps(reference, _extends({}, instance.props, {}, options, {
+      ignoreAttributes: true
+    }));
+    nextProps.ignoreAttributes = hasOwnProperty(options, 'ignoreAttributes') ? options.ignoreAttributes || false : prevProps.ignoreAttributes;
+    instance.props = nextProps;
+    addTriggersToReference();
+    cleanupInteractiveMouseListeners();
+    debouncedOnMouseMove = debounce(onMouseMove, nextProps.interactiveDebounce);
+    updatePopperElement(popper, prevProps, nextProps);
+    instance.popperChildren = getChildren(popper);
+
+    if (instance.popperInstance) {
+      if (POPPER_INSTANCE_DEPENDENCIES.some(function (prop) {
+        return hasOwnProperty(options, prop) && options[prop] !== prevProps[prop];
+      })) {
+        instance.popperInstance.destroy();
+        createPopperInstance();
+
+        if (instance.state.isVisible) {
+          instance.popperInstance.enableEventListeners();
+        }
+
+        if (instance.props.followCursor && lastMouseMoveEvent) {
+          positionVirtualReferenceNearCursor(lastMouseMoveEvent);
+        }
+      } else {
+        instance.popperInstance.update();
+      }
+    }
+  }
+  /**
+   * Shortcut for .set({ content: newContent })
+   */
+
+
+  function setContent(content) {
+    set({
+      content: content
+    });
+  }
+  /**
+   * Shows the tooltip
+   */
+
+
+  function show() {
+    var duration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : getValue(instance.props.duration, 0, defaultProps.duration[1]);
+
+    if (instance.state.isDestroyed || !instance.state.isEnabled || isUsingTouch && !instance.props.touch) {
+      return;
+    } // Standardize `disabled` behavior across browsers.
+    // Firefox allows events on disabled elements, but Chrome doesn't.
+    // Using a wrapper element (i.e. <span>) is recommended.
+
+
+    if (getEventListenersTarget().hasAttribute('disabled')) {
+      return;
+    }
+
+    if (instance.props.onShow(instance) === false) {
+      return;
+    }
+
+    addDocumentClickListener();
+    popper.style.visibility = 'visible';
+    instance.state.isVisible = true;
+
+    if (instance.props.interactive) {
+      getEventListenersTarget().classList.add(ACTIVE_CLASS);
+    } // Prevent a transition if the popper is at the opposite placement
+
+
+    var transitionableElements = getTransitionableElements();
+    setTransitionDuration(transitionableElements.concat(popper), 0);
+
+    currentMountCallback = function currentMountCallback() {
+      if (!instance.state.isVisible) {
+        return;
+      }
+
+      var isInLooseFollowCursorMode = getIsInLooseFollowCursorMode();
+
+      if (isInLooseFollowCursorMode && lastMouseMoveEvent) {
+        positionVirtualReferenceNearCursor(lastMouseMoveEvent);
+      } else if (!isInLooseFollowCursorMode) {
+        // Double update will apply correct mutations
+        instance.popperInstance.update();
+      }
+
+      if (instance.popperChildren.backdrop) {
+        instance.popperChildren.content.style.transitionDelay = Math.round(duration / 12) + 'ms';
+      }
+
+      if (instance.props.sticky) {
+        makeSticky();
+      }
+
+      setTransitionDuration([popper], instance.props.updateDuration);
+      setTransitionDuration(transitionableElements, duration);
+      setVisibilityState(transitionableElements, 'visible');
+      onTransitionedIn(duration, function () {
+        if (instance.props.aria) {
+          getEventListenersTarget().setAttribute("aria-".concat(instance.props.aria), popper.id);
+        }
+
+        instance.props.onShown(instance);
+        instance.state.isShown = true;
+      });
+    };
+
+    mount();
+  }
+  /**
+   * Hides the tooltip
+   */
+
+
+  function hide() {
+    var duration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : getValue(instance.props.duration, 1, defaultProps.duration[1]);
+
+    if (instance.state.isDestroyed || !instance.state.isEnabled && !isBeingDestroyed) {
+      return;
+    }
+
+    if (instance.props.onHide(instance) === false && !isBeingDestroyed) {
+      return;
+    }
+
+    removeDocumentClickListener();
+    popper.style.visibility = 'hidden';
+    instance.state.isVisible = false;
+    instance.state.isShown = false;
+    wasVisibleDuringPreviousUpdate = false;
+
+    if (instance.props.interactive) {
+      getEventListenersTarget().classList.remove(ACTIVE_CLASS);
+    }
+
+    var transitionableElements = getTransitionableElements();
+    setTransitionDuration(transitionableElements, duration);
+    setVisibilityState(transitionableElements, 'hidden');
+    onTransitionedOut(duration, function () {
+      if (!isScheduledToShow) {
+        removeFollowCursorListener();
+      }
+
+      if (instance.props.aria) {
+        getEventListenersTarget().removeAttribute("aria-".concat(instance.props.aria));
+      }
+
+      instance.popperInstance.disableEventListeners();
+      instance.popperInstance.options.placement = instance.props.placement;
+      popper.parentNode.removeChild(popper);
+      instance.props.onHidden(instance);
+      instance.state.isMounted = false;
+    });
+  }
+  /**
+   * Destroys the tooltip
+   */
+
+
+  function destroy(destroyTargetInstances) {
+    if (instance.state.isDestroyed) {
+      return;
+    }
+
+    isBeingDestroyed = true; // If the popper is currently mounted to the DOM, we want to ensure it gets
+    // hidden and unmounted instantly upon destruction
+
+    if (instance.state.isMounted) {
+      hide(0);
+    }
+
+    removeTriggersFromReference();
+    delete reference._tippy;
+    var target = instance.props.target;
+
+    if (target && destroyTargetInstances && isRealElement(reference)) {
+      arrayFrom(reference.querySelectorAll(target)).forEach(function (child) {
+        if (child._tippy) {
+          child._tippy.destroy();
+        }
+      });
+    }
+
+    if (instance.popperInstance) {
+      instance.popperInstance.destroy();
+    }
+
+    isBeingDestroyed = false;
+    instance.state.isDestroyed = true;
+  }
+}
+
+/**
+ * Groups an array of instances by taking control of their props during
+ * certain lifecycles.
+ */
+function group(instances) {
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$delay = _ref.delay,
+      delay = _ref$delay === void 0 ? instances[0].props.delay : _ref$delay,
+      _ref$duration = _ref.duration,
+      duration = _ref$duration === void 0 ? 0 : _ref$duration;
+
+  var isAnyTippyOpen = false;
+  instances.forEach(function (instance) {
+    if (instance._originalProps) {
+      instance.set(instance._originalProps);
+    } else {
+      instance._originalProps = _extends({}, instance.props);
+    }
+  });
+
+  function setIsAnyTippyOpen(value) {
+    isAnyTippyOpen = value;
+    updateInstances();
+  }
+
+  function onShow(instance) {
+    instance._originalProps.onShow(instance);
+
+    instances.forEach(function (instance) {
+      instance.set({
+        duration: duration
+      });
+
+      if (instance.state.isVisible) {
+        instance.hide();
+      }
+    });
+    setIsAnyTippyOpen(true);
+  }
+
+  function onHide(instance) {
+    instance._originalProps.onHide(instance);
+
+    setIsAnyTippyOpen(false);
+  }
+
+  function onShown(instance) {
+    instance._originalProps.onShown(instance);
+
+    instance.set({
+      duration: instance._originalProps.duration
+    });
+  }
+
+  function updateInstances() {
+    instances.forEach(function (instance) {
+      instance.set({
+        onShow: onShow,
+        onShown: onShown,
+        onHide: onHide,
+        delay: isAnyTippyOpen ? [0, Array.isArray(delay) ? delay[1] : delay] : delay,
+        duration: isAnyTippyOpen ? duration : instance._originalProps.duration
+      });
+    });
+  }
+
+  updateInstances();
+}
+
+var globalEventListenersBound = false;
+/**
+ * Exported module
+ */
+
+function tippy(targets, options) {
+  validateOptions(options || {}, defaultProps);
+
+  if (!globalEventListenersBound) {
+    bindGlobalEventListeners();
+    globalEventListenersBound = true;
+  }
+
+  var props = _extends({}, defaultProps, {}, options); // If they are specifying a virtual positioning reference, we need to polyfill
+  // some native DOM props
+
+
+  if (isBareVirtualElement(targets)) {
+    polyfillElementPrototypeProperties(targets);
+  }
+
+  var instances = getArrayOfElements(targets).reduce(function (acc, reference) {
+    var instance = reference && createTippy(reference, props);
+
+    if (instance) {
+      acc.push(instance);
+    }
+
+    return acc;
+  }, []);
+  return isSingular(targets) ? instances[0] : instances;
+}
+/**
+ * Static props
+ */
+
+
+tippy.version = version;
+tippy.defaults = defaultProps;
+/**
+ * Static methods
+ */
+
+tippy.setDefaults = function (partialDefaults) {
+  Object.keys(partialDefaults).forEach(function (key) {
+    // @ts-ignore
+    defaultProps[key] = partialDefaults[key];
+  });
+};
+
+tippy.hideAll = hideAll;
+tippy.group = group;
+/**
+ * Auto-init tooltips for elements with a `data-tippy="..."` attribute
+ */
+
+function autoInit() {
+  arrayFrom(document.querySelectorAll('[data-tippy]')).forEach(function (el) {
+    var content = el.getAttribute('data-tippy');
+
+    if (content) {
+      tippy(el, {
+        content: content
+      });
+    }
+  });
+}
+
+if (isBrowser) {
+  setTimeout(autoInit);
+}
+
+/**
+ * Injects a string of CSS styles to a style node in <head>
+ */
+
+function injectCSS(css) {
+  if (isBrowser) {
+    var style = document.createElement('style');
+    style.type = 'text/css';
+    style.textContent = css;
+    style.setAttribute('data-tippy-stylesheet', '');
+    var head = document.head;
+    var firstStyleOrLinkTag = head.querySelector('style,link');
+
+    if (firstStyleOrLinkTag) {
+      head.insertBefore(style, firstStyleOrLinkTag);
+    } else {
+      head.appendChild(style);
+    }
+  }
+}
+
+injectCSS(css);
+
+/* harmony default export */ __webpack_exports__["default"] = (tippy);
+//# sourceMappingURL=index.all.js.map
 
 
 /***/ }),
@@ -9525,10 +9685,10 @@ __webpack_require__(129);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAlert_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_141fbb3f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAlert_vue__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_141fbb3f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAlert_vue__ = __webpack_require__(225);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9583,10 +9743,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocomplete_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d633256_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAutocomplete_vue__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5d633256_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAutocomplete_vue__ = __webpack_require__(243);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9641,10 +9801,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCheckboxGroup_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_762bf35f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCheckboxGroup_vue__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_762bf35f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCheckboxGroup_vue__ = __webpack_require__(248);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9699,10 +9859,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCollapsible_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d53692a6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCollapsible_vue__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d53692a6_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCollapsible_vue__ = __webpack_require__(257);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9757,10 +9917,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirm_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_17239fe3_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiConfirm_vue__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_17239fe3_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiConfirm_vue__ = __webpack_require__(227);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9815,10 +9975,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiDatepicker_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_110a7be9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiDatepicker_vue__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_110a7be9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiDatepicker_vue__ = __webpack_require__(224);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9873,10 +10033,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFab_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_51a1c62a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiFab_vue__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_51a1c62a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiFab_vue__ = __webpack_require__(240);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9931,10 +10091,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiFileupload_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_518a2c2a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiFileupload_vue__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_518a2c2a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiFileupload_vue__ = __webpack_require__(239);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -9989,10 +10149,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenu_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b4cbc468_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiMenu_vue__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b4cbc468_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiMenu_vue__ = __webpack_require__(251);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10047,10 +10207,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiPreloader_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b992d84e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiPreloader_vue__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b992d84e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiPreloader_vue__ = __webpack_require__(253);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10105,10 +10265,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiRadioGroup_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b9809d1e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRadioGroup_vue__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b9809d1e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiRadioGroup_vue__ = __webpack_require__(252);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10163,10 +10323,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelect_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c55db4ae_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSelect_vue__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_c55db4ae_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSelect_vue__ = __webpack_require__(255);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10221,10 +10381,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSlider_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_41f3ef0e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSlider_vue__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_41f3ef0e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSlider_vue__ = __webpack_require__(237);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10279,10 +10439,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSnackbarContainer_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_82d4bb42_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSnackbarContainer_vue__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_82d4bb42_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSnackbarContainer_vue__ = __webpack_require__(249);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10337,10 +10497,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSwitch_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_295c683e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSwitch_vue__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_295c683e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSwitch_vue__ = __webpack_require__(231);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10395,10 +10555,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTab_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_363903b8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTab_vue__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_363903b8_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTab_vue__ = __webpack_require__(235);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10453,10 +10613,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabs_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d6d9d72a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTabs_vue__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d6d9d72a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTabs_vue__ = __webpack_require__(258);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10511,10 +10671,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTextbox_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_71a2b7a1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTextbox_vue__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_71a2b7a1_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTextbox_vue__ = __webpack_require__(247);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -10569,10 +10729,10 @@ if (false) {(function () {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiToolbar_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6ed76f1e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiToolbar_vue__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_6ed76f1e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiToolbar_vue__ = __webpack_require__(246);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -11034,11 +11194,11 @@ var _UiButton = __webpack_require__(13);
 
 var _UiButton2 = _interopRequireDefault(_UiButton);
 
-var _UiCalendar = __webpack_require__(45);
+var _UiCalendar = __webpack_require__(46);
 
 var _UiCalendar2 = _interopRequireDefault(_UiCalendar);
 
-var _UiCheckbox = __webpack_require__(46);
+var _UiCheckbox = __webpack_require__(47);
 
 var _UiCheckbox2 = _interopRequireDefault(_UiCheckbox);
 
@@ -11098,11 +11258,11 @@ var _UiProgressCircular = __webpack_require__(18);
 
 var _UiProgressCircular2 = _interopRequireDefault(_UiProgressCircular);
 
-var _UiProgressLinear = __webpack_require__(47);
+var _UiProgressLinear = __webpack_require__(48);
 
 var _UiProgressLinear2 = _interopRequireDefault(_UiProgressLinear);
 
-var _UiRadio = __webpack_require__(48);
+var _UiRadio = __webpack_require__(49);
 
 var _UiRadio2 = _interopRequireDefault(_UiRadio);
 
@@ -11122,7 +11282,7 @@ var _UiSlider = __webpack_require__(121);
 
 var _UiSlider2 = _interopRequireDefault(_UiSlider);
 
-var _UiSnackbar = __webpack_require__(49);
+var _UiSnackbar = __webpack_require__(50);
 
 var _UiSnackbar2 = _interopRequireDefault(_UiSnackbar);
 
@@ -11303,7 +11463,7 @@ exports.default = function (instance, Constructor) {
 
 exports.__esModule = true;
 
-var _defineProperty = __webpack_require__(93);
+var _defineProperty = __webpack_require__(94);
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -11366,7 +11526,7 @@ module.exports = __webpack_require__(9).Symbol;
 
 __webpack_require__(160);
 __webpack_require__(164);
-module.exports = __webpack_require__(44).f('iterator');
+module.exports = __webpack_require__(45).f('iterator');
 
 
 /***/ }),
@@ -11446,9 +11606,9 @@ module.exports = function (fn, that, length) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
-var getKeys = __webpack_require__(36);
+var getKeys = __webpack_require__(37);
 var gOPS = __webpack_require__(101);
-var pIE = __webpack_require__(37);
+var pIE = __webpack_require__(38);
 module.exports = function (it) {
   var result = getKeys(it);
   var getSymbols = gOPS.f;
@@ -11501,7 +11661,7 @@ module.exports = Array.isArray || function isArray(arg) {
 
 var create = __webpack_require__(99);
 var descriptor = __webpack_require__(24);
-var setToStringTag = __webpack_require__(38);
+var setToStringTag = __webpack_require__(39);
 var IteratorPrototype = {};
 
 // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
@@ -11587,7 +11747,7 @@ var meta = module.exports = {
 
 var dP = __webpack_require__(7);
 var anObject = __webpack_require__(21);
-var getKeys = __webpack_require__(36);
+var getKeys = __webpack_require__(37);
 
 module.exports = __webpack_require__(5) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
@@ -11604,10 +11764,10 @@ module.exports = __webpack_require__(5) ? Object.defineProperties : function def
 /* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var pIE = __webpack_require__(37);
+var pIE = __webpack_require__(38);
 var createDesc = __webpack_require__(24);
 var toIObject = __webpack_require__(11);
-var toPrimitive = __webpack_require__(42);
+var toPrimitive = __webpack_require__(43);
 var has = __webpack_require__(6);
 var IE8_DOM_DEFINE = __webpack_require__(97);
 var gOPD = Object.getOwnPropertyDescriptor;
@@ -11654,7 +11814,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
 var has = __webpack_require__(6);
 var toObject = __webpack_require__(104);
-var IE_PROTO = __webpack_require__(39)('IE_PROTO');
+var IE_PROTO = __webpack_require__(40)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -11670,8 +11830,8 @@ module.exports = Object.getPrototypeOf || function (O) {
 /* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(41);
-var defined = __webpack_require__(32);
+var toInteger = __webpack_require__(42);
+var defined = __webpack_require__(33);
 // true  -> String#at
 // false -> String#codePointAt
 module.exports = function (TO_STRING) {
@@ -11693,7 +11853,7 @@ module.exports = function (TO_STRING) {
 /* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(41);
+var toInteger = __webpack_require__(42);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -11707,7 +11867,7 @@ module.exports = function (index, length) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(41);
+var toInteger = __webpack_require__(42);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -11722,7 +11882,7 @@ module.exports = function (it) {
 
 var addToUnscopables = __webpack_require__(140);
 var step = __webpack_require__(148);
-var Iterators = __webpack_require__(35);
+var Iterators = __webpack_require__(36);
 var toIObject = __webpack_require__(11);
 
 // 22.1.3.4 Array.prototype.entries()
@@ -11759,7 +11919,7 @@ addToUnscopables('entries');
 /* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var $export = __webpack_require__(34);
+var $export = __webpack_require__(35);
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(5), 'Object', { defineProperty: __webpack_require__(7).f });
 
@@ -11804,30 +11964,30 @@ __webpack_require__(98)(String, 'String', function (iterated) {
 var global = __webpack_require__(4);
 var has = __webpack_require__(6);
 var DESCRIPTORS = __webpack_require__(5);
-var $export = __webpack_require__(34);
+var $export = __webpack_require__(35);
 var redefine = __webpack_require__(103);
 var META = __webpack_require__(149).KEY;
 var $fails = __webpack_require__(22);
-var shared = __webpack_require__(40);
-var setToStringTag = __webpack_require__(38);
+var shared = __webpack_require__(41);
+var setToStringTag = __webpack_require__(39);
 var uid = __webpack_require__(25);
 var wks = __webpack_require__(12);
-var wksExt = __webpack_require__(44);
-var wksDefine = __webpack_require__(43);
+var wksExt = __webpack_require__(45);
+var wksDefine = __webpack_require__(44);
 var enumKeys = __webpack_require__(143);
 var isArray = __webpack_require__(146);
 var anObject = __webpack_require__(21);
 var isObject = __webpack_require__(15);
 var toObject = __webpack_require__(104);
 var toIObject = __webpack_require__(11);
-var toPrimitive = __webpack_require__(42);
+var toPrimitive = __webpack_require__(43);
 var createDesc = __webpack_require__(24);
 var _create = __webpack_require__(99);
 var gOPNExt = __webpack_require__(152);
 var $GOPD = __webpack_require__(151);
 var $GOPS = __webpack_require__(101);
 var $DP = __webpack_require__(7);
-var $keys = __webpack_require__(36);
+var $keys = __webpack_require__(37);
 var gOPD = $GOPD.f;
 var dP = $DP.f;
 var gOPN = gOPNExt.f;
@@ -11951,7 +12111,7 @@ if (!USE_NATIVE) {
   $GOPD.f = $getOwnPropertyDescriptor;
   $DP.f = $defineProperty;
   __webpack_require__(100).f = gOPNExt.f = $getOwnPropertyNames;
-  __webpack_require__(37).f = $propertyIsEnumerable;
+  __webpack_require__(38).f = $propertyIsEnumerable;
   $GOPS.f = $getOwnPropertySymbols;
 
   if (DESCRIPTORS && !__webpack_require__(23)) {
@@ -12051,14 +12211,14 @@ setToStringTag(global.JSON, 'JSON', true);
 /* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(43)('asyncIterator');
+__webpack_require__(44)('asyncIterator');
 
 
 /***/ }),
 /* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(43)('observable');
+__webpack_require__(44)('observable');
 
 
 /***/ }),
@@ -12068,7 +12228,7 @@ __webpack_require__(43)('observable');
 __webpack_require__(157);
 var global = __webpack_require__(4);
 var hide = __webpack_require__(10);
-var Iterators = __webpack_require__(35);
+var Iterators = __webpack_require__(36);
 var TO_STRING_TAG = __webpack_require__(12)('toStringTag');
 
 var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
@@ -15419,2686 +15579,19 @@ Popper.Defaults = Defaults;
 /* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether-drop 1.4.1 */
-
-(function(root, factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(106)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('tether'));
-  } else {
-    root.Drop = factory(root.Tether);
-  }
-}(this, function(Tether) {
-
-/* global Tether */
-'use strict';
-
-var _bind = Function.prototype.bind;
-
-var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var _Tether$Utils = Tether.Utils;
-var extend = _Tether$Utils.extend;
-var addClass = _Tether$Utils.addClass;
-var removeClass = _Tether$Utils.removeClass;
-var hasClass = _Tether$Utils.hasClass;
-var Evented = _Tether$Utils.Evented;
-
-function sortAttach(str) {
-  var _str$split = str.split(' ');
-
-  var _str$split2 = _slicedToArray(_str$split, 2);
-
-  var first = _str$split2[0];
-  var second = _str$split2[1];
-
-  if (['left', 'right'].indexOf(first) >= 0) {
-    var _ref = [second, first];
-    first = _ref[0];
-    second = _ref[1];
-  }
-  return [first, second].join(' ');
-}
-
-function removeFromArray(arr, item) {
-  var index = undefined;
-  var results = [];
-  while ((index = arr.indexOf(item)) !== -1) {
-    results.push(arr.splice(index, 1));
-  }
-  return results;
-}
-
-var clickEvents = ['click'];
-if ('ontouchstart' in document.documentElement) {
-  clickEvents.push('touchstart');
-}
-
-var transitionEndEvents = {
-  'WebkitTransition': 'webkitTransitionEnd',
-  'MozTransition': 'transitionend',
-  'OTransition': 'otransitionend',
-  'transition': 'transitionend'
-};
-
-var transitionEndEvent = '';
-for (var _name in transitionEndEvents) {
-  if (({}).hasOwnProperty.call(transitionEndEvents, _name)) {
-    var tempEl = document.createElement('p');
-    if (typeof tempEl.style[_name] !== 'undefined') {
-      transitionEndEvent = transitionEndEvents[_name];
-    }
-  }
-}
-
-var MIRROR_ATTACH = {
-  left: 'right',
-  right: 'left',
-  top: 'bottom',
-  bottom: 'top',
-  middle: 'middle',
-  center: 'center'
-};
-
-var allDrops = {};
-
-// Drop can be included in external libraries.  Calling createContext gives you a fresh
-// copy of drop which won't interact with other copies on the page (beyond calling the document events).
-
-function createContext() {
-  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
-
-  var drop = function drop() {
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return new (_bind.apply(DropInstance, [null].concat(args)))();
-  };
-
-  extend(drop, {
-    createContext: createContext,
-    drops: [],
-    defaults: {}
-  });
-
-  var defaultOptions = {
-    classPrefix: 'drop',
-    defaults: {
-      position: 'bottom left',
-      openOn: 'click',
-      beforeClose: null,
-      constrainToScrollParent: true,
-      constrainToWindow: true,
-      classes: '',
-      remove: false,
-      openDelay: 0,
-      closeDelay: 50,
-      // inherited from openDelay and closeDelay if not explicitly defined
-      focusDelay: null,
-      blurDelay: null,
-      hoverOpenDelay: null,
-      hoverCloseDelay: null,
-      tetherOptions: {}
-    }
-  };
-
-  extend(drop, defaultOptions, options);
-  extend(drop.defaults, defaultOptions.defaults, options.defaults);
-
-  if (typeof allDrops[drop.classPrefix] === 'undefined') {
-    allDrops[drop.classPrefix] = [];
-  }
-
-  drop.updateBodyClasses = function () {
-    // There is only one body, so despite the context concept, we still iterate through all
-    // drops which share our classPrefix.
-
-    var anyOpen = false;
-    var drops = allDrops[drop.classPrefix];
-    var len = drops.length;
-    for (var i = 0; i < len; ++i) {
-      if (drops[i].isOpened()) {
-        anyOpen = true;
-        break;
-      }
-    }
-
-    if (anyOpen) {
-      addClass(document.body, drop.classPrefix + '-open');
-    } else {
-      removeClass(document.body, drop.classPrefix + '-open');
-    }
-  };
-
-  var DropInstance = (function (_Evented) {
-    _inherits(DropInstance, _Evented);
-
-    function DropInstance(opts) {
-      _classCallCheck(this, DropInstance);
-
-      _get(Object.getPrototypeOf(DropInstance.prototype), 'constructor', this).call(this);
-      this.options = extend({}, drop.defaults, opts);
-      this.target = this.options.target;
-
-      if (typeof this.target === 'undefined') {
-        throw new Error('Drop Error: You must provide a target.');
-      }
-
-      var dataPrefix = 'data-' + drop.classPrefix;
-
-      var contentAttr = this.target.getAttribute(dataPrefix);
-      if (contentAttr && this.options.content == null) {
-        this.options.content = contentAttr;
-      }
-
-      var attrsOverride = ['position', 'openOn'];
-      for (var i = 0; i < attrsOverride.length; ++i) {
-
-        var override = this.target.getAttribute(dataPrefix + '-' + attrsOverride[i]);
-        if (override && this.options[attrsOverride[i]] == null) {
-          this.options[attrsOverride[i]] = override;
-        }
-      }
-
-      if (this.options.classes && this.options.addTargetClasses !== false) {
-        addClass(this.target, this.options.classes);
-      }
-
-      drop.drops.push(this);
-      allDrops[drop.classPrefix].push(this);
-
-      this._boundEvents = [];
-      this.bindMethods();
-      this.setupElements();
-      this.setupEvents();
-      this.setupTether();
-    }
-
-    _createClass(DropInstance, [{
-      key: '_on',
-      value: function _on(element, event, handler) {
-        this._boundEvents.push({ element: element, event: event, handler: handler });
-        element.addEventListener(event, handler);
-      }
-    }, {
-      key: 'bindMethods',
-      value: function bindMethods() {
-        this.transitionEndHandler = this._transitionEndHandler.bind(this);
-      }
-    }, {
-      key: 'setupElements',
-      value: function setupElements() {
-        var _this = this;
-
-        this.drop = document.createElement('div');
-        addClass(this.drop, drop.classPrefix);
-
-        if (this.options.classes) {
-          addClass(this.drop, this.options.classes);
-        }
-
-        this.content = document.createElement('div');
-        addClass(this.content, drop.classPrefix + '-content');
-
-        if (typeof this.options.content === 'function') {
-          var generateAndSetContent = function generateAndSetContent() {
-            // content function might return a string or an element
-            var contentElementOrHTML = _this.options.content.call(_this, _this);
-
-            if (typeof contentElementOrHTML === 'string') {
-              _this.content.innerHTML = contentElementOrHTML;
-            } else if (typeof contentElementOrHTML === 'object') {
-              _this.content.innerHTML = '';
-              _this.content.appendChild(contentElementOrHTML);
-            } else {
-              throw new Error('Drop Error: Content function should return a string or HTMLElement.');
-            }
-          };
-
-          generateAndSetContent();
-          this.on('open', generateAndSetContent.bind(this));
-        } else if (typeof this.options.content === 'object') {
-          this.content.appendChild(this.options.content);
-        } else {
-          this.content.innerHTML = this.options.content;
-        }
-
-        this.drop.appendChild(this.content);
-      }
-    }, {
-      key: 'setupTether',
-      value: function setupTether() {
-        // Tether expects two attachment points, one in the target element, one in the
-        // drop.  We use a single one, and use the order as well, to allow us to put
-        // the drop on either side of any of the four corners.  This magic converts between
-        // the two:
-        var dropAttach = this.options.position.split(' ');
-        dropAttach[0] = MIRROR_ATTACH[dropAttach[0]];
-        dropAttach = dropAttach.join(' ');
-
-        var constraints = [];
-        if (this.options.constrainToScrollParent) {
-          constraints.push({
-            to: 'scrollParent',
-            pin: 'top, bottom',
-            attachment: 'together none'
-          });
-        } else {
-          // To get 'out of bounds' classes
-          constraints.push({
-            to: 'scrollParent'
-          });
-        }
-
-        if (this.options.constrainToWindow !== false) {
-          constraints.push({
-            to: 'window',
-            attachment: 'together'
-          });
-        } else {
-          // To get 'out of bounds' classes
-          constraints.push({
-            to: 'window'
-          });
-        }
-
-        var opts = {
-          element: this.drop,
-          target: this.target,
-          attachment: sortAttach(dropAttach),
-          targetAttachment: sortAttach(this.options.position),
-          classPrefix: drop.classPrefix,
-          offset: '0 0',
-          targetOffset: '0 0',
-          enabled: false,
-          constraints: constraints,
-          addTargetClasses: this.options.addTargetClasses
-        };
-
-        if (this.options.tetherOptions !== false) {
-          this.tether = new Tether(extend({}, opts, this.options.tetherOptions));
-        }
-      }
-    }, {
-      key: 'setupEvents',
-      value: function setupEvents() {
-        var _this2 = this;
-
-        if (!this.options.openOn) {
-          return;
-        }
-
-        if (this.options.openOn === 'always') {
-          setTimeout(this.open.bind(this));
-          return;
-        }
-
-        var events = this.options.openOn.split(' ');
-
-        if (events.indexOf('click') >= 0) {
-          var openHandler = function openHandler(event) {
-            _this2.toggle(event);
-            event.preventDefault();
-          };
-
-          var closeHandler = function closeHandler(event) {
-            if (!_this2.isOpened()) {
-              return;
-            }
-
-            // Clicking inside dropdown
-            if (event.target === _this2.drop || _this2.drop.contains(event.target)) {
-              return;
-            }
-
-            // Clicking target
-            if (event.target === _this2.target || _this2.target.contains(event.target)) {
-              return;
-            }
-
-            _this2.close(event);
-          };
-
-          for (var i = 0; i < clickEvents.length; ++i) {
-            var clickEvent = clickEvents[i];
-            this._on(this.target, clickEvent, openHandler);
-            this._on(document, clickEvent, closeHandler);
-          }
-        }
-
-        var inTimeout = null;
-        var outTimeout = null;
-
-        var inHandler = function inHandler(event) {
-          if (outTimeout !== null) {
-            clearTimeout(outTimeout);
-          } else {
-            inTimeout = setTimeout(function () {
-              _this2.open(event);
-              inTimeout = null;
-            }, (event.type === 'focus' ? _this2.options.focusDelay : _this2.options.hoverOpenDelay) || _this2.options.openDelay);
-          }
-        };
-
-        var outHandler = function outHandler(event) {
-          if (inTimeout !== null) {
-            clearTimeout(inTimeout);
-          } else {
-            outTimeout = setTimeout(function () {
-              _this2.close(event);
-              outTimeout = null;
-            }, (event.type === 'blur' ? _this2.options.blurDelay : _this2.options.hoverCloseDelay) || _this2.options.closeDelay);
-          }
-        };
-
-        if (events.indexOf('hover') >= 0) {
-          this._on(this.target, 'mouseover', inHandler);
-          this._on(this.drop, 'mouseover', inHandler);
-          this._on(this.target, 'mouseout', outHandler);
-          this._on(this.drop, 'mouseout', outHandler);
-        }
-
-        if (events.indexOf('focus') >= 0) {
-          this._on(this.target, 'focus', inHandler);
-          this._on(this.drop, 'focus', inHandler);
-          this._on(this.target, 'blur', outHandler);
-          this._on(this.drop, 'blur', outHandler);
-        }
-      }
-    }, {
-      key: 'isOpened',
-      value: function isOpened() {
-        if (this.drop) {
-          return hasClass(this.drop, drop.classPrefix + '-open');
-        }
-      }
-    }, {
-      key: 'toggle',
-      value: function toggle(event) {
-        if (this.isOpened()) {
-          this.close(event);
-        } else {
-          this.open(event);
-        }
-      }
-    }, {
-      key: 'open',
-      value: function open(event) {
-        var _this3 = this;
-
-        /* eslint no-unused-vars: 0 */
-        if (this.isOpened()) {
-          return;
-        }
-
-        if (!this.drop.parentNode) {
-          document.body.appendChild(this.drop);
-        }
-
-        if (typeof this.tether !== 'undefined') {
-          this.tether.enable();
-        }
-
-        addClass(this.drop, drop.classPrefix + '-open');
-        addClass(this.drop, drop.classPrefix + '-open-transitionend');
-
-        setTimeout(function () {
-          if (_this3.drop) {
-            addClass(_this3.drop, drop.classPrefix + '-after-open');
-          }
-        });
-
-        if (typeof this.tether !== 'undefined') {
-          this.tether.position();
-        }
-
-        this.trigger('open');
-
-        drop.updateBodyClasses();
-      }
-    }, {
-      key: '_transitionEndHandler',
-      value: function _transitionEndHandler(e) {
-        if (e.target !== e.currentTarget) {
-          return;
-        }
-
-        if (!hasClass(this.drop, drop.classPrefix + '-open')) {
-          removeClass(this.drop, drop.classPrefix + '-open-transitionend');
-        }
-        this.drop.removeEventListener(transitionEndEvent, this.transitionEndHandler);
-      }
-    }, {
-      key: 'beforeCloseHandler',
-      value: function beforeCloseHandler(event) {
-        var shouldClose = true;
-
-        if (!this.isClosing && typeof this.options.beforeClose === 'function') {
-          this.isClosing = true;
-          shouldClose = this.options.beforeClose(event, this) !== false;
-        }
-
-        this.isClosing = false;
-
-        return shouldClose;
-      }
-    }, {
-      key: 'close',
-      value: function close(event) {
-        if (!this.isOpened()) {
-          return;
-        }
-
-        if (!this.beforeCloseHandler(event)) {
-          return;
-        }
-
-        removeClass(this.drop, drop.classPrefix + '-open');
-        removeClass(this.drop, drop.classPrefix + '-after-open');
-
-        this.drop.addEventListener(transitionEndEvent, this.transitionEndHandler);
-
-        this.trigger('close');
-
-        if (typeof this.tether !== 'undefined') {
-          this.tether.disable();
-        }
-
-        drop.updateBodyClasses();
-
-        if (this.options.remove) {
-          this.remove(event);
-        }
-      }
-    }, {
-      key: 'remove',
-      value: function remove(event) {
-        this.close(event);
-        if (this.drop.parentNode) {
-          this.drop.parentNode.removeChild(this.drop);
-        }
-      }
-    }, {
-      key: 'position',
-      value: function position() {
-        if (this.isOpened() && typeof this.tether !== 'undefined') {
-          this.tether.position();
-        }
-      }
-    }, {
-      key: 'destroy',
-      value: function destroy() {
-        this.remove();
-
-        if (typeof this.tether !== 'undefined') {
-          this.tether.destroy();
-        }
-
-        for (var i = 0; i < this._boundEvents.length; ++i) {
-          var _boundEvents$i = this._boundEvents[i];
-          var element = _boundEvents$i.element;
-          var _event = _boundEvents$i.event;
-          var handler = _boundEvents$i.handler;
-
-          element.removeEventListener(_event, handler);
-        }
-
-        this._boundEvents = [];
-
-        this.tether = null;
-        this.drop = null;
-        this.content = null;
-        this.target = null;
-
-        removeFromArray(allDrops[drop.classPrefix], this);
-        removeFromArray(drop.drops, this);
-      }
-    }]);
-
-    return DropInstance;
-  })(Evented);
-
-  return drop;
-}
-
-var Drop = createContext();
-
-document.addEventListener('DOMContentLoaded', function () {
-  Drop.updateBodyClasses();
-});
-return Drop;
-
-}));
-
-
-/***/ }),
-/* 211 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether-tooltip 1.1.0 */
-
-(function(root, factory) {
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(210),__webpack_require__(106)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('tether-drop'), require('tether'));
-  } else {
-    root.Tooltip = factory(root.Drop, root.Tether);
-  }
-}(this, function(Drop, Tether) {
-
-/* global Tether Drop */
-
-'use strict';
-
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-var extend = Tether.Utils.extend;
-
-var _Drop = Drop.createContext({
-  classPrefix: 'tooltip'
-});
-
-var defaults = {
-  position: 'top center',
-  openOn: 'hover',
-  classes: 'tooltip-theme-arrows',
-  constrainToWindow: true,
-  constrainToScrollParent: false
-};
-
-var tooltipCount = 0;
-
-var Tooltip = (function () {
-  function Tooltip(options) {
-    _classCallCheck(this, Tooltip);
-
-    this.options = options;
-
-    if (!this.options.target) {
-      throw new Error('Tooltip Error: You must provide a target for Tooltip to attach to');
-    }
-
-    var position = this.options.target.getAttribute('data-tooltip-position');
-    if (position) {
-      if (typeof this.options.position === 'undefined') {
-        this.options.position = position;
-      }
-    }
-
-    var content = this.options.target.getAttribute('data-tooltip');
-
-    if (content) {
-      if (typeof this.options.content === 'undefined') {
-        var contentEl = document.createElement('div');
-        contentEl.innerHTML = content;
-
-        // Add ARIA attributes (see #50)
-        contentEl.setAttribute('role', 'tooltip');
-        contentEl.id = 'drop-tooltip-' + tooltipCount;
-        this.options.target.setAttribute('aria-describedby', contentEl.id);
-        tooltipCount += 1;
-
-        this.options.content = contentEl;
-      }
-    }
-
-    if (!this.options.content) {
-      throw new Error('Tooltip Error: You must provide content for Tooltip to display');
-    }
-
-    this.options = extend({}, defaults, this.options);
-
-    this.drop = new _Drop(this.options);
-  }
-
-  _createClass(Tooltip, [{
-    key: 'close',
-    value: function close() {
-      this.drop.close();
-    }
-  }, {
-    key: 'open',
-    value: function open() {
-      this.drop.open();
-    }
-  }, {
-    key: 'toggle',
-    value: function toggle() {
-      this.drop.toggle();
-    }
-  }, {
-    key: 'remove',
-    value: function remove() {
-      this.drop.remove();
-    }
-  }, {
-    key: 'destroy',
-    value: function destroy() {
-      this.drop.destroy();
-    }
-  }, {
-    key: 'position',
-    value: function position() {
-      this.drop.position();
-    }
-  }]);
-
-  return Tooltip;
-})();
-
-var initialized = [];
-
-Tooltip.init = function () {
-  var tooltipElements = document.querySelectorAll('[data-tooltip]');
-  var len = tooltipElements.length;
-  for (var i = 0; i < len; ++i) {
-    var el = tooltipElements[i];
-    if (initialized.indexOf(el) === -1) {
-      new Tooltip({
-        target: el
-      });
-      initialized.push(el);
-    }
-  }
-};
-
-document.addEventListener('DOMContentLoaded', function () {
-  if (Tooltip.autoinit !== false) {
-    Tooltip.init();
-  }
-});
-return Tooltip;
-
-}));
-
-
-/***/ }),
-/* 212 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(209);
-/**!
-* tippy.js v4.3.5
-* (c) 2017-2019 atomiks
-* MIT License
-*/
-
-
-var css = ".tippy-iOS{cursor:pointer!important;-webkit-tap-highlight-color:transparent}.tippy-popper{transition-timing-function:cubic-bezier(.165,.84,.44,1);max-width:calc(100% - 8px);pointer-events:none;outline:0}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-7px;bottom:-6.5px;-webkit-transform-origin:50% 0;transform-origin:50% 0;margin:0 3px}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;bottom:-7px;margin:0 3px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 25%;transform-origin:0 25%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%)}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%,-45%);transform:scale(.2) translate(-50%,-45%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(-10px);transform:perspective(700px) translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(60deg);transform:perspective(700px) rotateX(60deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=top] [data-animation=scale]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px) scale(.5);transform:translateY(-10px) scale(.5)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-7px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%;margin:0 3px}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:8px solid #333;border-right:8px solid transparent;border-left:8px solid transparent;top:-7px;margin:0 3px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%)}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-50%);transform:scale(.2) translate(-50%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateY(10px);transform:perspective(700px) translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateX(-60deg);transform:perspective(700px) rotateX(-60deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=scale]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px) scale(.5);transform:translateY(10px) scale(.5)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-12px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%;margin:3px 0}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-75%,-50%);transform:scale(.2) translate(-75%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(-10px);transform:perspective(700px) translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(-60deg);transform:perspective(700px) rotateY(-60deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=left] [data-animation=scale]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px) scale(.5);transform:translateX(-10px) scale(.5)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-12px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%;margin:3px 0}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:8px solid #333;border-top:8px solid transparent;border-bottom:8px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%)}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(.2) translate(-25%,-50%);transform:scale(.2) translate(-25%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{-webkit-transform:perspective(700px) translateX(10px);transform:perspective(700px) translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:perspective(700px) rotateY(60deg);transform:perspective(700px) rotateY(60deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-popper[x-placement^=right] [data-animation=scale]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px) scale(.5);transform:translateX(10px) scale(.5)}.tippy-tooltip{position:relative;color:#fff;border-radius:.25rem;font-size:.875rem;padding:.3125rem .5625rem;line-height:1.4;text-align:center;background-color:#333}.tippy-tooltip[data-size=small]{padding:.1875rem .375rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.375rem .75rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:initial}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] .tippy-roundarrow path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:18px;height:7px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;background-color:#333;border-radius:50%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:\"\";float:left;padding-top:100%}.tippy-backdrop+.tippy-content{transition-property:opacity;will-change:opacity}.tippy-backdrop+.tippy-content[data-state=hidden]{opacity:0}";
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-var version = "4.3.5";
-
-var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
-var ua = isBrowser ? navigator.userAgent : '';
-var isIE = /MSIE |Trident\//.test(ua);
-var isUCBrowser = /UCBrowser\//.test(ua);
-var isIOS = isBrowser && /iPhone|iPad|iPod/.test(navigator.platform) && !window.MSStream;
-
-var defaultProps = {
-  a11y: true,
-  allowHTML: true,
-  animateFill: true,
-  animation: 'shift-away',
-  appendTo: function appendTo() {
-    return document.body;
-  },
-  aria: 'describedby',
-  arrow: false,
-  arrowType: 'sharp',
-  boundary: 'scrollParent',
-  content: '',
-  delay: 0,
-  distance: 10,
-  duration: [325, 275],
-  flip: true,
-  flipBehavior: 'flip',
-  flipOnUpdate: false,
-  followCursor: false,
-  hideOnClick: true,
-  ignoreAttributes: false,
-  inertia: false,
-  interactive: false,
-  interactiveBorder: 2,
-  interactiveDebounce: 0,
-  lazy: true,
-  maxWidth: 350,
-  multiple: false,
-  offset: 0,
-  onHidden: function onHidden() {},
-  onHide: function onHide() {},
-  onMount: function onMount() {},
-  onShow: function onShow() {},
-  onShown: function onShown() {},
-  onTrigger: function onTrigger() {},
-  placement: 'top',
-  popperOptions: {},
-  role: 'tooltip',
-  showOnInit: false,
-  size: 'regular',
-  sticky: false,
-  target: '',
-  theme: 'dark',
-  touch: true,
-  touchHold: false,
-  trigger: 'mouseenter focus',
-  triggerTarget: null,
-  updateDuration: 0,
-  wait: null,
-  zIndex: 9999
-  /**
-   * If the set() method encounters one of these, the popperInstance must be
-   * recreated
-   */
-
-};
-var POPPER_INSTANCE_DEPENDENCIES = ['arrow', 'arrowType', 'boundary', 'distance', 'flip', 'flipBehavior', 'flipOnUpdate', 'offset', 'placement', 'popperOptions'];
-
-var elementProto = isBrowser ? Element.prototype : {};
-var matches = elementProto.matches || elementProto.matchesSelector || elementProto.webkitMatchesSelector || elementProto.mozMatchesSelector || elementProto.msMatchesSelector;
-/**
- * Ponyfill for Array.from - converts iterable values to an array
- */
-
-function arrayFrom(value) {
-  return [].slice.call(value);
-}
-/**
- * Ponyfill for Element.prototype.closest
- */
-
-function closest(element, selector) {
-  return closestCallback(element, function (el) {
-    return matches.call(el, selector);
-  });
-}
-/**
- * Works like Element.prototype.closest, but uses a callback instead
- */
-
-function closestCallback(element, callback) {
-  while (element) {
-    if (callback(element)) {
-      return element;
-    }
-
-    element = element.parentElement;
-  }
-
-  return null;
-}
-
-// Passive event listener config
-var PASSIVE = {
-  passive: true // Popper `preventOverflow` padding
-
-};
-var PADDING = 4; // Popper attributes
-// In Popper v2 these will be `data-*` instead of `x-*` to adhere to HTML5 spec
-
-var PLACEMENT_ATTRIBUTE = 'x-placement';
-var OUT_OF_BOUNDARIES_ATTRIBUTE = 'x-out-of-boundaries'; // Classes
-
-var IOS_CLASS = "tippy-iOS";
-var ACTIVE_CLASS = "tippy-active";
-var POPPER_CLASS = "tippy-popper";
-var TOOLTIP_CLASS = "tippy-tooltip";
-var CONTENT_CLASS = "tippy-content";
-var BACKDROP_CLASS = "tippy-backdrop";
-var ARROW_CLASS = "tippy-arrow";
-var ROUND_ARROW_CLASS = "tippy-roundarrow"; // Selectors
-
-var POPPER_SELECTOR = ".".concat(POPPER_CLASS);
-var TOOLTIP_SELECTOR = ".".concat(TOOLTIP_CLASS);
-var CONTENT_SELECTOR = ".".concat(CONTENT_CLASS);
-var BACKDROP_SELECTOR = ".".concat(BACKDROP_CLASS);
-var ARROW_SELECTOR = ".".concat(ARROW_CLASS);
-var ROUND_ARROW_SELECTOR = ".".concat(ROUND_ARROW_CLASS);
-
-var isUsingTouch = false;
-function onDocumentTouch() {
-  if (isUsingTouch) {
-    return;
-  }
-
-  isUsingTouch = true;
-
-  if (isIOS) {
-    document.body.classList.add(IOS_CLASS);
-  }
-
-  if (window.performance) {
-    document.addEventListener('mousemove', onDocumentMouseMove);
-  }
-}
-var lastMouseMoveTime = 0;
-function onDocumentMouseMove() {
-  var now = performance.now(); // Chrome 60+ is 1 mousemove per animation frame, use 20ms time difference
-
-  if (now - lastMouseMoveTime < 20) {
-    isUsingTouch = false;
-    document.removeEventListener('mousemove', onDocumentMouseMove);
-
-    if (!isIOS) {
-      document.body.classList.remove(IOS_CLASS);
-    }
-  }
-
-  lastMouseMoveTime = now;
-}
-function onWindowBlur() {
-  var _document = document,
-      activeElement = _document.activeElement;
-
-  if (activeElement && activeElement.blur && activeElement._tippy) {
-    activeElement.blur();
-  }
-}
-/**
- * Adds the needed global event listeners
- */
-
-function bindGlobalEventListeners() {
-  document.addEventListener('touchstart', onDocumentTouch, PASSIVE);
-  window.addEventListener('blur', onWindowBlur);
-}
-
-var keys = Object.keys(defaultProps);
-/**
- * Returns an object of optional props from data-tippy-* attributes
- */
-
-function getDataAttributeOptions(reference) {
-  return keys.reduce(function (acc, key) {
-    var valueAsString = (reference.getAttribute("data-tippy-".concat(key)) || '').trim();
-
-    if (!valueAsString) {
-      return acc;
-    }
-
-    if (key === 'content') {
-      acc[key] = valueAsString;
-    } else {
-      try {
-        acc[key] = JSON.parse(valueAsString);
-      } catch (e) {
-        acc[key] = valueAsString;
-      }
-    }
-
-    return acc;
-  }, {});
-}
-/**
- * Polyfills the virtual reference (plain object) with Element.prototype props
- * Mutating because DOM elements are mutated, adds `_tippy` property
- */
-
-function polyfillElementPrototypeProperties(virtualReference) {
-  var polyfills = {
-    isVirtual: true,
-    attributes: virtualReference.attributes || {},
-    contains: function contains() {},
-    setAttribute: function setAttribute(key, value) {
-      virtualReference.attributes[key] = value;
-    },
-    getAttribute: function getAttribute(key) {
-      return virtualReference.attributes[key];
-    },
-    removeAttribute: function removeAttribute(key) {
-      delete virtualReference.attributes[key];
-    },
-    hasAttribute: function hasAttribute(key) {
-      return key in virtualReference.attributes;
-    },
-    addEventListener: function addEventListener() {},
-    removeEventListener: function removeEventListener() {},
-    classList: {
-      classNames: {},
-      add: function add(key) {
-        virtualReference.classList.classNames[key] = true;
-      },
-      remove: function remove(key) {
-        delete virtualReference.classList.classNames[key];
-      },
-      contains: function contains(key) {
-        return key in virtualReference.classList.classNames;
-      }
-    }
-  };
-
-  for (var key in polyfills) {
-    virtualReference[key] = polyfills[key];
-  }
-}
-
-/**
- * Determines if a value is a "bare" virtual element (before mutations done
- * by `polyfillElementPrototypeProperties()`). JSDOM elements show up as
- * [object Object], we can check if the value is "element-like" if it has
- * `addEventListener`
- */
-
-function isBareVirtualElement(value) {
-  return {}.toString.call(value) === '[object Object]' && !value.addEventListener;
-}
-/**
- * Determines if the value is a reference element
- */
-
-function isReferenceElement(value) {
-  return !!value._tippy && !matches.call(value, POPPER_SELECTOR);
-}
-/**
- * Safe .hasOwnProperty check, for prototype-less objects
- */
-
-function hasOwnProperty(obj, key) {
-  return {}.hasOwnProperty.call(obj, key);
-}
-/**
- * Returns an array of elements based on the value
- */
-
-function getArrayOfElements(value) {
-  if (isSingular(value)) {
-    // TODO: VirtualReference is not compatible to type Element
-    return [value];
-  }
-
-  if (value instanceof NodeList) {
-    return arrayFrom(value);
-  }
-
-  if (Array.isArray(value)) {
-    return value;
-  }
-
-  try {
-    return arrayFrom(document.querySelectorAll(value));
-  } catch (e) {
-    return [];
-  }
-}
-/**
- * Returns a value at a given index depending on if it's an array or number
- */
-
-function getValue(value, index, defaultValue) {
-  if (Array.isArray(value)) {
-    var v = value[index];
-    return v == null ? defaultValue : v;
-  }
-
-  return value;
-}
-/**
- * Debounce utility. To avoid bloating bundle size, we're only passing 1
- * argument here, a more generic function would pass all arguments. Only
- * `onMouseMove` uses this which takes the event object for now.
- */
-
-function debounce(fn, ms) {
-  // Avoid wrapping in `setTimeout` if ms is 0 anyway
-  if (ms === 0) {
-    return fn;
-  }
-
-  var timeout;
-  return function (arg) {
-    clearTimeout(timeout);
-    timeout = setTimeout(function () {
-      fn(arg);
-    }, ms);
-  };
-}
-/**
- * Prevents errors from being thrown while accessing nested modifier objects
- * in `popperOptions`
- */
-
-function getModifier(obj, key) {
-  return obj && obj.modifiers && obj.modifiers[key];
-}
-/**
- * Determines if an array or string includes a value
- */
-
-function includes(a, b) {
-  return a.indexOf(b) > -1;
-}
-/**
- * Determines if the value is a real element
- */
-
-function isRealElement(value) {
-  return value instanceof Element;
-}
-/**
- * Determines if the value is singular-like
- */
-
-function isSingular(value) {
-  return !!(value && hasOwnProperty(value, 'isVirtual')) || isRealElement(value);
-}
-/**
- * Firefox extensions don't allow setting .innerHTML directly, this will trick it
- */
-
-function innerHTML() {
-  return 'innerHTML';
-}
-/**
- * Evaluates a function if one, or returns the value
- */
-
-function invokeWithArgsOrReturn(value, args) {
-  return typeof value === 'function' ? value.apply(null, args) : value;
-}
-/**
- * Sets a popperInstance `flip` modifier's enabled state
- */
-
-function setFlipModifierEnabled(modifiers, value) {
-  modifiers.filter(function (m) {
-    return m.name === 'flip';
-  })[0].enabled = value;
-}
-/**
- * Determines if an element can receive focus
- * Always returns true for virtual objects
- */
-
-function canReceiveFocus(element) {
-  return isRealElement(element) ? matches.call(element, 'a[href],area[href],button,details,input,textarea,select,iframe,[tabindex]') && !element.hasAttribute('disabled') : true;
-}
-/**
- * Returns a new `div` element
- */
-
-function div() {
-  return document.createElement('div');
-}
-/**
- * Applies a transition duration to a list of elements
- */
-
-function setTransitionDuration(els, value) {
-  els.forEach(function (el) {
-    if (el) {
-      el.style.transitionDuration = "".concat(value, "ms");
-    }
-  });
-}
-/**
- * Sets the visibility state to elements so they can begin to transition
- */
-
-function setVisibilityState(els, state) {
-  els.forEach(function (el) {
-    if (el) {
-      el.setAttribute('data-state', state);
-    }
-  });
-}
-/**
- * Evaluates the props object by merging data attributes and
- * disabling conflicting options where necessary
- */
-
-function evaluateProps(reference, props) {
-  var out = _extends({}, props, {
-    content: invokeWithArgsOrReturn(props.content, [reference])
-  }, props.ignoreAttributes ? {} : getDataAttributeOptions(reference));
-
-  if (out.arrow || isUCBrowser) {
-    out.animateFill = false;
-  }
-
-  return out;
-}
-/**
- * Validates an object of options with the valid default props object
- */
-
-function validateOptions(options, defaultProps) {
-  Object.keys(options).forEach(function (option) {
-    if (!hasOwnProperty(defaultProps, option)) {
-      throw new Error("[tippy]: `".concat(option, "` is not a valid option"));
-    }
-  });
-}
-
-/**
- * Sets the innerHTML of an element
- */
-
-function setInnerHTML(element, html) {
-  element[innerHTML()] = isRealElement(html) ? html[innerHTML()] : html;
-}
-/**
- * Sets the content of a tooltip
- */
-
-function setContent(contentEl, props) {
-  if (isRealElement(props.content)) {
-    setInnerHTML(contentEl, '');
-    contentEl.appendChild(props.content);
-  } else if (typeof props.content !== 'function') {
-    var key = props.allowHTML ? 'innerHTML' : 'textContent';
-    contentEl[key] = props.content;
-  }
-}
-/**
- * Returns the child elements of a popper element
- */
-
-function getChildren(popper) {
-  return {
-    tooltip: popper.querySelector(TOOLTIP_SELECTOR),
-    backdrop: popper.querySelector(BACKDROP_SELECTOR),
-    content: popper.querySelector(CONTENT_SELECTOR),
-    arrow: popper.querySelector(ARROW_SELECTOR) || popper.querySelector(ROUND_ARROW_SELECTOR)
-  };
-}
-/**
- * Adds `data-inertia` attribute
- */
-
-function addInertia(tooltip) {
-  tooltip.setAttribute('data-inertia', '');
-}
-/**
- * Removes `data-inertia` attribute
- */
-
-function removeInertia(tooltip) {
-  tooltip.removeAttribute('data-inertia');
-}
-/**
- * Creates an arrow element and returns it
- */
-
-function createArrowElement(arrowType) {
-  var arrow = div();
-
-  if (arrowType === 'round') {
-    arrow.className = ROUND_ARROW_CLASS;
-    setInnerHTML(arrow, '<svg viewBox="0 0 18 7" xmlns="http://www.w3.org/2000/svg"><path d="M0 7s2.021-.015 5.253-4.218C6.584 1.051 7.797.007 9 0c1.203-.007 2.416 1.035 3.761 2.782C16.012 7.005 18 7 18 7H0z"/></svg>');
-  } else {
-    arrow.className = ARROW_CLASS;
-  }
-
-  return arrow;
-}
-/**
- * Creates a backdrop element and returns it
- */
-
-function createBackdropElement() {
-  var backdrop = div();
-  backdrop.className = BACKDROP_CLASS;
-  backdrop.setAttribute('data-state', 'hidden');
-  return backdrop;
-}
-/**
- * Adds interactive-related attributes
- */
-
-function addInteractive(popper, tooltip) {
-  popper.setAttribute('tabindex', '-1');
-  tooltip.setAttribute('data-interactive', '');
-}
-/**
- * Removes interactive-related attributes
- */
-
-function removeInteractive(popper, tooltip) {
-  popper.removeAttribute('tabindex');
-  tooltip.removeAttribute('data-interactive');
-}
-/**
- * Add/remove transitionend listener from tooltip
- */
-
-function updateTransitionEndListener(tooltip, action, listener) {
-  // UC Browser hasn't adopted the `transitionend` event despite supporting
-  // unprefixed transitions...
-  var eventName = isUCBrowser && document.body.style.webkitTransition !== undefined ? 'webkitTransitionEnd' : 'transitionend';
-  tooltip[action + 'EventListener'](eventName, listener);
-}
-/**
- * Returns the popper's placement, ignoring shifting (top-start, etc)
- */
-
-function getBasicPlacement(popper) {
-  var fullPlacement = popper.getAttribute(PLACEMENT_ATTRIBUTE);
-  return fullPlacement ? fullPlacement.split('-')[0] : '';
-}
-/**
- * Triggers reflow
- */
-
-function reflow(popper) {
-  void popper.offsetHeight;
-}
-/**
- * Adds/removes theme from tooltip's classList
- */
-
-function updateTheme(tooltip, action, theme) {
-  theme.split(' ').forEach(function (themeName) {
-    tooltip.classList[action](themeName + '-theme');
-  });
-}
-/**
- * Constructs the popper element and returns it
- */
-
-function createPopperElement(id, props) {
-  var popper = div();
-  popper.className = POPPER_CLASS;
-  popper.id = "tippy-".concat(id);
-  popper.style.zIndex = '' + props.zIndex;
-  popper.style.position = 'absolute';
-  popper.style.top = '0';
-  popper.style.left = '0';
-
-  if (props.role) {
-    popper.setAttribute('role', props.role);
-  }
-
-  var tooltip = div();
-  tooltip.className = TOOLTIP_CLASS;
-  tooltip.style.maxWidth = props.maxWidth + (typeof props.maxWidth === 'number' ? 'px' : '');
-  tooltip.setAttribute('data-size', props.size);
-  tooltip.setAttribute('data-animation', props.animation);
-  tooltip.setAttribute('data-state', 'hidden');
-  updateTheme(tooltip, 'add', props.theme);
-  var content = div();
-  content.className = CONTENT_CLASS;
-  content.setAttribute('data-state', 'hidden');
-
-  if (props.interactive) {
-    addInteractive(popper, tooltip);
-  }
-
-  if (props.arrow) {
-    tooltip.appendChild(createArrowElement(props.arrowType));
-  }
-
-  if (props.animateFill) {
-    tooltip.appendChild(createBackdropElement());
-    tooltip.setAttribute('data-animatefill', '');
-  }
-
-  if (props.inertia) {
-    addInertia(tooltip);
-  }
-
-  setContent(content, props);
-  tooltip.appendChild(content);
-  popper.appendChild(tooltip);
-  return popper;
-}
-/**
- * Updates the popper element based on the new props
- */
-
-function updatePopperElement(popper, prevProps, nextProps) {
-  var _getChildren = getChildren(popper),
-      tooltip = _getChildren.tooltip,
-      content = _getChildren.content,
-      backdrop = _getChildren.backdrop,
-      arrow = _getChildren.arrow;
-
-  popper.style.zIndex = '' + nextProps.zIndex;
-  tooltip.setAttribute('data-size', nextProps.size);
-  tooltip.setAttribute('data-animation', nextProps.animation);
-  tooltip.style.maxWidth = nextProps.maxWidth + (typeof nextProps.maxWidth === 'number' ? 'px' : '');
-
-  if (nextProps.role) {
-    popper.setAttribute('role', nextProps.role);
-  } else {
-    popper.removeAttribute('role');
-  }
-
-  if (prevProps.content !== nextProps.content) {
-    setContent(content, nextProps);
-  } // animateFill
-
-
-  if (!prevProps.animateFill && nextProps.animateFill) {
-    tooltip.appendChild(createBackdropElement());
-    tooltip.setAttribute('data-animatefill', '');
-  } else if (prevProps.animateFill && !nextProps.animateFill) {
-    tooltip.removeChild(backdrop);
-    tooltip.removeAttribute('data-animatefill');
-  } // arrow
-
-
-  if (!prevProps.arrow && nextProps.arrow) {
-    tooltip.appendChild(createArrowElement(nextProps.arrowType));
-  } else if (prevProps.arrow && !nextProps.arrow) {
-    tooltip.removeChild(arrow);
-  } // arrowType
-
-
-  if (prevProps.arrow && nextProps.arrow && prevProps.arrowType !== nextProps.arrowType) {
-    tooltip.replaceChild(createArrowElement(nextProps.arrowType), arrow);
-  } // interactive
-
-
-  if (!prevProps.interactive && nextProps.interactive) {
-    addInteractive(popper, tooltip);
-  } else if (prevProps.interactive && !nextProps.interactive) {
-    removeInteractive(popper, tooltip);
-  } // inertia
-
-
-  if (!prevProps.inertia && nextProps.inertia) {
-    addInertia(tooltip);
-  } else if (prevProps.inertia && !nextProps.inertia) {
-    removeInertia(tooltip);
-  } // theme
-
-
-  if (prevProps.theme !== nextProps.theme) {
-    updateTheme(tooltip, 'remove', prevProps.theme);
-    updateTheme(tooltip, 'add', nextProps.theme);
-  }
-}
-/**
- * Hides all visible poppers on the document
- */
-
-function hideAll() {
-  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      excludedReferenceOrInstance = _ref.exclude,
-      duration = _ref.duration;
-
-  arrayFrom(document.querySelectorAll(POPPER_SELECTOR)).forEach(function (popper) {
-    var instance = popper._tippy;
-
-    if (instance) {
-      var isExcluded = false;
-
-      if (excludedReferenceOrInstance) {
-        isExcluded = isReferenceElement(excludedReferenceOrInstance) ? instance.reference === excludedReferenceOrInstance : popper === excludedReferenceOrInstance.popper;
-      }
-
-      if (!isExcluded) {
-        instance.hide(duration);
-      }
-    }
-  });
-}
-/**
- * Determines if the mouse cursor is outside of the popper's interactive border
- * region
- */
-
-function isCursorOutsideInteractiveBorder(popperPlacement, popperRect, event, props) {
-  if (!popperPlacement) {
-    return true;
-  }
-
-  var x = event.clientX,
-      y = event.clientY;
-  var interactiveBorder = props.interactiveBorder,
-      distance = props.distance;
-  var exceedsTop = popperRect.top - y > (popperPlacement === 'top' ? interactiveBorder + distance : interactiveBorder);
-  var exceedsBottom = y - popperRect.bottom > (popperPlacement === 'bottom' ? interactiveBorder + distance : interactiveBorder);
-  var exceedsLeft = popperRect.left - x > (popperPlacement === 'left' ? interactiveBorder + distance : interactiveBorder);
-  var exceedsRight = x - popperRect.right > (popperPlacement === 'right' ? interactiveBorder + distance : interactiveBorder);
-  return exceedsTop || exceedsBottom || exceedsLeft || exceedsRight;
-}
-/**
- * Returns the distance offset, taking into account the default offset due to
- * the transform: translate() rule (10px) in CSS
- */
-
-function getOffsetDistanceInPx(distance) {
-  return -(distance - 10) + 'px';
-}
-
-var idCounter = 1; // Workaround for IE11's lack of new MouseEvent constructor
-
-var mouseMoveListeners = [];
-/**
- * Creates and returns a Tippy object. We're using a closure pattern instead of
- * a class so that the exposed object API is clean without private members
- * prefixed with `_`.
- */
-
-function createTippy(reference, collectionProps) {
-  var props = evaluateProps(reference, collectionProps); // If the reference shouldn't have multiple tippys, return null early
-
-  if (!props.multiple && reference._tippy) {
-    return null;
-  }
-  /* ======================= 🔒 Private members 🔒 ======================= */
-
-
-  var lastTriggerEventType;
-  var lastMouseMoveEvent;
-  var showTimeoutId;
-  var hideTimeoutId;
-  var scheduleHideAnimationFrameId;
-  var isScheduledToShow = false;
-  var isBeingDestroyed = false;
-  var previousPlacement;
-  var wasVisibleDuringPreviousUpdate = false;
-  var hasMountCallbackRun = false;
-  var currentMountCallback;
-  var currentTransitionEndListener;
-  var listeners = [];
-  var currentComputedPadding;
-  var debouncedOnMouseMove = debounce(onMouseMove, props.interactiveDebounce);
-  /* ======================= 🔑 Public members 🔑 ======================= */
-
-  var id = idCounter++;
-  var popper = createPopperElement(id, props);
-  var popperChildren = getChildren(popper);
-  var popperInstance = null;
-  var state = {
-    // Is the instance currently enabled?
-    isEnabled: true,
-    // Is the tippy currently showing and not transitioning out?
-    isVisible: false,
-    // Has the instance been destroyed?
-    isDestroyed: false,
-    // Is the tippy currently mounted to the DOM?
-    isMounted: false,
-    // Has the tippy finished transitioning in?
-    isShown: false
-  };
-  var instance = {
-    // properties
-    id: id,
-    reference: reference,
-    popper: popper,
-    popperChildren: popperChildren,
-    popperInstance: popperInstance,
-    props: props,
-    state: state,
-    // methods
-    clearDelayTimeouts: clearDelayTimeouts,
-    set: set,
-    setContent: setContent,
-    show: show,
-    hide: hide,
-    enable: enable,
-    disable: disable,
-    destroy: destroy
-    /* ==================== Initial instance mutations =================== */
-
-  };
-  reference._tippy = instance;
-  popper._tippy = instance;
-  addTriggersToReference();
-
-  if (!props.lazy) {
-    createPopperInstance();
-  }
-
-  if (props.showOnInit) {
-    scheduleShow();
-  } // Ensure the event listeners target can receive focus
-
-
-  if (props.a11y && !props.target && !canReceiveFocus(getEventListenersTarget())) {
-    getEventListenersTarget().setAttribute('tabindex', '0');
-  } // Prevent a tippy with a delay from hiding if the cursor left then returned
-  // before it started hiding
-
-
-  popper.addEventListener('mouseenter', function (event) {
-    if (instance.props.interactive && instance.state.isVisible && lastTriggerEventType === 'mouseenter') {
-      // We don't want props.onTrigger() to be called here, since the `event`
-      // object is not related to the reference element
-      scheduleShow(event, true);
-    }
-  });
-  popper.addEventListener('mouseleave', function () {
-    if (instance.props.interactive && lastTriggerEventType === 'mouseenter') {
-      document.addEventListener('mousemove', debouncedOnMouseMove);
-    }
-  });
-  return instance;
-  /* ======================= 🔒 Private methods 🔒 ======================= */
-
-  /**
-   * Removes the follow cursor listener
-   */
-
-  function removeFollowCursorListener() {
-    document.removeEventListener('mousemove', positionVirtualReferenceNearCursor);
-  }
-  /**
-   * Cleans up interactive mouse listeners
-   */
-
-
-  function cleanupInteractiveMouseListeners() {
-    document.body.removeEventListener('mouseleave', scheduleHide);
-    document.removeEventListener('mousemove', debouncedOnMouseMove);
-    mouseMoveListeners = mouseMoveListeners.filter(function (listener) {
-      return listener !== debouncedOnMouseMove;
-    });
-  }
-  /**
-   * Returns correct target used for event listeners
-   */
-
-
-  function getEventListenersTarget() {
-    return instance.props.triggerTarget || reference;
-  }
-  /**
-   * Adds the document click event listener for the instance
-   */
-
-
-  function addDocumentClickListener() {
-    document.addEventListener('click', onDocumentClick, true);
-  }
-  /**
-   * Removes the document click event listener for the instance
-   */
-
-
-  function removeDocumentClickListener() {
-    document.removeEventListener('click', onDocumentClick, true);
-  }
-  /**
-   * Returns transitionable inner elements used in show/hide methods
-   */
-
-
-  function getTransitionableElements() {
-    return [instance.popperChildren.tooltip, instance.popperChildren.backdrop, instance.popperChildren.content];
-  }
-  /**
-   * Determines if the instance is in `followCursor` mode.
-   * NOTE: in v5, touch devices will use `initial` behavior no matter the value.
-   */
-
-
-  function getIsInLooseFollowCursorMode() {
-    var followCursor = instance.props.followCursor;
-    return followCursor && lastTriggerEventType !== 'focus' || isUsingTouch && followCursor === 'initial';
-  }
-  /**
-   * Updates the tooltip's position on each animation frame
-   */
-
-
-  function makeSticky() {
-    setTransitionDuration([popper], isIE ? 0 : instance.props.updateDuration);
-    var prevRefRect = reference.getBoundingClientRect();
-
-    function updatePosition() {
-      var currentRefRect = reference.getBoundingClientRect(); // Only schedule an update if the reference rect has changed
-
-      if (prevRefRect.top !== currentRefRect.top || prevRefRect.right !== currentRefRect.right || prevRefRect.bottom !== currentRefRect.bottom || prevRefRect.left !== currentRefRect.left) {
-        instance.popperInstance.scheduleUpdate();
-      }
-
-      prevRefRect = currentRefRect;
-
-      if (instance.state.isMounted) {
-        requestAnimationFrame(updatePosition);
-      }
-    }
-
-    updatePosition();
-  }
-  /**
-   * Invokes a callback once the tooltip has fully transitioned out
-   */
-
-
-  function onTransitionedOut(duration, callback) {
-    onTransitionEnd(duration, function () {
-      if (!instance.state.isVisible && popper.parentNode && popper.parentNode.contains(popper)) {
-        callback();
-      }
-    });
-  }
-  /**
-   * Invokes a callback once the tooltip has fully transitioned in
-   */
-
-
-  function onTransitionedIn(duration, callback) {
-    onTransitionEnd(duration, callback);
-  }
-  /**
-   * Invokes a callback once the tooltip's CSS transition ends
-   */
-
-
-  function onTransitionEnd(duration, callback) {
-    var tooltip = instance.popperChildren.tooltip;
-    /**
-     * Listener added as the `transitionend` handler
-     */
-
-    function listener(event) {
-      if (event.target === tooltip) {
-        updateTransitionEndListener(tooltip, 'remove', listener);
-        callback();
-      }
-    } // Make callback synchronous if duration is 0
-    // `transitionend` won't fire otherwise
-
-
-    if (duration === 0) {
-      return callback();
-    }
-
-    updateTransitionEndListener(tooltip, 'remove', currentTransitionEndListener);
-    updateTransitionEndListener(tooltip, 'add', listener);
-    currentTransitionEndListener = listener;
-  }
-  /**
-   * Adds an event listener to the reference and stores it in `listeners`
-   */
-
-
-  function on(eventType, handler) {
-    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-    getEventListenersTarget().addEventListener(eventType, handler, options);
-    listeners.push({
-      eventType: eventType,
-      handler: handler,
-      options: options
-    });
-  }
-  /**
-   * Adds event listeners to the reference based on the `trigger` prop
-   */
-
-
-  function addTriggersToReference() {
-    if (instance.props.touchHold && !instance.props.target) {
-      on('touchstart', onTrigger, PASSIVE);
-      on('touchend', onMouseLeave, PASSIVE);
-    }
-
-    instance.props.trigger.trim().split(' ').forEach(function (eventType) {
-      if (eventType === 'manual') {
-        return;
-      } // Non-delegates
-
-
-      if (!instance.props.target) {
-        on(eventType, onTrigger);
-
-        switch (eventType) {
-          case 'mouseenter':
-            on('mouseleave', onMouseLeave);
-            break;
-
-          case 'focus':
-            on(isIE ? 'focusout' : 'blur', onBlur);
-            break;
-        }
-      } else {
-        // Delegates
-        switch (eventType) {
-          case 'mouseenter':
-            on('mouseover', onDelegateShow);
-            on('mouseout', onDelegateHide);
-            break;
-
-          case 'focus':
-            on('focusin', onDelegateShow);
-            on('focusout', onDelegateHide);
-            break;
-
-          case 'click':
-            on(eventType, onDelegateShow);
-            break;
-        }
-      }
-    });
-  }
-  /**
-   * Removes event listeners from the reference
-   */
-
-
-  function removeTriggersFromReference() {
-    listeners.forEach(function (_ref) {
-      var eventType = _ref.eventType,
-          handler = _ref.handler,
-          options = _ref.options;
-      getEventListenersTarget().removeEventListener(eventType, handler, options);
-    });
-    listeners = [];
-  }
-  /**
-   * Positions the virtual reference near the cursor
-   */
-
-
-  function positionVirtualReferenceNearCursor(event) {
-    var _lastMouseMoveEvent = lastMouseMoveEvent = event,
-        x = _lastMouseMoveEvent.clientX,
-        y = _lastMouseMoveEvent.clientY; // Gets set once popperInstance `onCreate` has been called
-
-
-    if (!currentComputedPadding) {
-      return;
-    } // If the instance is interactive, avoid updating the position unless it's
-    // over the reference element
-
-
-    var isCursorOverReference = closestCallback(event.target, function (el) {
-      return el === reference;
-    });
-    var rect = reference.getBoundingClientRect();
-    var followCursor = instance.props.followCursor;
-    var isHorizontal = followCursor === 'horizontal';
-    var isVertical = followCursor === 'vertical'; // The virtual reference needs some size to prevent itself from overflowing
-
-    var isVerticalPlacement = includes(['top', 'bottom'], getBasicPlacement(popper));
-    var fullPlacement = popper.getAttribute(PLACEMENT_ATTRIBUTE);
-    var isVariation = fullPlacement ? !!fullPlacement.split('-')[1] : false;
-    var size = isVerticalPlacement ? popper.offsetWidth : popper.offsetHeight;
-    var halfSize = size / 2;
-    var verticalIncrease = isVerticalPlacement ? 0 : isVariation ? size : halfSize;
-    var horizontalIncrease = isVerticalPlacement ? isVariation ? size : halfSize : 0;
-
-    if (isCursorOverReference || !instance.props.interactive) {
-      instance.popperInstance.reference = _extends({}, instance.popperInstance.reference, {
-        // This will exist in next Popper.js feature release to fix #532
-        // @ts-ignore
-        referenceNode: reference,
-        // These `client` values don't get used by Popper.js if they are 0
-        clientWidth: 0,
-        clientHeight: 0,
-        getBoundingClientRect: function getBoundingClientRect() {
-          return {
-            width: isVerticalPlacement ? size : 0,
-            height: isVerticalPlacement ? 0 : size,
-            top: (isHorizontal ? rect.top : y) - verticalIncrease,
-            bottom: (isHorizontal ? rect.bottom : y) + verticalIncrease,
-            left: (isVertical ? rect.left : x) - horizontalIncrease,
-            right: (isVertical ? rect.right : x) + horizontalIncrease
-          };
-        }
-      });
-      instance.popperInstance.update();
-    }
-
-    if (followCursor === 'initial' && instance.state.isVisible) {
-      removeFollowCursorListener();
-    }
-  }
-  /**
-   * Creates the tippy instance for a delegate when it's been triggered
-   */
-
-
-  function createDelegateChildTippy(event) {
-    if (event) {
-      var targetEl = closest(event.target, instance.props.target);
-
-      if (targetEl && !targetEl._tippy) {
-        createTippy(targetEl, _extends({}, instance.props, {
-          content: invokeWithArgsOrReturn(collectionProps.content, [targetEl]),
-          appendTo: collectionProps.appendTo,
-          target: '',
-          showOnInit: true
-        }));
-      }
-    }
-  }
-  /**
-   * Event listener invoked upon trigger
-   */
-
-
-  function onTrigger(event) {
-    if (!instance.state.isEnabled || isEventListenerStopped(event)) {
-      return;
-    }
-
-    if (!instance.state.isVisible) {
-      lastTriggerEventType = event.type;
-
-      if (event instanceof MouseEvent) {
-        lastMouseMoveEvent = event; // If scrolling, `mouseenter` events can be fired if the cursor lands
-        // over a new target, but `mousemove` events don't get fired. This
-        // causes interactive tooltips to get stuck open until the cursor is
-        // moved
-
-        mouseMoveListeners.forEach(function (listener) {
-          return listener(event);
-        });
-      }
-    } // Toggle show/hide when clicking click-triggered tooltips
-
-
-    if (event.type === 'click' && instance.props.hideOnClick !== false && instance.state.isVisible) {
-      scheduleHide();
-    } else {
-      scheduleShow(event);
-    }
-  }
-  /**
-   * Event listener used for interactive tooltips to detect when they should
-   * hide
-   */
-
-
-  function onMouseMove(event) {
-    var isCursorOverPopper = closest(event.target, POPPER_SELECTOR) === popper;
-    var isCursorOverReference = closestCallback(event.target, function (el) {
-      return el === reference;
-    });
-
-    if (isCursorOverPopper || isCursorOverReference) {
-      return;
-    }
-
-    if (isCursorOutsideInteractiveBorder(getBasicPlacement(popper), popper.getBoundingClientRect(), event, instance.props)) {
-      cleanupInteractiveMouseListeners();
-      scheduleHide();
-    }
-  }
-  /**
-   * Event listener invoked upon mouseleave
-   */
-
-
-  function onMouseLeave(event) {
-    if (isEventListenerStopped(event)) {
-      return;
-    }
-
-    if (instance.props.interactive) {
-      document.body.addEventListener('mouseleave', scheduleHide);
-      document.addEventListener('mousemove', debouncedOnMouseMove);
-      mouseMoveListeners.push(debouncedOnMouseMove);
-      return;
-    }
-
-    scheduleHide();
-  }
-  /**
-   * Event listener invoked upon blur
-   */
-
-
-  function onBlur(event) {
-    if (event.target !== getEventListenersTarget()) {
-      return;
-    }
-
-    if (instance.props.interactive && event.relatedTarget && popper.contains(event.relatedTarget)) {
-      return;
-    }
-
-    scheduleHide();
-  }
-  /**
-   * Event listener invoked when a child target is triggered
-   */
-
-
-  function onDelegateShow(event) {
-    if (closest(event.target, instance.props.target)) {
-      scheduleShow(event);
-    }
-  }
-  /**
-   * Event listener invoked when a child target should hide
-   */
-
-
-  function onDelegateHide(event) {
-    if (closest(event.target, instance.props.target)) {
-      scheduleHide();
-    }
-  }
-  /**
-   * Determines if an event listener should stop further execution due to the
-   * `touchHold` option
-   */
-
-
-  function isEventListenerStopped(event) {
-    var supportsTouch = 'ontouchstart' in window;
-    var isTouchEvent = includes(event.type, 'touch');
-    var touchHold = instance.props.touchHold;
-    return supportsTouch && isUsingTouch && touchHold && !isTouchEvent || isUsingTouch && !touchHold && isTouchEvent;
-  }
-  /**
-   * Runs the mount callback
-   */
-
-
-  function runMountCallback() {
-    if (!hasMountCallbackRun && currentMountCallback) {
-      hasMountCallbackRun = true;
-      reflow(popper);
-      currentMountCallback();
-    }
-  }
-  /**
-   * Creates the popper instance for the instance
-   */
-
-
-  function createPopperInstance() {
-    var popperOptions = instance.props.popperOptions;
-    var _instance$popperChild = instance.popperChildren,
-        tooltip = _instance$popperChild.tooltip,
-        arrow = _instance$popperChild.arrow;
-    var preventOverflowModifier = getModifier(popperOptions, 'preventOverflow');
-
-    function applyMutations(data) {
-      if (instance.props.flip && !instance.props.flipOnUpdate) {
-        if (data.flipped) {
-          instance.popperInstance.options.placement = data.placement;
-        }
-
-        setFlipModifierEnabled(instance.popperInstance.modifiers, false);
-      } // Apply all of the popper's attributes to the tootip node as well.
-      // Allows users to avoid using the .tippy-popper selector for themes.
-
-
-      tooltip.setAttribute(PLACEMENT_ATTRIBUTE, data.placement);
-
-      if (data.attributes[OUT_OF_BOUNDARIES_ATTRIBUTE] !== false) {
-        tooltip.setAttribute(OUT_OF_BOUNDARIES_ATTRIBUTE, '');
-      } else {
-        tooltip.removeAttribute(OUT_OF_BOUNDARIES_ATTRIBUTE);
-      } // Prevents a transition when changing placements (while tippy is visible)
-      // for scroll/resize updates
-
-
-      if (previousPlacement && previousPlacement !== data.placement && wasVisibleDuringPreviousUpdate) {
-        tooltip.style.transition = 'none';
-        requestAnimationFrame(function () {
-          tooltip.style.transition = '';
-        });
-      }
-
-      previousPlacement = data.placement;
-      wasVisibleDuringPreviousUpdate = instance.state.isVisible;
-      var basicPlacement = getBasicPlacement(popper);
-      var styles = tooltip.style; // Account for the `distance` offset
-
-      styles.top = styles.bottom = styles.left = styles.right = '';
-      styles[basicPlacement] = getOffsetDistanceInPx(instance.props.distance);
-      var padding = preventOverflowModifier && preventOverflowModifier.padding !== undefined ? preventOverflowModifier.padding : PADDING;
-      var isPaddingNumber = typeof padding === 'number';
-
-      var computedPadding = _extends({
-        top: isPaddingNumber ? padding : padding.top,
-        bottom: isPaddingNumber ? padding : padding.bottom,
-        left: isPaddingNumber ? padding : padding.left,
-        right: isPaddingNumber ? padding : padding.right
-      }, !isPaddingNumber && padding);
-
-      computedPadding[basicPlacement] = isPaddingNumber ? padding + instance.props.distance : (padding[basicPlacement] || 0) + instance.props.distance;
-      instance.popperInstance.modifiers.filter(function (m) {
-        return m.name === 'preventOverflow';
-      })[0].padding = computedPadding;
-      currentComputedPadding = computedPadding;
-    }
-
-    var config = _extends({
-      eventsEnabled: false,
-      placement: instance.props.placement
-    }, popperOptions, {
-      modifiers: _extends({}, popperOptions ? popperOptions.modifiers : {}, {
-        preventOverflow: _extends({
-          boundariesElement: instance.props.boundary,
-          padding: PADDING
-        }, preventOverflowModifier),
-        arrow: _extends({
-          element: arrow,
-          enabled: !!arrow
-        }, getModifier(popperOptions, 'arrow')),
-        flip: _extends({
-          enabled: instance.props.flip,
-          // The tooltip is offset by 10px from the popper in CSS,
-          // we need to account for its distance
-          padding: instance.props.distance + PADDING,
-          behavior: instance.props.flipBehavior
-        }, getModifier(popperOptions, 'flip')),
-        offset: _extends({
-          offset: instance.props.offset
-        }, getModifier(popperOptions, 'offset'))
-      }),
-      onCreate: function onCreate(data) {
-        applyMutations(data);
-        runMountCallback();
-
-        if (popperOptions && popperOptions.onCreate) {
-          popperOptions.onCreate(data);
-        }
-      },
-      onUpdate: function onUpdate(data) {
-        applyMutations(data);
-        runMountCallback();
-
-        if (popperOptions && popperOptions.onUpdate) {
-          popperOptions.onUpdate(data);
-        }
-      }
-    });
-
-    instance.popperInstance = new __WEBPACK_IMPORTED_MODULE_0_popper_js__["a" /* default */](reference, popper, config);
-  }
-  /**
-   * Mounts the tooltip to the DOM
-   */
-
-
-  function mount() {
-    hasMountCallbackRun = false;
-    var isInLooseFollowCursorMode = getIsInLooseFollowCursorMode();
-
-    if (instance.popperInstance) {
-      setFlipModifierEnabled(instance.popperInstance.modifiers, instance.props.flip);
-
-      if (!isInLooseFollowCursorMode) {
-        instance.popperInstance.reference = reference;
-        instance.popperInstance.enableEventListeners();
-      }
-
-      instance.popperInstance.scheduleUpdate();
-    } else {
-      createPopperInstance();
-
-      if (!isInLooseFollowCursorMode) {
-        instance.popperInstance.enableEventListeners();
-      }
-    }
-
-    var appendTo = instance.props.appendTo;
-    var parentNode = appendTo === 'parent' ? reference.parentNode : invokeWithArgsOrReturn(appendTo, [reference]);
-
-    if (!parentNode.contains(popper)) {
-      parentNode.appendChild(popper);
-      instance.props.onMount(instance);
-      instance.state.isMounted = true;
-    }
-  }
-  /**
-   * Setup before show() is invoked (delays, etc.)
-   */
-
-
-  function scheduleShow(event, shouldAvoidCallingOnTrigger) {
-    clearDelayTimeouts();
-
-    if (instance.state.isVisible) {
-      return;
-    } // Is a delegate, create an instance for the child target
-
-
-    if (instance.props.target) {
-      return createDelegateChildTippy(event);
-    }
-
-    isScheduledToShow = true;
-
-    if (event && !shouldAvoidCallingOnTrigger) {
-      instance.props.onTrigger(instance, event);
-    }
-
-    if (instance.props.wait) {
-      return instance.props.wait(instance, event);
-    } // If the tooltip has a delay, we need to be listening to the mousemove as
-    // soon as the trigger event is fired, so that it's in the correct position
-    // upon mount.
-    // Edge case: if the tooltip is still mounted, but then scheduleShow() is
-    // called, it causes a jump.
-
-
-    if (getIsInLooseFollowCursorMode() && !instance.state.isMounted) {
-      if (!instance.popperInstance) {
-        createPopperInstance();
-      }
-
-      document.addEventListener('mousemove', positionVirtualReferenceNearCursor);
-    }
-
-    addDocumentClickListener();
-    var delay = getValue(instance.props.delay, 0, defaultProps.delay);
-
-    if (delay) {
-      showTimeoutId = setTimeout(function () {
-        show();
-      }, delay);
-    } else {
-      show();
-    }
-  }
-  /**
-   * Setup before hide() is invoked (delays, etc.)
-   */
-
-
-  function scheduleHide() {
-    clearDelayTimeouts();
-
-    if (!instance.state.isVisible) {
-      removeFollowCursorListener();
-      removeDocumentClickListener();
-      return;
-    }
-
-    isScheduledToShow = false;
-    var delay = getValue(instance.props.delay, 1, defaultProps.delay);
-
-    if (delay) {
-      hideTimeoutId = setTimeout(function () {
-        if (instance.state.isVisible) {
-          hide();
-        }
-      }, delay);
-    } else {
-      // Fixes a `transitionend` problem when it fires 1 frame too
-      // late sometimes, we don't want hide() to be called.
-      scheduleHideAnimationFrameId = requestAnimationFrame(function () {
-        hide();
-      });
-    }
-  }
-  /**
-   * Listener to handle clicks on the document to determine if the
-   * instance should hide
-   */
-
-
-  function onDocumentClick(event) {
-    // Clicked on interactive popper
-    if (instance.props.interactive && popper.contains(event.target)) {
-      return;
-    } // Clicked on the event listeners target
-
-
-    if (getEventListenersTarget().contains(event.target)) {
-      if (isUsingTouch) {
-        return;
-      }
-
-      if (instance.state.isVisible && includes(instance.props.trigger, 'click')) {
-        return;
-      }
-    }
-
-    if (instance.props.hideOnClick === true) {
-      clearDelayTimeouts();
-      hide();
-    }
-  }
-  /* ======================= 🔑 Public methods 🔑 ======================= */
-
-  /**
-   * Enables the instance to allow it to show or hide
-   */
-
-
-  function enable() {
-    instance.state.isEnabled = true;
-  }
-  /**
-   * Disables the instance to disallow it to show or hide
-   */
-
-
-  function disable() {
-    instance.state.isEnabled = false;
-  }
-  /**
-   * Clears pending timeouts related to the `delay` prop if any
-   */
-
-
-  function clearDelayTimeouts() {
-    clearTimeout(showTimeoutId);
-    clearTimeout(hideTimeoutId);
-    cancelAnimationFrame(scheduleHideAnimationFrameId);
-  }
-  /**
-   * Sets new props for the instance and redraws the tooltip
-   */
-
-
-  function set(options) {
-    // Backwards-compatible after TypeScript change
-    options = options || {};
-    validateOptions(options, defaultProps);
-    removeTriggersFromReference();
-    var prevProps = instance.props;
-    var nextProps = evaluateProps(reference, _extends({}, instance.props, {}, options, {
-      ignoreAttributes: true
-    }));
-    nextProps.ignoreAttributes = hasOwnProperty(options, 'ignoreAttributes') ? options.ignoreAttributes || false : prevProps.ignoreAttributes;
-    instance.props = nextProps;
-    addTriggersToReference();
-    cleanupInteractiveMouseListeners();
-    debouncedOnMouseMove = debounce(onMouseMove, nextProps.interactiveDebounce);
-    updatePopperElement(popper, prevProps, nextProps);
-    instance.popperChildren = getChildren(popper);
-
-    if (instance.popperInstance) {
-      if (POPPER_INSTANCE_DEPENDENCIES.some(function (prop) {
-        return hasOwnProperty(options, prop) && options[prop] !== prevProps[prop];
-      })) {
-        instance.popperInstance.destroy();
-        createPopperInstance();
-
-        if (instance.state.isVisible) {
-          instance.popperInstance.enableEventListeners();
-        }
-
-        if (instance.props.followCursor && lastMouseMoveEvent) {
-          positionVirtualReferenceNearCursor(lastMouseMoveEvent);
-        }
-      } else {
-        instance.popperInstance.update();
-      }
-    }
-  }
-  /**
-   * Shortcut for .set({ content: newContent })
-   */
-
-
-  function setContent(content) {
-    set({
-      content: content
-    });
-  }
-  /**
-   * Shows the tooltip
-   */
-
-
-  function show() {
-    var duration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : getValue(instance.props.duration, 0, defaultProps.duration[1]);
-
-    if (instance.state.isDestroyed || !instance.state.isEnabled || isUsingTouch && !instance.props.touch) {
-      return;
-    } // Standardize `disabled` behavior across browsers.
-    // Firefox allows events on disabled elements, but Chrome doesn't.
-    // Using a wrapper element (i.e. <span>) is recommended.
-
-
-    if (getEventListenersTarget().hasAttribute('disabled')) {
-      return;
-    }
-
-    if (instance.props.onShow(instance) === false) {
-      return;
-    }
-
-    addDocumentClickListener();
-    popper.style.visibility = 'visible';
-    instance.state.isVisible = true;
-
-    if (instance.props.interactive) {
-      getEventListenersTarget().classList.add(ACTIVE_CLASS);
-    } // Prevent a transition if the popper is at the opposite placement
-
-
-    var transitionableElements = getTransitionableElements();
-    setTransitionDuration(transitionableElements.concat(popper), 0);
-
-    currentMountCallback = function currentMountCallback() {
-      if (!instance.state.isVisible) {
-        return;
-      }
-
-      var isInLooseFollowCursorMode = getIsInLooseFollowCursorMode();
-
-      if (isInLooseFollowCursorMode && lastMouseMoveEvent) {
-        positionVirtualReferenceNearCursor(lastMouseMoveEvent);
-      } else if (!isInLooseFollowCursorMode) {
-        // Double update will apply correct mutations
-        instance.popperInstance.update();
-      }
-
-      if (instance.popperChildren.backdrop) {
-        instance.popperChildren.content.style.transitionDelay = Math.round(duration / 12) + 'ms';
-      }
-
-      if (instance.props.sticky) {
-        makeSticky();
-      }
-
-      setTransitionDuration([popper], instance.props.updateDuration);
-      setTransitionDuration(transitionableElements, duration);
-      setVisibilityState(transitionableElements, 'visible');
-      onTransitionedIn(duration, function () {
-        if (instance.props.aria) {
-          getEventListenersTarget().setAttribute("aria-".concat(instance.props.aria), popper.id);
-        }
-
-        instance.props.onShown(instance);
-        instance.state.isShown = true;
-      });
-    };
-
-    mount();
-  }
-  /**
-   * Hides the tooltip
-   */
-
-
-  function hide() {
-    var duration = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : getValue(instance.props.duration, 1, defaultProps.duration[1]);
-
-    if (instance.state.isDestroyed || !instance.state.isEnabled && !isBeingDestroyed) {
-      return;
-    }
-
-    if (instance.props.onHide(instance) === false && !isBeingDestroyed) {
-      return;
-    }
-
-    removeDocumentClickListener();
-    popper.style.visibility = 'hidden';
-    instance.state.isVisible = false;
-    instance.state.isShown = false;
-    wasVisibleDuringPreviousUpdate = false;
-
-    if (instance.props.interactive) {
-      getEventListenersTarget().classList.remove(ACTIVE_CLASS);
-    }
-
-    var transitionableElements = getTransitionableElements();
-    setTransitionDuration(transitionableElements, duration);
-    setVisibilityState(transitionableElements, 'hidden');
-    onTransitionedOut(duration, function () {
-      if (!isScheduledToShow) {
-        removeFollowCursorListener();
-      }
-
-      if (instance.props.aria) {
-        getEventListenersTarget().removeAttribute("aria-".concat(instance.props.aria));
-      }
-
-      instance.popperInstance.disableEventListeners();
-      instance.popperInstance.options.placement = instance.props.placement;
-      popper.parentNode.removeChild(popper);
-      instance.props.onHidden(instance);
-      instance.state.isMounted = false;
-    });
-  }
-  /**
-   * Destroys the tooltip
-   */
-
-
-  function destroy(destroyTargetInstances) {
-    if (instance.state.isDestroyed) {
-      return;
-    }
-
-    isBeingDestroyed = true; // If the popper is currently mounted to the DOM, we want to ensure it gets
-    // hidden and unmounted instantly upon destruction
-
-    if (instance.state.isMounted) {
-      hide(0);
-    }
-
-    removeTriggersFromReference();
-    delete reference._tippy;
-    var target = instance.props.target;
-
-    if (target && destroyTargetInstances && isRealElement(reference)) {
-      arrayFrom(reference.querySelectorAll(target)).forEach(function (child) {
-        if (child._tippy) {
-          child._tippy.destroy();
-        }
-      });
-    }
-
-    if (instance.popperInstance) {
-      instance.popperInstance.destroy();
-    }
-
-    isBeingDestroyed = false;
-    instance.state.isDestroyed = true;
-  }
-}
-
-/**
- * Groups an array of instances by taking control of their props during
- * certain lifecycles.
- */
-function group(instances) {
-  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-      _ref$delay = _ref.delay,
-      delay = _ref$delay === void 0 ? instances[0].props.delay : _ref$delay,
-      _ref$duration = _ref.duration,
-      duration = _ref$duration === void 0 ? 0 : _ref$duration;
-
-  var isAnyTippyOpen = false;
-  instances.forEach(function (instance) {
-    if (instance._originalProps) {
-      instance.set(instance._originalProps);
-    } else {
-      instance._originalProps = _extends({}, instance.props);
-    }
-  });
-
-  function setIsAnyTippyOpen(value) {
-    isAnyTippyOpen = value;
-    updateInstances();
-  }
-
-  function onShow(instance) {
-    instance._originalProps.onShow(instance);
-
-    instances.forEach(function (instance) {
-      instance.set({
-        duration: duration
-      });
-
-      if (instance.state.isVisible) {
-        instance.hide();
-      }
-    });
-    setIsAnyTippyOpen(true);
-  }
-
-  function onHide(instance) {
-    instance._originalProps.onHide(instance);
-
-    setIsAnyTippyOpen(false);
-  }
-
-  function onShown(instance) {
-    instance._originalProps.onShown(instance);
-
-    instance.set({
-      duration: instance._originalProps.duration
-    });
-  }
-
-  function updateInstances() {
-    instances.forEach(function (instance) {
-      instance.set({
-        onShow: onShow,
-        onShown: onShown,
-        onHide: onHide,
-        delay: isAnyTippyOpen ? [0, Array.isArray(delay) ? delay[1] : delay] : delay,
-        duration: isAnyTippyOpen ? duration : instance._originalProps.duration
-      });
-    });
-  }
-
-  updateInstances();
-}
-
-var globalEventListenersBound = false;
-/**
- * Exported module
- */
-
-function tippy(targets, options) {
-  validateOptions(options || {}, defaultProps);
-
-  if (!globalEventListenersBound) {
-    bindGlobalEventListeners();
-    globalEventListenersBound = true;
-  }
-
-  var props = _extends({}, defaultProps, {}, options); // If they are specifying a virtual positioning reference, we need to polyfill
-  // some native DOM props
-
-
-  if (isBareVirtualElement(targets)) {
-    polyfillElementPrototypeProperties(targets);
-  }
-
-  var instances = getArrayOfElements(targets).reduce(function (acc, reference) {
-    var instance = reference && createTippy(reference, props);
-
-    if (instance) {
-      acc.push(instance);
-    }
-
-    return acc;
-  }, []);
-  return isSingular(targets) ? instances[0] : instances;
-}
-/**
- * Static props
- */
-
-
-tippy.version = version;
-tippy.defaults = defaultProps;
-/**
- * Static methods
- */
-
-tippy.setDefaults = function (partialDefaults) {
-  Object.keys(partialDefaults).forEach(function (key) {
-    // @ts-ignore
-    defaultProps[key] = partialDefaults[key];
-  });
-};
-
-tippy.hideAll = hideAll;
-tippy.group = group;
-/**
- * Auto-init tooltips for elements with a `data-tippy="..."` attribute
- */
-
-function autoInit() {
-  arrayFrom(document.querySelectorAll('[data-tippy]')).forEach(function (el) {
-    var content = el.getAttribute('data-tippy');
-
-    if (content) {
-      tippy(el, {
-        content: content
-      });
-    }
-  });
-}
-
-if (isBrowser) {
-  setTimeout(autoInit);
-}
-
-/**
- * Injects a string of CSS styles to a style node in <head>
- */
-
-function injectCSS(css) {
-  if (isBrowser) {
-    var style = document.createElement('style');
-    style.type = 'text/css';
-    style.textContent = css;
-    style.setAttribute('data-tippy-stylesheet', '');
-    var head = document.head;
-    var firstStyleOrLinkTag = head.querySelector('style,link');
-
-    if (firstStyleOrLinkTag) {
-      head.insertBefore(style, firstStyleOrLinkTag);
-    } else {
-      head.appendChild(style);
-    }
-  }
-}
-
-injectCSS(css);
-
-/* harmony default export */ __webpack_exports__["default"] = (tippy);
-//# sourceMappingURL=index.all.js.map
-
-
-/***/ }),
-/* 213 */
-/***/ (function(module, exports, __webpack_require__) {
-
 !function(e,o){ true?module.exports=o():"function"==typeof define&&define.amd?define([],o):"object"==typeof exports?exports.VueDragScroll=o():e.VueDragScroll=o()}(window,(function(){return function(e){var o={};function t(r){if(o[r])return o[r].exports;var n=o[r]={i:r,l:!1,exports:{}};return e[r].call(n.exports,n,n.exports,t),n.l=!0,n.exports}return t.m=e,t.c=o,t.d=function(e,o,r){t.o(e,o)||Object.defineProperty(e,o,{enumerable:!0,get:r})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,o){if(1&o&&(e=t(e)),8&o)return e;if(4&o&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&o&&"string"!=typeof e)for(var n in e)t.d(r,n,function(o){return e[o]}.bind(null,n));return r},t.n=function(e){var o=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(o,"a",o),o},t.o=function(e,o){return Object.prototype.hasOwnProperty.call(e,o)},t.p="/dist/",t(t.s=0)}([function(e,o,t){"use strict";t.r(o);var r=function(e,o,t){for(var r=0,n=o.length;r<n;r++)e.addEventListener(o[r],t)},n=function(e,o,t){for(var r=0,n=o.length;r<n;r++)e.removeEventListener(o[r],t)},i=function(e,o,t){var r;e.componentInstance?e.componentInstance.$emit(o,t):("function"==typeof window.CustomEvent?r=new window.CustomEvent(o,{detail:t}):(r=document.createEvent("CustomEvent")).initCustomEvent(o,!0,!0,t),e.elm.dispatchEvent(r))};function l(e){return(l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}var u=["mousedown","touchstart"],c=["mousemove","touchmove"],d=["mouseup","touchend"],a=function(e,o,t){var a=e,s=!0;"boolean"==typeof o.value?s=o.value:"object"===l(o.value)?("string"==typeof o.value.target?(a=e.querySelector(o.value.target))||console.error("There is no element with the current target value."):void 0!==o.value.target&&console.error("The parameter \"target\" should be be either 'undefined' or 'string'."),"boolean"==typeof o.value.active?s=o.value.active:void 0!==o.value.active&&console.error("The parameter \"active\" value should be either 'undefined', 'true' or 'false'.")):void 0!==o.value&&console.error("The passed value should be either 'undefined', 'true' or 'false' or 'object'.");var f=function(){var e,n,l,s=!1,f=!1;a.md=function(t){t.preventDefault();var r=t instanceof window.MouseEvent,i=r?t.pageX:t.touches[0].pageX,u=r?t.pageY:t.touches[0].pageY,c=document.elementFromPoint(i-window.pageXOffset,u-window.pageYOffset),d="nochilddrag"===o.arg,s=o.modifiers.noleft,m=o.modifiers.noright,v=o.modifiers.nomiddle,p=o.modifiers.noback,w=o.modifiers.noforward,y="firstchilddrag"===o.arg,h=c===a,g=c===a.firstChild,b=d?void 0!==c.dataset.dragscroll:void 0===c.dataset.noDragscroll;(h||b&&(!y||g))&&(1===t.which&&s||2===t.which&&v||3===t.which&&m||4===t.which&&p||5===t.which&&w||(l=1,e=r?t.clientX:t.touches[0].clientX,n=r?t.clientY:t.touches[0].clientY,"touchstart"===t.type&&(f=!0)))},a.mu=function(e){l=0,s&&i(t,"dragscrollend"),s=!1,"touchend"===e.type&&!0===f?(e.target.click(),f=!1):e.target.focus()},a.mm=function(r){var u,c,d=r instanceof window.MouseEvent,f={};if(l){s||i(t,"dragscrollstart"),s=!0;var m=a.scrollLeft+a.clientWidth>=a.scrollWidth||0===a.scrollLeft,v=a.scrollTop+a.clientHeight>=a.scrollHeight||0===a.scrollTop;u=-e+(e=d?r.clientX:r.touches[0].clientX),c=-n+(n=d?r.clientY:r.touches[0].clientY),o.modifiers.pass?(a.scrollLeft-=o.modifiers.y?-0:u,a.scrollTop-=o.modifiers.x?-0:c,a===document.body&&(a.scrollLeft-=o.modifiers.y?-0:u,a.scrollTop-=o.modifiers.x?-0:c),(m||o.modifiers.y)&&window.scrollBy(-u,0),(v||o.modifiers.x)&&window.scrollBy(0,-c)):(o.modifiers.x&&(c=-0),o.modifiers.y&&(u=-0),a.scrollLeft-=u,a.scrollTop-=c,a===document.body&&(a.scrollLeft-=u,a.scrollTop-=c)),f.deltaX=-u,f.deltaY=-c,i(t,"dragscrollmove",f)}},r(a,u,a.md),r(window,d,a.mu),r(window,c,a.mm)};s?"complete"===document.readyState?f():window.addEventListener("load",f):(n(a,u,a.md),n(window,d,a.mu),n(window,c,a.mm))},s={bind:function(e,o,t){a(e,o,t)},update:function(e,o,t,r){JSON.stringify(o.value)!==JSON.stringify(o.oldValue)&&a(e,o,t)},unbind:function(e,o,t){var r=e;n(r,u,r.md),n(window,d,r.mu),n(window,c,r.mm)}};t.d(o,"dragscroll",(function(){return s}));var f={install:function(e,o){var t=Number(e.version.split(".")[0]),r=Number(e.version.split(".")[1]);if(t<2&&r<1)throw new Error("v-dragscroll supports vue version 2.1 and above. You are using Vue@".concat(e.version,". Please upgrade to the latest version of Vue."));e.directive("dragscroll",s)}};"undefined"!=typeof window&&window.Vue&&(window.VueDragscroll=f,window.Vue.use(f));o.default=f}])}));
 //# sourceMappingURL=vue-dragscroll.min.js.map
 
 /***/ }),
-/* 214 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiAutocompleteSuggestion_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_01a9f2b9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAutocompleteSuggestion_vue__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_01a9f2b9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiAutocompleteSuggestion_vue__ = __webpack_require__(220);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18148,15 +15641,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 215 */
+/* 212 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarControls_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5468d681_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarControls_vue__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5468d681_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarControls_vue__ = __webpack_require__(241);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18206,15 +15699,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 216 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarMonth_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e8f0dc76_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarMonth_vue__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_e8f0dc76_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarMonth_vue__ = __webpack_require__(259);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18264,15 +15757,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 217 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiCalendarWeek_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_346a723f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarWeek_vue__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_346a723f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiCalendarWeek_vue__ = __webpack_require__(233);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18322,15 +15815,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 218 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiConfirmClosePrompt_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_201c7bc9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiConfirmClosePrompt_vue__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_201c7bc9_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiConfirmClosePrompt_vue__ = __webpack_require__(229);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18380,15 +15873,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 219 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiMenuOption_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0d29ee3e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiMenuOption_vue__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0d29ee3e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiMenuOption_vue__ = __webpack_require__(222);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18438,15 +15931,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 220 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiSelectOption_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0241f6fe_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSelectOption_vue__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0241f6fe_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiSelectOption_vue__ = __webpack_require__(221);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18496,15 +15989,15 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 221 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue__) if(["default","default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_UiTabHeaderItem_vue__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5c29e9d0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTabHeaderItem_vue__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5c29e9d0_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_UiTabHeaderItem_vue__ = __webpack_require__(242);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
@@ -18554,7 +16047,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 222 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18616,7 +16109,7 @@ if (false) {
 }
 
 /***/ }),
-/* 223 */
+/* 220 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18670,7 +16163,7 @@ if (false) {
 }
 
 /***/ }),
-/* 224 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18775,7 +16268,7 @@ if (false) {
 }
 
 /***/ }),
-/* 225 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18855,7 +16348,7 @@ if (false) {
 }
 
 /***/ }),
-/* 226 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18905,7 +16398,7 @@ if (false) {
 }
 
 /***/ }),
-/* 227 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19175,7 +16668,7 @@ if (false) {
 }
 
 /***/ }),
-/* 228 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19333,7 +16826,7 @@ if (false) {
 }
 
 /***/ }),
-/* 229 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19452,7 +16945,7 @@ if (false) {
 }
 
 /***/ }),
-/* 230 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19537,7 +17030,7 @@ if (false) {
 }
 
 /***/ }),
-/* 231 */
+/* 228 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19591,7 +17084,7 @@ if (false) {
 }
 
 /***/ }),
-/* 232 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19771,7 +17264,7 @@ if (false) {
 }
 
 /***/ }),
-/* 233 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19938,7 +17431,7 @@ if (false) {
 }
 
 /***/ }),
-/* 234 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19996,7 +17489,7 @@ if (false) {
 }
 
 /***/ }),
-/* 235 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20050,7 +17543,7 @@ if (false) {
 }
 
 /***/ }),
-/* 236 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20104,7 +17597,7 @@ if (false) {
 }
 
 /***/ }),
-/* 237 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20114,11 +17607,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      ref: "tooltip",
-      staticClass: "ui-tooltip",
-      attrs: { role: "tooltip", id: _vm.id }
-    },
+    { ref: "tooltip", attrs: { role: "tooltip", id: _vm.id } },
     [_vm._t("default")],
     2
   )
@@ -20135,7 +17624,7 @@ if (false) {
 }
 
 /***/ }),
-/* 238 */
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20182,7 +17671,7 @@ if (false) {
 }
 
 /***/ }),
-/* 239 */
+/* 236 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20357,7 +17846,7 @@ if (false) {
 }
 
 /***/ }),
-/* 240 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20538,7 +18027,7 @@ if (false) {
 }
 
 /***/ }),
-/* 241 */
+/* 238 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20638,7 +18127,7 @@ if (false) {
 }
 
 /***/ }),
-/* 242 */
+/* 239 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20732,7 +18221,7 @@ if (false) {
 }
 
 /***/ }),
-/* 243 */
+/* 240 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20794,7 +18283,7 @@ if (false) {
 }
 
 /***/ }),
-/* 244 */
+/* 241 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20899,7 +18388,7 @@ if (false) {
 }
 
 /***/ }),
-/* 245 */
+/* 242 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20967,7 +18456,7 @@ if (false) {
 }
 
 /***/ }),
-/* 246 */
+/* 243 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21224,7 +18713,7 @@ if (false) {
 }
 
 /***/ }),
-/* 247 */
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21324,7 +18813,7 @@ if (false) {
 }
 
 /***/ }),
-/* 248 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21346,7 +18835,7 @@ if (false) {
 }
 
 /***/ }),
-/* 249 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21444,7 +18933,7 @@ if (false) {
 }
 
 /***/ }),
-/* 250 */
+/* 247 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21613,7 +19102,7 @@ if (false) {
 }
 
 /***/ }),
-/* 251 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21703,7 +19192,7 @@ if (false) {
 }
 
 /***/ }),
-/* 252 */
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21770,7 +19259,7 @@ if (false) {
 }
 
 /***/ }),
-/* 253 */
+/* 250 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21838,7 +19327,7 @@ if (false) {
 }
 
 /***/ }),
-/* 254 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21927,7 +19416,7 @@ if (false) {
 }
 
 /***/ }),
-/* 255 */
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22012,7 +19501,7 @@ if (false) {
 }
 
 /***/ }),
-/* 256 */
+/* 253 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22043,7 +19532,7 @@ if (false) {
 }
 
 /***/ }),
-/* 257 */
+/* 254 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22085,7 +19574,7 @@ if (false) {
 }
 
 /***/ }),
-/* 258 */
+/* 255 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22491,7 +19980,7 @@ if (false) {
 }
 
 /***/ }),
-/* 259 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22541,7 +20030,7 @@ if (false) {
 }
 
 /***/ }),
-/* 260 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22686,7 +20175,7 @@ if (false) {
 }
 
 /***/ }),
-/* 261 */
+/* 258 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22804,7 +20293,7 @@ if (false) {
 }
 
 /***/ }),
-/* 262 */
+/* 259 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
