@@ -87,6 +87,10 @@
       dragScroll: {
         type: Boolean,
         default: false
+      },
+      preventRestrictFocus: {
+        type: Boolean,
+        default: false
       }
     },
 
@@ -208,6 +212,7 @@
       restrictFocus(e) {
         try {
           if (
+            !this.preventRestrictFocus &&
             this.$refs.container &&
             e.target &&
             !this.$refs.container.contains(e.target)
