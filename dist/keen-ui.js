@@ -4600,6 +4600,10 @@ exports.default = (_name$props$data$dire = {
     dragScroll: {
       type: Boolean,
       default: false
+    },
+    preventRestrictFocus: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -4703,7 +4707,7 @@ exports.default = (_name$props$data$dire = {
     },
     restrictFocus: function restrictFocus(e) {
       try {
-        if (this.$refs.container && e.target && !this.$refs.container.contains(e.target)) {
+        if (!this.preventRestrictFocus && this.$refs.container && e.target && !this.$refs.container.contains(e.target)) {
           e.stopPropagation();
           this.$refs.container.focus();
         }
