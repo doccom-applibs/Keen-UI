@@ -108,7 +108,7 @@
           let $this = this;
           this.dropInstance = tippy(this.triggerEl, {
             arrow: false,
-            //animation: "fade",
+            animation: "fade",
             trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
             theme: "custom",
             boundary: "viewport",

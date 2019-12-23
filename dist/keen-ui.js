@@ -4885,7 +4885,7 @@ exports.default = {
         var $this = this;
         this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
           arrow: false,
-
+          animation: "fade",
           trigger: this.transformOpenOn(),
           theme: "custom",
           boundary: "viewport",
