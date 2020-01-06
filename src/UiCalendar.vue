@@ -4,19 +4,17 @@
             <div
                 class="ui-calendar__header-year"
                 tabindex="0"
-
                 :class="{ 'is-active': showYearPicker }"
-
                 @click="showYearPicker = true"
                 @keydown.enter="showYearPicker = true"
-            >{{ headerYear }}</div>
+            >
+                {{ headerYear }}
+            </div>
 
             <div
                 class="ui-calendar__header-details"
                 tabindex="0"
-
                 :class="{ 'is-active': !showYearPicker }"
-
                 @click="showYearPicker = false"
                 @keydown.enter="showYearPicker = false"
             >
@@ -30,39 +28,34 @@
                 <li
                     class="ui-calendar__year"
                     tabindex="0"
-
                     :class="getYearClasses(year)"
-
                     @click="selectYear(year)"
                     @keydown.enter="selectYear(year)"
-
                     v-for="year in yearRange"
                     v-if="!isYearOutOfRange(year)"
-                >{{ year }}</li>
+                >
+                    {{ year }}
+                </li>
             </ul>
 
             <div v-show="!showYearPicker">
                 <ui-calendar-controls
                     ref="controls"
-
                     :date-in-view="dateInView"
                     :lang="lang"
                     :max-date="maxDate"
                     :min-date="minDate"
-
                     @go-to-date="onGoToDate"
                 ></ui-calendar-controls>
 
                 <ui-calendar-month
                     ref="month"
-
                     :date-filter="dateFilter"
                     :date-in-view="dateInView"
                     :lang="lang"
                     :max-date="maxDate"
                     :min-date="minDate"
                     :selected="value"
-
                     @change="onMonthChange"
                     @date-select="onDateSelect"
                 ></ui-calendar-month>
@@ -76,14 +69,14 @@
 </template>
 
 <script>
-import UiCalendarControls from './UiCalendarControls.vue';
-import UiCalendarMonth from './UiCalendarMonth.vue';
+import UiCalendarControls from "./UiCalendarControls.vue";
+import UiCalendarMonth from "./UiCalendarMonth.vue";
 
-import dateUtils from './helpers/date';
-import { scrollIntoView } from './helpers/element-scroll';
+import dateUtils from "./helpers/date";
+import { scrollIntoView } from "./helpers/element-scroll";
 
 export default {
-    name: 'ui-calendar',
+    name: "ui-calendar",
 
     props: {
         value: Date,
@@ -98,24 +91,27 @@ export default {
         yearRange: {
             type: Array,
             default() {
-                const thisYear = (new Date()).getFullYear();
+                const thisYear = new Date().getFullYear();
 
                 // Generates a range of 200 years
                 // (100 years into the past and 100 years into the future, including the current year)
-                return Array.apply(null, Array(200))
-                    .map((item, index) => {
-                        return (thisYear - 100) + index;
-                    });
+                return Array.apply(null, Array(200)).map((item, index) => {
+                    return thisYear - 100 + index;
+                });
             }
         },
         dateFilter: Function,
         color: {
             type: String,
-            default: 'primary' // 'primary' or 'accent'
+            default: "primary" // 'primary' or 'accent'
         },
         orientation: {
             type: String,
-            default: 'portrait' // 'portrait' or 'landscape'
+            default: "portrait" // 'portrait' or 'landscape'
+        },
+        initWithYearPicker: {
+            type: Boolean,
+            default: false
         }
     },
 
@@ -123,7 +119,7 @@ export default {
         return {
             today: new Date(),
             dateInView: this.getDateInRange(this.value, new Date()),
-            showYearPicker: false
+            showYearPicker: this.initWithYearPicker
         };
     },
 
@@ -136,20 +132,25 @@ export default {
         },
 
         headerYear() {
-            return this.value ? this.value.getFullYear() : this.today.getFullYear();
+            return this.value
+                ? this.value.getFullYear()
+                : this.today.getFullYear();
         },
 
         headerDay() {
-            return this.value ?
-                dateUtils.getDayAbbreviated(this.value, this.lang) :
-                dateUtils.getDayAbbreviated(this.today, this.lang);
+            return this.value
+                ? dateUtils.getDayAbbreviated(this.value, this.lang)
+                : dateUtils.getDayAbbreviated(this.today, this.lang);
         },
 
         headerDate() {
             const date = this.value ? this.value : this.today;
 
-            return dateUtils.getMonthAbbreviated(date, this.lang) + ' ' +
-                dateUtils.getDayOfMonth(date, this.lang);
+            return (
+                dateUtils.getMonthAbbreviated(date, this.lang) +
+                " " +
+                dateUtils.getDayOfMonth(date, this.lang)
+            );
         }
     },
 
@@ -163,8 +164,9 @@ export default {
         showYearPicker() {
             if (this.showYearPicker) {
                 this.$nextTick(() => {
-                    const el = this.$refs.years.querySelector('.is-selected') ||
-                    this.$refs.years.querySelector('.is-current-year');
+                    const el =
+                        this.$refs.years.querySelector(".is-selected") ||
+                        this.$refs.years.querySelector(".is-current-year");
 
                     scrollIntoView(el, { marginTop: 126 });
                 });
@@ -197,8 +199,8 @@ export default {
 
         getYearClasses(year) {
             return {
-                'is-current-year': this.isYearCurrent(year),
-                'is-selected': this.isYearSelected(year)
+                "is-current-year": this.isYearCurrent(year),
+                "is-selected": this.isYearSelected(year)
             };
         },
 
@@ -223,8 +225,8 @@ export default {
         },
 
         onDateSelect(date) {
-            this.$emit('input', date);
-            this.$emit('date-select', date);
+            this.$emit("input", date);
+            this.$emit("date-select", date);
         },
 
         onGoToDate(date, options = { isForward: true }) {
@@ -233,7 +235,7 @@ export default {
 
         onMonthChange(newDate) {
             this.dateInView = newDate;
-            this.$emit('month-change', newDate);
+            this.$emit("month-change", newDate);
         }
     },
 
@@ -245,9 +247,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import './styles/imports';
+@import "./styles/imports";
 
-$ui-calendar-padding    : rem-calc(8px) !default;
+$ui-calendar-padding: rem-calc(8px) !default;
 
 .ui-calendar {
     color: $primary-text-color;
@@ -285,12 +287,12 @@ $ui-calendar-padding    : rem-calc(8px) !default;
 }
 
 .ui-calendar__header-details {
-    font-size: rem-calc(22px)
+    font-size: rem-calc(22px);
 }
 
 .ui-calendar__body {
     height: ($ui-calendar-cell-size * 6) + $ui-calendar-controls-height +
-        $ui-calendar-month-header-height  + ($ui-calendar-padding * 2);
+        $ui-calendar-month-header-height + ($ui-calendar-padding * 2);
     overflow: hidden;
     padding: $ui-calendar-padding;
     position: relative;
