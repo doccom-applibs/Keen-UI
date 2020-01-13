@@ -172,7 +172,6 @@ export default {
             default: null
         }
     },
-    directives: { mask },
 
     data() {
         return {
@@ -347,7 +346,8 @@ export default {
     },
 
     directives: {
-        autofocus
+        autofocus,
+        mask
     }
 };
 </script>
