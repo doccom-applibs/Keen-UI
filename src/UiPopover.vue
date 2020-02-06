@@ -43,6 +43,10 @@
         type: [String, Boolean],
         default: false
       },
+      maxWidth: {
+        type: [String, Number],
+        default: 400
+      },
       onHideCallback: Function,
       raised: {
         type: Boolean,
@@ -116,7 +120,7 @@
             appendTo: this.appendTo ? this.appendTo : document.body,
             content: this.$el,
             interactive: true,
-            maxWidth: 400,
+            maxWidth: this.maxWidth,
             placement: this.placement,
             distance: 0,
             delay: [0, 0], //show,hide
