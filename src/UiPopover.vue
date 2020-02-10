@@ -40,7 +40,7 @@
         default: "bottom"
       },
       appendTo: {
-        type: [String, Boolean],
+        type: [String, Boolean, HTMLBodyElement],
         default: false
       },
       maxWidth: {
