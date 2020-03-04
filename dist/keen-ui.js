@@ -4858,7 +4858,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _defineProperty2 = __webpack_require__(32);
@@ -4884,209 +4884,197 @@ var _classlist2 = _interopRequireDefault(_classlist);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (_name$props$data$dire = {
-  name: "ui-modal",
+    name: "ui-modal",
 
-  props: {
-    title: {
-      type: String,
-      default: "UiModal title"
-    },
-    size: {
-      type: String,
-      default: "normal" },
-    role: {
-      type: String,
-      default: "dialog" },
-    transition: {
-      type: String,
-      default: "scale" },
-    removeHeader: {
-      type: Boolean,
-      default: false
-    },
-    removeCloseButton: {
-      type: Boolean,
-      default: false
-    },
-    preventShift: {
-      type: Boolean,
-      default: false
-    },
-    dismissible: {
-      type: Boolean,
-      default: true
-    },
-    dismissOn: {
-      type: String,
-      default: "backdrop esc close-button"
-    },
-    promptBeforeClose: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    dragScroll: {
-      type: Boolean,
-      default: false
-    },
-    preventRestrictFocus: {
-      type: Boolean,
-      default: false
-    }
-  },
-
-  data: function data() {
-    return {
-      isOpen: false,
-      lastfocusedElement: null,
-      triggerCloseConfirmPromptAlertKey: null
-    };
-  },
-
-
-  directives: {
-    dragscroll: _vueDragscroll.dragscroll
-  },
-
-  computed: {
-    classes: function classes() {
-      return ["ui-modal--size-" + this.size, { "has-footer": this.hasFooter }, { "is-open": this.isOpen }];
-    },
-    hasFooter: function hasFooter() {
-      return Boolean(this.$slots.footer);
-    },
-    toggleTransition: function toggleTransition() {
-      return "ui-modal--transition-" + this.transition;
-    },
-    dismissOnBackdrop: function dismissOnBackdrop() {
-      return this.dismissOn.indexOf("backdrop") > -1;
-    },
-    dismissOnCloseButton: function dismissOnCloseButton() {
-      return this.dismissOn.indexOf("close-button") > -1;
-    },
-    dismissOnEsc: function dismissOnEsc() {
-      return this.dismissOn.indexOf("esc") > -1;
-    }
-  },
-
-  watch: {
-    isOpen: function isOpen() {
-      var _this = this;
-
-      this.$nextTick(function () {
-        _this[_this.isOpen ? "onOpen" : "onClose"]();
-      });
-    }
-  },
-
-  beforeDestroy: function beforeDestroy() {
-    if (this.isOpen) {
-      this.teardownModal();
-    }
-  },
-
-
-  methods: {
-    open: function open() {
-      this.isOpen = true;
-    },
-    close: function close() {
-      this.isOpen = false;
-    },
-    closeModal: function closeModal(e) {
-      this.triggerCloseConfirmPromptAlertKey = null;
-
-      if (!this.dismissible) {
-        return;
-      }
-
-      if (this.promptBeforeClose) {
-        return this.triggerCloseConfirmPromptAlertKey = Date.now();
-      }
-
-      if (e.currentTarget === this.$refs.backdrop && e.target !== e.currentTarget) {
-        return;
-      }
-
-      this.isOpen = false;
-    },
-    destroyModal: function destroyModal() {
-      this.dismissible = true;
-      this.triggerCloseConfirmPromptAlertKey = null;
-      this.promptBeforeClose = false;
-      this.isOpen = false;
-      this.$emit("close");
-    },
-    onOpen: function onOpen() {
-      this.lastfocusedElement = document.activeElement;
-      this.$refs.container.focus();
-
-      _classlist2.default.add(document.body, "ui-modal--is-open");
-      document.addEventListener("focus", this.restrictFocus, true);
-
-      this.$emit("open");
-    },
-    onClose: function onClose() {
-      this.teardownModal();
-      this.$emit("close");
-    },
-    redirectFocus: function redirectFocus() {
-      if (this.$refs.container) this.$refs.container.focus();
-    },
-    restrictFocus: function restrictFocus(e) {
-      try {
-        if (!this.preventRestrictFocus && this.$refs.container && e.target && !this.$refs.container.contains(e.target)) {
-          e.stopPropagation();
-          this.$refs.container.focus();
+    props: {
+        title: {
+            type: String,
+            default: "UiModal title"
+        },
+        size: {
+            type: String,
+            default: "normal" },
+        role: {
+            type: String,
+            default: "dialog" },
+        transition: {
+            type: String,
+            default: "scale" },
+        removeHeader: {
+            type: Boolean,
+            default: false
+        },
+        removeCloseButton: {
+            type: Boolean,
+            default: false
+        },
+        preventShift: {
+            type: Boolean,
+            default: false
+        },
+        dismissible: {
+            type: Boolean,
+            default: true
+        },
+        dismissOn: {
+            type: String,
+            default: "backdrop esc close-button"
+        },
+        promptBeforeClose: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        dragScroll: {
+            type: Boolean,
+            default: false
+        },
+        preventRestrictFocus: {
+            type: Boolean,
+            default: false
         }
-      } catch (e) {
-        console.error(e);
-      }
     },
-    teardownModal: function teardownModal() {
-      document.removeEventListener("focus", this.restrictFocus, true);
 
-      if (this.lastfocusedElement) {
-        this.lastfocusedElement.focus();
-      }
+    data: function data() {
+        return {
+            isOpen: false,
+            lastfocusedElement: null,
+            triggerCloseConfirmPromptAlertKey: null
+        };
     },
-    onEnter: function onEnter() {
-      this.$emit("reveal");
+
+
+    directives: {
+        dragscroll: _vueDragscroll.dragscroll
     },
-    onLeave: function onLeave() {
-      this.$emit("hide");
 
-      _classlist2.default.remove(document.body, "ui-modal--is-open");
+    computed: {
+        classes: function classes() {
+            return ["ui-modal--size-" + this.size, { "has-footer": this.hasFooter }, { "is-open": this.isOpen }];
+        },
+        hasFooter: function hasFooter() {
+            return Boolean(this.$slots.footer);
+        },
+        toggleTransition: function toggleTransition() {
+            return "ui-modal--transition-" + this.transition;
+        },
+        dismissOnBackdrop: function dismissOnBackdrop() {
+            return this.dismissOn.indexOf("backdrop") > -1;
+        },
+        dismissOnCloseButton: function dismissOnCloseButton() {
+            return this.dismissOn.indexOf("close-button") > -1;
+        },
+        dismissOnEsc: function dismissOnEsc() {
+            return this.dismissOn.indexOf("esc") > -1;
+        }
     },
-    promptModalActionTriggered: function promptModalActionTriggered(val) {
-      this.triggerCloseConfirmPromptAlertKey = null;
 
-      if (!val) return;
+    watch: {
+        isOpen: function isOpen() {
+            var _this = this;
 
-      if (val) {
-        return this.isOpen = false;
-      }
+            this.$nextTick(function () {
+                _this[_this.isOpen ? "onOpen" : "onClose"]();
+            });
+        }
+    },
 
-      return false;
-    }
-  },
+    beforeDestroy: function beforeDestroy() {
+        if (this.isOpen) {
+            this.teardownModal();
+        }
+    },
 
-  mounted: function mounted() {
-    try {
-      VueEventBus.$on("Application.SessionEnded", this.destroyModal);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-}, (0, _defineProperty3.default)(_name$props$data$dire, "beforeDestroy", function beforeDestroy() {
-  try {
-    VueEventBus.$off("Application.SessionEnded", this.destroyModal);
-  } catch (e) {
-    console.error(e);
-  }
-}), (0, _defineProperty3.default)(_name$props$data$dire, "components", {
-  UiCloseButton: _UiCloseButton2.default,
-  UiConfirmClosePrompt: _UiConfirmClosePrompt2.default
+
+    methods: {
+        open: function open() {
+            this.isOpen = true;
+        },
+        close: function close() {
+            this.isOpen = false;
+        },
+        closeModal: function closeModal(e) {
+            this.triggerCloseConfirmPromptAlertKey = null;
+
+            if (!this.dismissible) {
+                return;
+            }
+
+            if (this.promptBeforeClose) {
+                return this.triggerCloseConfirmPromptAlertKey = Date.now();
+            }
+
+            if (e.currentTarget === this.$refs.backdrop && e.target !== e.currentTarget) {
+                return;
+            }
+
+            this.isOpen = false;
+        },
+        destroyModal: function destroyModal() {
+            this.dismissible = true;
+            this.triggerCloseConfirmPromptAlertKey = null;
+            this.promptBeforeClose = false;
+            this.isOpen = false;
+            this.$emit("close");
+        },
+        onOpen: function onOpen() {
+            this.lastfocusedElement = document.activeElement;
+            this.$refs.container.focus();
+
+            _classlist2.default.add(document.body, "ui-modal--is-open");
+            document.addEventListener("focus", this.restrictFocus, true);
+
+            this.$emit("open");
+        },
+        onClose: function onClose() {
+            this.teardownModal();
+            this.$emit("close");
+        },
+        redirectFocus: function redirectFocus() {
+            if (this.$refs.container) this.$refs.container.focus();
+        },
+        restrictFocus: function restrictFocus(e) {
+            try {
+                if (!this.preventRestrictFocus && this.$refs.container && e.target && !this.$refs.container.contains(e.target)) {
+                    e.stopPropagation();
+                    this.$refs.container.focus();
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        },
+        teardownModal: function teardownModal() {
+            document.removeEventListener("focus", this.restrictFocus, true);
+
+            if (this.lastfocusedElement) {
+                this.lastfocusedElement.focus();
+            }
+        },
+        onEnter: function onEnter() {
+            this.$emit("reveal");
+        },
+        onLeave: function onLeave() {
+            this.$emit("hide");
+
+            _classlist2.default.remove(document.body, "ui-modal--is-open");
+        },
+        promptModalActionTriggered: function promptModalActionTriggered(val) {
+            this.triggerCloseConfirmPromptAlertKey = null;
+
+            if (!val) return;
+
+            if (val) {
+                return this.isOpen = false;
+            }
+
+            return false;
+        }
+    },
+
+    mounted: function mounted() {}
+}, (0, _defineProperty3.default)(_name$props$data$dire, "beforeDestroy", function beforeDestroy() {}), (0, _defineProperty3.default)(_name$props$data$dire, "components", {
+    UiCloseButton: _UiCloseButton2.default,
+    UiConfirmClosePrompt: _UiConfirmClosePrompt2.default
 }), _name$props$data$dire);
 
 /***/ }),
