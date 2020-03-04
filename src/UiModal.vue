@@ -1,320 +1,344 @@
 <template>
-  <transition :name="toggleTransition" @after-enter="onEnter" @after-leave="onLeave">
-    <div class="ui-modal ui-modal__mask" :class="classes" :role="role" v-show="isOpen">
-      <div class="ui-modal__wrapper" ref="backdrop" :class="{ 'has-dummy-scrollbar': preventShift }" @click="dismissOnBackdrop && closeModal($event)">
-        <div class="ui-modal__container" ref="container" tabindex="-1" @keydown.esc="dismissOnEsc && closeModal($event)">
-          <div class="ui-modal__header" v-if="!removeHeader">
-            <slot name="header">
-              <h1 class="ui-modal__header-text">{{ title }}</h1>
-            </slot>
+    <transition
+        :name="toggleTransition"
+        @after-enter="onEnter"
+        @after-leave="onLeave"
+    >
+        <div
+            class="ui-modal ui-modal__mask"
+            :class="classes"
+            :role="role"
+            v-show="isOpen"
+        >
+            <div
+                class="ui-modal__wrapper"
+                ref="backdrop"
+                :class="{ 'has-dummy-scrollbar': preventShift }"
+                @click="dismissOnBackdrop && closeModal($event)"
+            >
+                <div
+                    class="ui-modal__container"
+                    ref="container"
+                    tabindex="-1"
+                    @keydown.esc="dismissOnEsc && closeModal($event)"
+                >
+                    <div class="ui-modal__header" v-if="!removeHeader">
+                        <slot name="header">
+                            <h1 class="ui-modal__header-text">{{ title }}</h1>
+                        </slot>
 
-            <div ref="ui-modal-close-btn" class="ui-modal__close-button">
-              <ui-close-button @click="closeModal" v-if="dismissOnCloseButton && !removeCloseButton && dismissible"></ui-close-button>
+                        <div
+                            ref="ui-modal-close-btn"
+                            class="ui-modal__close-button"
+                        >
+                            <ui-close-button
+                                @click="closeModal"
+                                v-if="
+                                    dismissOnCloseButton &&
+                                        !removeCloseButton &&
+                                        dismissible
+                                "
+                            ></ui-close-button>
+                        </div>
+                    </div>
+                    <slot name="body-head"></slot>
+                    <div v-dragscroll="dragScroll" class="ui-modal__body">
+                        <slot></slot>
+                    </div>
+
+                    <div class="ui-modal__footer" v-if="hasFooter">
+                        <slot name="footer"></slot>
+                    </div>
+
+                    <div
+                        class="ui-modal__focus-redirect"
+                        tabindex="0"
+                        @focus.stop="redirectFocus"
+                    ></div>
+                </div>
             </div>
-          </div>
-          <slot name="body-head"></slot>
-          <div v-dragscroll="dragScroll" class="ui-modal__body">
-            <slot></slot>
-          </div>
 
-          <div class="ui-modal__footer" v-if="hasFooter">
-            <slot name="footer"></slot>
-          </div>
-
-          <div class="ui-modal__focus-redirect" tabindex="0" @focus.stop="redirectFocus"></div>
+            <UiConfirmClosePrompt
+                :key="triggerCloseConfirmPromptAlertKey"
+                @action-triggered="promptModalActionTriggered"
+                v-if="triggerCloseConfirmPromptAlertKey"
+            ></UiConfirmClosePrompt>
         </div>
-      </div>
-
-      <UiConfirmClosePrompt :key="triggerCloseConfirmPromptAlertKey" @action-triggered="promptModalActionTriggered" v-if="triggerCloseConfirmPromptAlertKey"></UiConfirmClosePrompt>
-
-    </div>
-  </transition>
+    </transition>
 </template>
 
 <script>
-  import UiCloseButton from "./UiCloseButton.vue";
-  import UiConfirmClosePrompt from "./UiConfirmClosePrompt.vue";
-  import { dragscroll } from "vue-dragscroll";
+import UiCloseButton from "./UiCloseButton.vue";
+import UiConfirmClosePrompt from "./UiConfirmClosePrompt.vue";
+import { dragscroll } from "vue-dragscroll";
 
-  import classlist from "./helpers/classlist";
+import classlist from "./helpers/classlist";
 
-  export default {
+export default {
     name: "ui-modal",
 
     props: {
-      title: {
-        type: String,
-        default: "UiModal title"
-      },
-      size: {
-        type: String,
-        default: "normal" // 'small', 'normal', or 'large'
-      },
-      role: {
-        type: String,
-        default: "dialog" // 'dialog' or 'alertdialog'
-      },
-      transition: {
-        type: String,
-        default: "scale" // 'scale', or 'fade'
-      },
-      removeHeader: {
-        type: Boolean,
-        default: false
-      },
-      removeCloseButton: {
-        type: Boolean,
-        default: false
-      },
-      preventShift: {
-        type: Boolean,
-        default: false
-      },
-      dismissible: {
-        type: Boolean,
-        default: true
-      },
-      dismissOn: {
-        type: String,
-        default: "backdrop esc close-button"
-      },
-      promptBeforeClose: {
-        //Allow a close prompt to be activated
-        type: Boolean,
-        required: false,
-        default: false
-      },
-      dragScroll: {
-        type: Boolean,
-        default: false
-      },
-      preventRestrictFocus: {
-        type: Boolean,
-        default: false
-      }
+        title: {
+            type: String,
+            default: "UiModal title"
+        },
+        size: {
+            type: String,
+            default: "normal" // 'small', 'normal', or 'large'
+        },
+        role: {
+            type: String,
+            default: "dialog" // 'dialog' or 'alertdialog'
+        },
+        transition: {
+            type: String,
+            default: "scale" // 'scale', or 'fade'
+        },
+        removeHeader: {
+            type: Boolean,
+            default: false
+        },
+        removeCloseButton: {
+            type: Boolean,
+            default: false
+        },
+        preventShift: {
+            type: Boolean,
+            default: false
+        },
+        dismissible: {
+            type: Boolean,
+            default: true
+        },
+        dismissOn: {
+            type: String,
+            default: "backdrop esc close-button"
+        },
+        promptBeforeClose: {
+            //Allow a close prompt to be activated
+            type: Boolean,
+            required: false,
+            default: false
+        },
+        dragScroll: {
+            type: Boolean,
+            default: false
+        },
+        preventRestrictFocus: {
+            type: Boolean,
+            default: false
+        }
     },
 
     data() {
-      return {
-        isOpen: false,
-        lastfocusedElement: null,
-        triggerCloseConfirmPromptAlertKey: null
-      };
+        return {
+            isOpen: false,
+            lastfocusedElement: null,
+            triggerCloseConfirmPromptAlertKey: null
+        };
     },
 
     directives: {
-      dragscroll
+        dragscroll
     },
 
     computed: {
-      classes() {
-        return [
-          `ui-modal--size-${this.size}`,
-          { "has-footer": this.hasFooter },
-          { "is-open": this.isOpen }
-        ];
-      },
+        classes() {
+            return [
+                `ui-modal--size-${this.size}`,
+                { "has-footer": this.hasFooter },
+                { "is-open": this.isOpen }
+            ];
+        },
 
-      hasFooter() {
-        return Boolean(this.$slots.footer);
-      },
+        hasFooter() {
+            return Boolean(this.$slots.footer);
+        },
 
-      toggleTransition() {
-        return `ui-modal--transition-${this.transition}`;
-      },
+        toggleTransition() {
+            return `ui-modal--transition-${this.transition}`;
+        },
 
-      dismissOnBackdrop() {
-        return this.dismissOn.indexOf("backdrop") > -1;
-      },
+        dismissOnBackdrop() {
+            return this.dismissOn.indexOf("backdrop") > -1;
+        },
 
-      dismissOnCloseButton() {
-        return this.dismissOn.indexOf("close-button") > -1;
-      },
+        dismissOnCloseButton() {
+            return this.dismissOn.indexOf("close-button") > -1;
+        },
 
-      dismissOnEsc() {
-        return this.dismissOn.indexOf("esc") > -1;
-      }
+        dismissOnEsc() {
+            return this.dismissOn.indexOf("esc") > -1;
+        }
     },
 
     watch: {
-      isOpen() {
-        this.$nextTick(() => {
-          this[this.isOpen ? "onOpen" : "onClose"]();
-        });
-      }
+        isOpen() {
+            this.$nextTick(() => {
+                this[this.isOpen ? "onOpen" : "onClose"]();
+            });
+        }
     },
 
     beforeDestroy() {
-      if (this.isOpen) {
-        this.teardownModal();
-      }
+        if (this.isOpen) {
+            this.teardownModal();
+        }
     },
 
     methods: {
-      open() {
-        this.isOpen = true;
-      },
+        open() {
+            this.isOpen = true;
+        },
 
-      close() {
-        this.isOpen = false;
-      },
+        close() {
+            this.isOpen = false;
+        },
 
-      closeModal(e) {
-        this.triggerCloseConfirmPromptAlertKey = null;
+        closeModal(e) {
+            this.triggerCloseConfirmPromptAlertKey = null;
 
-        if (!this.dismissible) {
-          return;
-        }
+            if (!this.dismissible) {
+                return;
+            }
 
-        if (this.promptBeforeClose) {
-          return (this.triggerCloseConfirmPromptAlertKey = Date.now()); //If prop set to confirm close!
-        }
+            if (this.promptBeforeClose) {
+                return (this.triggerCloseConfirmPromptAlertKey = Date.now()); //If prop set to confirm close!
+            }
 
-        // Make sure the element clicked was the backdrop and not a child whose click
-        // event has bubbled up
-        if (
-          e.currentTarget === this.$refs.backdrop &&
-          e.target !== e.currentTarget
-        ) {
-          return;
-        }
+            // Make sure the element clicked was the backdrop and not a child whose click
+            // event has bubbled up
+            if (
+                e.currentTarget === this.$refs.backdrop &&
+                e.target !== e.currentTarget
+            ) {
+                return;
+            }
 
-        this.isOpen = false;
-      },
+            this.isOpen = false;
+        },
 
-      destroyModal() {
-        this.dismissible = true;
-        this.triggerCloseConfirmPromptAlertKey = null;
-        this.promptBeforeClose = false;
-        this.isOpen = false;
-        this.$emit("close");
-      },
+        destroyModal() {
+            this.dismissible = true;
+            this.triggerCloseConfirmPromptAlertKey = null;
+            this.promptBeforeClose = false;
+            this.isOpen = false;
+            this.$emit("close");
+        },
 
-      onOpen() {
-        this.lastfocusedElement = document.activeElement;
-        this.$refs.container.focus();
-
-        classlist.add(document.body, "ui-modal--is-open");
-        document.addEventListener("focus", this.restrictFocus, true);
-
-        this.$emit("open");
-      },
-
-      onClose() {
-        this.teardownModal();
-        this.$emit("close");
-      },
-
-      redirectFocus() {
-        if (this.$refs.container) this.$refs.container.focus();
-      },
-
-      restrictFocus(e) {
-        try {
-          if (
-            !this.preventRestrictFocus &&
-            this.$refs.container &&
-            e.target &&
-            !this.$refs.container.contains(e.target)
-          ) {
-            e.stopPropagation();
+        onOpen() {
+            this.lastfocusedElement = document.activeElement;
             this.$refs.container.focus();
-          }
-        } catch (e) {
-          console.error(e);
+
+            classlist.add(document.body, "ui-modal--is-open");
+            document.addEventListener("focus", this.restrictFocus, true);
+
+            this.$emit("open");
+        },
+
+        onClose() {
+            this.teardownModal();
+            this.$emit("close");
+        },
+
+        redirectFocus() {
+            if (this.$refs.container) this.$refs.container.focus();
+        },
+
+        restrictFocus(e) {
+            try {
+                if (
+                    !this.preventRestrictFocus &&
+                    this.$refs.container &&
+                    e.target &&
+                    !this.$refs.container.contains(e.target)
+                ) {
+                    e.stopPropagation();
+                    this.$refs.container.focus();
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        },
+
+        teardownModal() {
+            // classlist.remove(document.body, 'ui-modal--is-open');
+            document.removeEventListener("focus", this.restrictFocus, true);
+
+            if (this.lastfocusedElement) {
+                this.lastfocusedElement.focus();
+            }
+        },
+
+        onEnter() {
+            this.$emit("reveal");
+        },
+
+        onLeave() {
+            this.$emit("hide");
+
+            classlist.remove(document.body, "ui-modal--is-open");
+        },
+
+        promptModalActionTriggered(val) {
+            this.triggerCloseConfirmPromptAlertKey = null;
+
+            if (!val) return;
+
+            if (val) {
+                //Confirmed close
+                return (this.isOpen = false);
+            }
+
+            return false;
         }
-      },
-
-      teardownModal() {
-        // classlist.remove(document.body, 'ui-modal--is-open');
-        document.removeEventListener("focus", this.restrictFocus, true);
-
-        if (this.lastfocusedElement) {
-          this.lastfocusedElement.focus();
-        }
-      },
-
-      onEnter() {
-        this.$emit("reveal");
-      },
-
-      onLeave() {
-        this.$emit("hide");
-
-        classlist.remove(document.body, "ui-modal--is-open");
-      },
-
-      promptModalActionTriggered(val) {
-        this.triggerCloseConfirmPromptAlertKey = null;
-
-        if (!val) return;
-
-        if (val) {
-          //Confirmed close
-          return (this.isOpen = false);
-        }
-
-        return false;
-      }
     },
 
-    mounted() {
-      try {
-        VueEventBus.$on("Application.SessionEnded", this.destroyModal);
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    beforeDestroy() {
-      try {
-        VueEventBus.$off("Application.SessionEnded", this.destroyModal);
-      } catch (e) {
-        console.error(e);
-      }
-    },
+    mounted() {},
+    beforeDestroy() {},
 
     components: {
-      UiCloseButton,
-      UiConfirmClosePrompt
+        UiCloseButton,
+        UiConfirmClosePrompt
     }
-  };
+};
 </script>
 
 <style lang="scss">
-  @import "./styles/imports";
+@import "./styles/imports";
 
-  $ui-modal-transition-duration: 0.3s !default;
-  $ui-modal-mask-background: rgba(black, 0.5) !default;
-  $ui-modal-header-height: rem-calc(56px);
-  $ui-modal-footer-height: rem-calc(70px);
+$ui-modal-transition-duration: 0.3s !default;
+$ui-modal-mask-background: rgba(black, 0.5) !default;
+$ui-modal-header-height: rem-calc(56px);
+$ui-modal-footer-height: rem-calc(70px);
 
-  $ui-modal-font-size: rem-calc(14px);
-  $ui-modal-header-font-size: rem-calc(18px);
+$ui-modal-font-size: rem-calc(14px);
+$ui-modal-header-font-size: rem-calc(18px);
 
-  .ui-modal {
+.ui-modal {
     font-family: $font-stack;
     font-size: $ui-modal-font-size;
 
     &.has-footer {
-      .ui-modal__body {
-        max-height: calc(
-          100vh - #{$ui-modal-header-height + $ui-modal-footer-height}
-        );
-      }
+        .ui-modal__body {
+            max-height: calc(
+                100vh - #{$ui-modal-header-height + $ui-modal-footer-height}
+            );
+        }
     }
 
     &:not(.has-footer) {
-      .ui-modal__body {
-        padding: rem-calc(16px 24px 24px);
-      }
+        .ui-modal__body {
+            padding: rem-calc(16px 24px 24px);
+        }
     }
-  }
+}
 
-  .ui-modal--is-open {
+.ui-modal--is-open {
     overflow: hidden;
-  }
+}
 
-  .ui-modal__mask {
+.ui-modal__mask {
     background-color: $ui-modal-mask-background;
     display: table;
     height: 100%;
@@ -324,19 +348,19 @@
     transition: opacity $ui-modal-transition-duration ease;
     width: 100%;
     z-index: $z-index-modal;
-  }
+}
 
-  .ui-modal__wrapper {
+.ui-modal__wrapper {
     display: table-cell;
     vertical-align: middle;
     overflow-x: hidden;
 
     &.has-dummy-scrollbar {
-      overflow-y: scroll;
+        overflow-y: scroll;
     }
-  }
+}
 
-  .ui-modal__container {
+.ui-modal__container {
     background-color: white;
     border-radius: $ui-default-border-radius;
     box-shadow: 0 2px 8px rgba(black, 0.33);
@@ -348,9 +372,9 @@
     padding: 0;
     transition: all $ui-modal-transition-duration ease;
     width: rem-calc(528px);
-  }
+}
 
-  .ui-modal__header {
+.ui-modal__header {
     align-items: center;
     background-color: #f5f5f5;
     box-shadow: 0 1px 1px rgba(black, 0.16);
@@ -359,29 +383,29 @@
     padding: rem-calc(0 24px);
     position: relative;
     z-index: 1;
-  }
+}
 
-  .ui-modal__header-text {
+.ui-modal__header-text {
     align-items: center;
     display: flex;
     flex-grow: 1;
     font-size: $ui-modal-header-font-size;
     font-weight: normal;
     margin: 0;
-  }
+}
 
-  .ui-modal__close-button {
+.ui-modal__close-button {
     margin-left: auto;
     margin-right: rem-calc(-8px);
-  }
+}
 
-  .ui-modal__body {
+.ui-modal__body {
     max-height: calc(100vh - #{$ui-modal-header-height});
     overflow-y: auto;
     padding: rem-calc(16px 24px);
-  }
+}
 
-  .ui-modal__footer {
+.ui-modal__footer {
     align-items: center;
     display: flex;
     height: $ui-modal-footer-height;
@@ -389,45 +413,45 @@
     padding: rem-calc(0 24px);
 
     .ui-button {
-      margin-left: rem-calc(8px);
+        margin-left: rem-calc(8px);
 
-      &:first-child {
-        margin-left: 0;
-      }
+        &:first-child {
+            margin-left: 0;
+        }
     }
-  }
+}
 
-  // ================================================
-  // Sizes
-  // ================================================
+// ================================================
+// Sizes
+// ================================================
 
-  .ui-modal--size-large {
+.ui-modal--size-large {
     .ui-modal__container {
-      width: rem-calc(848px);
+        width: rem-calc(848px);
     }
-  }
+}
 
-  .ui-modal--size-small {
+.ui-modal--size-small {
     .ui-modal__container {
-      width: rem-calc(320px);
+        width: rem-calc(320px);
     }
-  }
+}
 
-  // ================================================
-  // Transitions
-  // ================================================
+// ================================================
+// Transitions
+// ================================================
 
-  .ui-modal--transition-fade-enter,
-  .ui-modal--transition-fade-leave-active {
+.ui-modal--transition-fade-enter,
+.ui-modal--transition-fade-leave-active {
     opacity: 0;
-  }
+}
 
-  .ui-modal--transition-scale-enter,
-  .ui-modal--transition-scale-leave-active {
+.ui-modal--transition-scale-enter,
+.ui-modal--transition-scale-leave-active {
     opacity: 0;
 
     .ui-modal__container {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
-  }
+}
 </style>
