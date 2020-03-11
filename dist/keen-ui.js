@@ -5085,7 +5085,7 @@ exports.default = (_name$props$data$dire = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _typeof2 = __webpack_require__(33);
@@ -5107,185 +5107,191 @@ var _tippy2 = _interopRequireDefault(_tippy);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  name: "ui-popover",
+    name: "ui-popover",
 
-  props: (0, _defineProperty3.default)({
-    trigger: {
-      type: String,
-      required: true
-    },
-    dropdownPosition: {
-      type: String,
-      default: "bottom left"
-    },
-    openOn: {
-      type: String,
-      default: "click" },
-    containFocus: {
-      type: Boolean,
-      default: false
-    },
-    focusRedirector: Function,
-    raised: {
-      type: Boolean,
-      default: true
-    },
-    placement: {
-      type: String,
-      default: "bottom"
-    },
-    appendTo: {
-      type: [String, Boolean, HTMLBodyElement],
-      default: false
-    },
-    maxWidth: {
-      type: [String, Number],
-      default: 400
-    },
-    onHideCallback: Function
-  }, "raised", {
-    type: Boolean,
-    default: function _default() {
-      return true;
-    }
-  }),
+    props: (0, _defineProperty3.default)({
+        trigger: {
+            type: String,
+            required: true
+        },
+        dropdownPosition: {
+            type: String,
+            default: "bottom left"
+        },
+        openOn: {
+            type: String,
+            default: "click" },
+        containFocus: {
+            type: Boolean,
+            default: false
+        },
+        focusRedirector: Function,
+        raised: {
+            type: Boolean,
+            default: true
+        },
+        placement: {
+            type: String,
+            default: "bottom"
+        },
+        appendTo: {
+            type: [String, Boolean, HTMLBodyElement],
+            default: false
+        },
+        maxWidth: {
+            type: [String, Number],
+            default: 400
+        },
+        onHideCallback: Function
+    }, "raised", {
+        type: Boolean,
+        default: function _default() {
+            return true;
+        }
+    }),
 
-  data: function data() {
-    return {
-      dropInstance: null
-    };
-  },
-
-
-  computed: {
-    triggerEl: function triggerEl() {
-      return this.$parent.$refs[this.trigger];
-    }
-  },
-
-  mounted: function mounted() {
-    var _this = this;
-
-    if (this.transformOpenOn()) {
-      this.$nextTick(function () {
-        _this.initializeDropdown();
-      });
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    try {
-      if (this.dropInstance && typeof this.dropInstance.destroy === "function") {
-        this.dropInstance.destroy(true);
-      }
-    } catch (e) {
-      this.dropInstance = null;
-      console.error(e);
-    }
-  },
+    data: function data() {
+        return {
+            dropInstance: null
+        };
+    },
 
 
-  methods: {
-    reposition: function reposition() {
-      if (this.dropInstance && this.dropInstance.popperInstance) {
-        return this.dropInstance.popperInstance.update();
-      }
+    computed: {
+        triggerEl: function triggerEl() {
+            return this.$parent.$refs[this.trigger];
+        }
     },
-    setInstanceOptions: function setInstanceOptions(obj) {
-      if (this.dropInstance && obj && (typeof obj === "undefined" ? "undefined" : (0, _typeof3.default)(obj)) === "object") {
-        return this.dropInstance.set(obj);
-      }
-    },
-    transformOpenOn: function transformOpenOn() {
-      if (!this.openOn) return false;
-      if (this.openOn === "hover") return "mouseenter";
-      return this.openOn;
-    },
-    initializeDropdown: function initializeDropdown() {
-      try {
-        var $this = this;
-        this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
-          arrow: false,
-          animation: "fade",
-          trigger: this.transformOpenOn(),
-          theme: "custom",
-          boundary: "viewport",
-          animateFill: false,
-          appendTo: this.appendTo ? this.appendTo : document.body,
-          content: this.$el,
-          interactive: true,
-          maxWidth: this.maxWidth,
-          placement: this.placement,
-          distance: 0,
-          delay: [0, 0],
-          duration: [0, 0],
-          interactiveBorder: 2,
-          flipOnUpdate: true,
-          showOnInit: false,
-          onMount: function onMount(_ref) {
-            var reference = _ref.reference;
 
-            reference.setAttribute("aria-expanded", "true");
-            _classlist2.default.add($this.triggerEl, "has-dropdown-open");
-            $this.$emit("open");
-          },
-          onHide: function onHide(_ref2) {
-            var reference = _ref2.reference;
+    mounted: function mounted() {
+        var _this = this;
 
-            reference.setAttribute("aria-expanded", "false");
-            _classlist2.default.remove($this.triggerEl, "has-dropdown-open");
-            if ($this.onHideCallback && typeof $this.onHideCallback === "function") {
-              $this.onHideCallback();
+        if (this.transformOpenOn()) {
+            this.$nextTick(function () {
+                _this.initializeDropdown();
+            });
+        }
+    },
+    beforeDestroy: function beforeDestroy() {
+        try {
+            if (this.dropInstance && typeof this.dropInstance.destroy === "function") {
+                this.dropInstance.destroy(true);
             }
-          },
-          onHidden: function onHidden(_ref3) {
-            var reference = _ref3.reference;
+        } catch (e) {
+            this.dropInstance = null;
+            console.error(e);
+        }
+    },
 
-            $this.$emit("close");
-          }
-        });
-      } catch (e) {
-        console.error(e);
-      }
-    },
-    openDropdown: function openDropdown() {
-      if (this.dropInstance) {
-        this.dropInstance.show();
-      }
-    },
-    closeDropdown: function closeDropdown() {
-      if (this.dropInstance) {
-        this.dropInstance.hide();
-      }
-    },
-    toggleDropdown: function toggleDropdown(e) {
-      if (this.dropInstance) {
-        this.dropInstance.hide(e);
-      }
-    },
-    onOpen: function onOpen() {},
-    onClose: function onClose() {},
-    restrictFocus: function restrictFocus(e) {
-      if (!this.containFocus) {
-        this.closeDropdown();
-        return;
-      }
-      e.stopPropagation();
-      if (this.focusRedirector) {
-        this.focusRedirector(e);
-      } else {
-        this.$el.focus();
-      }
-    },
-    open: function open() {
-      this.openDropdown();
-    },
-    close: function close() {
-      this.closeDropdown();
-    },
-    toggle: function toggle() {
-      this.toggleDropdown();
+
+    methods: {
+        reposition: function reposition() {
+            if (this.dropInstance && this.dropInstance.popperInstance) {
+                return this.dropInstance.popperInstance.update();
+            }
+        },
+        setInstanceOptions: function setInstanceOptions(obj) {
+            if (this.dropInstance && obj && (typeof obj === "undefined" ? "undefined" : (0, _typeof3.default)(obj)) === "object") {
+                return this.dropInstance.set(obj);
+            }
+        },
+        transformOpenOn: function transformOpenOn() {
+            if (!this.openOn) return false;
+            if (this.openOn === "hover") return "mouseenter";
+            return this.openOn;
+        },
+        initializeDropdown: function initializeDropdown() {
+            try {
+                var $this = this;
+                this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
+                    arrow: false,
+                    animation: "fade",
+                    trigger: this.transformOpenOn(),
+                    theme: "custom",
+                    boundary: "viewport",
+                    animateFill: false,
+                    appendTo: this.appendTo ? this.appendTo : document.body,
+                    content: this.$el,
+                    interactive: true,
+                    maxWidth: this.maxWidth,
+                    placement: this.placement,
+                    distance: 0,
+                    delay: [0, 0],
+                    duration: [0, 0],
+                    interactiveBorder: 2,
+                    flipOnUpdate: true,
+                    showOnInit: false,
+                    popperOptions: {
+                        modifiers: {
+                            computeStyle: {
+                                gpuAcceleration: false }
+                        }
+                    },
+                    onMount: function onMount(_ref) {
+                        var reference = _ref.reference;
+
+                        reference.setAttribute("aria-expanded", "true");
+                        _classlist2.default.add($this.triggerEl, "has-dropdown-open");
+                        $this.$emit("open");
+                    },
+                    onHide: function onHide(_ref2) {
+                        var reference = _ref2.reference;
+
+                        reference.setAttribute("aria-expanded", "false");
+                        _classlist2.default.remove($this.triggerEl, "has-dropdown-open");
+                        if ($this.onHideCallback && typeof $this.onHideCallback === "function") {
+                            $this.onHideCallback();
+                        }
+                    },
+                    onHidden: function onHidden(_ref3) {
+                        var reference = _ref3.reference;
+
+                        $this.$emit("close");
+                    }
+                });
+            } catch (e) {
+                console.error(e);
+            }
+        },
+        openDropdown: function openDropdown() {
+            if (this.dropInstance) {
+                this.dropInstance.show();
+            }
+        },
+        closeDropdown: function closeDropdown() {
+            if (this.dropInstance) {
+                this.dropInstance.hide();
+            }
+        },
+        toggleDropdown: function toggleDropdown(e) {
+            if (this.dropInstance) {
+                this.dropInstance.hide(e);
+            }
+        },
+        onOpen: function onOpen() {},
+        onClose: function onClose() {},
+        restrictFocus: function restrictFocus(e) {
+            if (!this.containFocus) {
+                this.closeDropdown();
+                return;
+            }
+            e.stopPropagation();
+            if (this.focusRedirector) {
+                this.focusRedirector(e);
+            } else {
+                this.$el.focus();
+            }
+        },
+        open: function open() {
+            this.openDropdown();
+        },
+        close: function close() {
+            this.closeDropdown();
+        },
+        toggle: function toggle() {
+            this.toggleDropdown();
+        }
     }
-  }
 };
 
 /***/ }),
