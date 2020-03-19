@@ -12,7 +12,7 @@
           <slot>{{ label }}</slot>
         </div>
 
-        <ui-icon class="ui-autocomplete__clear-button" title="Clear" @click.native="updateValue('')" v-show="!disabled && valueLength > 0">
+        <ui-icon class="ui-autocomplete__clear-button" title="Clear" @click.native="updateValue('')" v-show="enableClear && !disabled && valueLength > 0">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M18.984 6.422L13.406 12l5.578 5.578-1.406 1.406L12 13.406l-5.578 5.578-1.406-1.406L10.594 12 5.016 6.422l1.406-1.406L12 10.594l5.578-5.578z" />
           </svg>
@@ -142,6 +142,14 @@
       showCharCounterLabel: {
         type: Boolean,
         default: true
+      },
+      alwaysShowAllSuggestions: {
+        type: Boolean,
+        default: false
+      },
+      enableClear: {
+        type: Boolean,
+        default: false
       }
     },
 
@@ -211,6 +219,8 @@
       },
 
       matchingSuggestions() {
+        if (this.alwaysShowAllSuggestions) return this.suggestions;
+
         return this.suggestions
           .filter((suggestion, index) => {
             if (this.filter) {
@@ -313,7 +323,23 @@
       selectHighlighted(index, e) {
         if (this.showDropdown && this.$refs.suggestions.length > 0) {
           e.preventDefault();
-          this.selectSuggestion(this.$refs.suggestions[index].suggestion);
+
+          if (this.alwaysShowAllSuggestions) {
+            //In this context, is used as a datalist substitute
+            if (index === -1 && this.value)
+              return this.selectSuggestion(this.value); //allow a dynamic value to be set, none highlighted
+
+            //Is the present entered value a suggestion, or custom entry
+            const valueIsCustom =
+              this.value && !this.suggestions.find(x => x.value === this.value);
+
+            if (valueIsCustom) return this.selectSuggestion(this.value);
+
+            return this.selectSuggestion(
+              this.$refs.suggestions[index].suggestion
+            );
+          }
+          return this.selectSuggestion(this.$refs.suggestions[index].suggestion);
         }
       },
 
