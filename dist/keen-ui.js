@@ -2836,7 +2836,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _UiCalendarControls = __webpack_require__(215);
@@ -2856,150 +2856,149 @@ var _elementScroll = __webpack_require__(95);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  name: "ui-calendar",
+    name: "ui-calendar",
 
-  props: {
-    value: Date,
-    minDate: Date,
-    maxDate: Date,
-    lang: {
-      type: Object,
-      default: function _default() {
-        return _date2.default.defaultLang;
-      }
-    },
-    yearRange: {
-      type: Array,
-      default: function _default() {
-        var thisYear = new Date().getFullYear();
+    props: {
+        value: Date,
+        minDate: Date,
+        maxDate: Date,
+        lang: {
+            type: Object,
+            default: function _default() {
+                return _date2.default.defaultLang;
+            }
+        },
+        yearRange: {
+            type: Array,
+            default: function _default() {
+                var thisYear = new Date().getFullYear();
 
-        return Array.apply(null, Array(200)).map(function (item, index) {
-          return thisYear - 100 + index;
-        });
-      }
+                return Array.apply(null, Array(200)).map(function (item, index) {
+                    return thisYear - 100 + index;
+                });
+            }
+        },
+        dateFilter: Function,
+        color: {
+            type: String,
+            default: "primary" },
+        orientation: {
+            type: String,
+            default: "portrait" },
+        initWithYearPicker: {
+            type: Boolean,
+            default: false
+        }
     },
-    dateFilter: Function,
-    color: {
-      type: String,
-      default: "primary" },
-    orientation: {
-      type: String,
-      default: "portrait" },
-    initWithYearPicker: {
-      type: Boolean,
-      default: false
+
+    data: function data() {
+        return {
+            today: new Date(),
+            dateInView: this.getDateInRange(this.value, new Date()),
+            showYearPicker: this.initWithYearPicker
+        };
+    },
+
+
+    computed: {
+        classes: function classes() {
+            return ["ui-calendar--color-" + this.color, "ui-calendar--orientation-" + this.orientation];
+        },
+        headerYear: function headerYear() {
+            return this.value ? this.value.getFullYear() : this.today.getFullYear();
+        },
+        headerDay: function headerDay() {
+            return this.value ? _date2.default.getDayAbbreviated(this.value, this.lang) : _date2.default.getDayAbbreviated(this.today, this.lang);
+        },
+        headerDate: function headerDate() {
+            var date = this.value ? this.value : this.today;
+
+            return _date2.default.getMonthAbbreviated(date, this.lang) + " " + _date2.default.getDayOfMonth(date, this.lang);
+        }
+    },
+
+    watch: {
+        value: function value() {
+            if (this.value) {
+                this.dateInView = _date2.default.clone(this.value);
+            }
+        },
+        showYearPicker: function showYearPicker() {
+            var _this = this;
+
+            if (this.showYearPicker) {
+                this.$nextTick(function () {
+                    var el = _this.$refs.years.querySelector(".is-selected") || _this.$refs.years.querySelector(".is-current-year");
+
+                    (0, _elementScroll.scrollIntoView)(el, { marginTop: 126 });
+                });
+            }
+        }
+    },
+
+    methods: {
+        selectYear: function selectYear(year) {
+            var newDate = _date2.default.clone(this.dateInView);
+            newDate.setFullYear(year);
+
+            this.dateInView = this.getDateInRange(newDate);
+            this.showYearPicker = false;
+        },
+        getDateInRange: function getDateInRange(date, fallback) {
+            date = date || fallback;
+
+            if (this.minDate && date.getTime() < this.minDate.getTime()) {
+                return this.minDate;
+            }
+
+            if (this.maxDate && date.getTime() > this.maxDate.getTime()) {
+                return this.maxDate;
+            }
+
+            return date;
+        },
+        getYearClasses: function getYearClasses(year) {
+            return {
+                "is-current-year": this.isYearCurrent(year),
+                "is-selected": this.isYearSelected(year)
+            };
+        },
+        isYearCurrent: function isYearCurrent(year) {
+            return year === this.today.getFullYear();
+        },
+        isYearSelected: function isYearSelected(year) {
+            return this.value && year === this.value.getFullYear();
+        },
+        isYearOutOfRange: function isYearOutOfRange(year) {
+            if (this.minDate && year < this.minDate.getFullYear()) {
+                return true;
+            }
+
+            if (this.maxDate && year > this.maxDate.getFullYear()) {
+                return true;
+            }
+
+            return false;
+        },
+        onDateSelect: function onDateSelect(date) {
+            this.$emit("input", date);
+            this.$emit("date-select", date);
+        },
+        onGoToDate: function onGoToDate(date) {
+            var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { isForward: true };
+
+            this.$refs.month.goToDate(date, options);
+        },
+        onMonthChange: function onMonthChange(newDate) {
+            this.dateInView = newDate;
+            this.$emit("month-change", newDate);
+        }
+    },
+
+    components: {
+        UiCalendarControls: _UiCalendarControls2.default,
+        UiCalendarMonth: _UiCalendarMonth2.default
     }
-  },
-
-  data: function data() {
-    return {
-      today: new Date(),
-      dateInView: this.getDateInRange(this.value, new Date()),
-      showYearPicker: this.initWithYearPicker
-    };
-  },
-
-
-  computed: {
-    classes: function classes() {
-      return ["ui-calendar--color-" + this.color, "ui-calendar--orientation-" + this.orientation];
-    },
-    headerYear: function headerYear() {
-      return this.value ? this.value.getFullYear() : this.today.getFullYear();
-    },
-    headerDay: function headerDay() {
-      return this.value ? _date2.default.getDayAbbreviated(this.value, this.lang) : _date2.default.getDayAbbreviated(this.today, this.lang);
-    },
-    headerDate: function headerDate() {
-      var date = this.value ? this.value : this.today;
-
-      return _date2.default.getMonthAbbreviated(date, this.lang) + " " + _date2.default.getDayOfMonth(date, this.lang);
-    }
-  },
-
-  watch: {
-    value: function value() {
-      if (this.value) {
-        this.dateInView = _date2.default.clone(this.value);
-      }
-    },
-    showYearPicker: function showYearPicker() {
-      var _this = this;
-
-      if (this.showYearPicker) {
-        this.$nextTick(function () {
-          alert(23);
-          var el = _this.$refs.years.querySelector(".is-selected") || _this.$refs.years.querySelector(".is-current-year");
-
-          (0, _elementScroll.scrollIntoView)(el, { marginTop: 126 });
-        });
-      }
-    }
-  },
-
-  methods: {
-    selectYear: function selectYear(year) {
-      var newDate = _date2.default.clone(this.dateInView);
-      newDate.setFullYear(year);
-
-      this.dateInView = this.getDateInRange(newDate);
-      this.showYearPicker = false;
-    },
-    getDateInRange: function getDateInRange(date, fallback) {
-      date = date || fallback;
-
-      if (this.minDate && date.getTime() < this.minDate.getTime()) {
-        return this.minDate;
-      }
-
-      if (this.maxDate && date.getTime() > this.maxDate.getTime()) {
-        return this.maxDate;
-      }
-
-      return date;
-    },
-    getYearClasses: function getYearClasses(year) {
-      return {
-        "is-current-year": this.isYearCurrent(year),
-        "is-selected": this.isYearSelected(year)
-      };
-    },
-    isYearCurrent: function isYearCurrent(year) {
-      return year === this.today.getFullYear();
-    },
-    isYearSelected: function isYearSelected(year) {
-      return this.value && year === this.value.getFullYear();
-    },
-    isYearOutOfRange: function isYearOutOfRange(year) {
-      if (this.minDate && year < this.minDate.getFullYear()) {
-        return true;
-      }
-
-      if (this.maxDate && year > this.maxDate.getFullYear()) {
-        return true;
-      }
-
-      return false;
-    },
-    onDateSelect: function onDateSelect(date) {
-      this.$emit("input", date);
-      this.$emit("date-select", date);
-    },
-    onGoToDate: function onGoToDate(date) {
-      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { isForward: true };
-
-      this.$refs.month.goToDate(date, options);
-    },
-    onMonthChange: function onMonthChange(newDate) {
-      this.dateInView = newDate;
-      this.$emit("month-change", newDate);
-    }
-  },
-
-  components: {
-    UiCalendarControls: _UiCalendarControls2.default,
-    UiCalendarMonth: _UiCalendarMonth2.default
-  }
 };
 
 /***/ }),
@@ -18057,7 +18056,7 @@ var render = function() {
             }
           }
         },
-        [_vm._v("\n      " + _vm._s(_vm.headerYear) + "\n    ")]
+        [_vm._v("\n            " + _vm._s(_vm.headerYear) + "\n        ")]
       ),
       _vm._v(" "),
       _c(
@@ -18131,7 +18130,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("\n        " + _vm._s(year) + "\n      ")]
+                [_vm._v("\n                " + _vm._s(year) + "\n            ")]
               )
             : _vm._e()
         }),
