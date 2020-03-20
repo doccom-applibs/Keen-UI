@@ -1,275 +1,272 @@
 <template>
-    <div
-        class="ui-popover"
-        aria-expanded="false"
-        role="dialog"
-        tabindex="-1"
-        :class="{ 'is-raised': raised }"
-        @keydown.esc="closeDropdown"
-    >
-        <slot></slot>
-        <div
-            class="ui-popover__focus-redirector"
-            tabindex="0"
-            @focus="restrictFocus"
-        ></div>
-    </div>
+  <div ref="popover-el" class="ui-popover no-display" aria-expanded="false" role="dialog" tabindex="-1" :class="{ 'is-raised': raised }" @keydown.esc="closeDropdown">
+    <slot></slot>
+    <div class="ui-popover__focus-redirector" tabindex="0" @focus="restrictFocus"></div>
+  </div>
 </template>
 
 <script>
-import classlist from "./helpers/classlist";
-import tippy from "tippy.js";
+  import classlist from "./helpers/classlist";
+  import tippy from "tippy.js";
 
-export default {
+  export default {
     name: "ui-popover",
 
     props: {
-        trigger: {
-            type: String,
-            required: true
-        },
-        dropdownPosition: {
-            type: String,
-            default: "bottom left"
-        },
-        openOn: {
-            type: String,
-            default: "click" // 'click', 'hover', 'focus', or 'always'
-        },
-        containFocus: {
-            type: Boolean,
-            default: false
-        },
-        focusRedirector: Function,
-        raised: {
-            type: Boolean,
-            default: true
-        },
-        placement: {
-            type: String,
-            default: "bottom"
-        },
-        appendTo: {
-            type: [String, Boolean, HTMLBodyElement],
-            default: false
-        },
-        maxWidth: {
-            type: [String, Number],
-            default: 400
-        },
-        onHideCallback: Function,
-        raised: {
-            type: Boolean,
-            default: () => {
-                return true;
-            }
+      trigger: {
+        type: String,
+        required: true
+      },
+      dropdownPosition: {
+        type: String,
+        default: "bottom left"
+      },
+      openOn: {
+        type: String,
+        default: "click" // 'click', 'hover', 'focus', or 'always'
+      },
+      containFocus: {
+        type: Boolean,
+        default: false
+      },
+      focusRedirector: Function,
+      raised: {
+        type: Boolean,
+        default: true
+      },
+      placement: {
+        type: String,
+        default: "bottom"
+      },
+      appendTo: {
+        type: [String, Boolean, HTMLBodyElement],
+        default: false
+      },
+      maxWidth: {
+        type: [String, Number],
+        default: 400
+      },
+      onHideCallback: Function,
+      raised: {
+        type: Boolean,
+        default: () => {
+          return true;
         }
+      }
     },
 
     data() {
-        return {
-            dropInstance: null
-            //lastfocusedElement: null
-        };
+      return {
+        dropInstance: null
+        //lastfocusedElement: null
+      };
     },
 
     computed: {
-        triggerEl() {
-            return this.$parent.$refs[this.trigger];
-        }
+      triggerEl() {
+        return this.$parent.$refs[this.trigger];
+      }
     },
 
     mounted() {
-        if (this.transformOpenOn()) {
-            this.$nextTick(() => {
-                this.initializeDropdown();
-            });
-        }
+      if (this.transformOpenOn()) {
+        this.$nextTick(() => {
+          this.initializeDropdown();
+        });
+      }
     },
 
     beforeDestroy() {
-        try {
-            if (
-                this.dropInstance &&
-                typeof this.dropInstance.destroy === "function"
-            ) {
-                this.dropInstance.destroy(true);
-            }
-        } catch (e) {
-            this.dropInstance = null;
-            console.error(e);
+      try {
+        if (
+          this.dropInstance &&
+          typeof this.dropInstance.destroy === "function"
+        ) {
+          this.dropInstance.destroy(true);
         }
+      } catch (e) {
+        this.dropInstance = null;
+        console.error(e);
+      }
     },
 
     methods: {
-        reposition() {
-            if (this.dropInstance && this.dropInstance.popperInstance) {
-                return this.dropInstance.popperInstance.update();
-            }
-        },
-        setInstanceOptions(obj) {
-            if (this.dropInstance && obj && typeof obj === "object") {
-                return this.dropInstance.set(obj);
-            }
-        },
-        transformOpenOn() {
-            if (!this.openOn) return false;
-            if (this.openOn === "hover") return "mouseenter";
-            return this.openOn;
-        },
-        initializeDropdown() {
-            try {
-                let $this = this;
-                this.dropInstance = tippy(this.triggerEl, {
-                    arrow: false,
-                    animation: "fade",
-                    trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
-                    theme: "custom",
-                    boundary: "viewport",
-                    animateFill: false,
-                    appendTo: this.appendTo ? this.appendTo : document.body,
-                    content: this.$el,
-                    interactive: true,
-                    maxWidth: this.maxWidth,
-                    placement: this.placement,
-                    distance: 0,
-                    delay: [0, 0], //show,hide
-                    duration: [0, 0], //show,hide
-                    interactiveBorder: 2,
-                    flipOnUpdate: true,
-                    showOnInit: false,
-                    popperOptions: {
-                        modifiers: {
-                            computeStyle: {
-                                gpuAcceleration: false //Prevent blurry text in Chrome and IE
-                            }
-                        }
-                    },
-                    onMount({ reference }) {
-                        reference.setAttribute("aria-expanded", "true");
-                        classlist.add($this.triggerEl, "has-dropdown-open");
-                        $this.$emit("open");
-                    },
-                    onHide({ reference }) {
-                        reference.setAttribute("aria-expanded", "false");
-                        classlist.remove($this.triggerEl, "has-dropdown-open");
-                        if (
-                            $this.onHideCallback &&
-                            typeof $this.onHideCallback === "function"
-                        ) {
-                            $this.onHideCallback();
-                        }
-                    },
-                    onHidden({ reference }) {
-                        $this.$emit("close");
-                    }
-                });
-            } catch (e) {
-                console.error(e);
-            }
-        },
-
-        openDropdown() {
-            if (this.dropInstance) {
-                this.dropInstance.show();
-            }
-        },
-
-        closeDropdown() {
-            if (this.dropInstance) {
-                this.dropInstance.hide();
-            }
-        },
-
-        toggleDropdown(e) {
-            if (this.dropInstance) {
-                this.dropInstance.hide(e);
-            }
-        },
-
-        onOpen() {
-            //classlist.add(this.triggerEl, "has-dropdown-open");
-            //this.lastfocusedElement = document.activeElement;
-            //this.$el.focus();
-            //this.$emit("open");
-        },
-
-        onClose() {
-            //classlist.remove(this.triggerEl, "has-dropdown-open");
-            // if (this.lastfocusedElement) {
-            //   this.lastfocusedElement.focus();
-            // }
-            //this.$emit("close");
-        },
-
-        restrictFocus(e) {
-            if (!this.containFocus) {
-                this.closeDropdown();
-                return;
-            }
-            e.stopPropagation();
-            if (this.focusRedirector) {
-                this.focusRedirector(e);
-            } else {
-                this.$el.focus();
-            }
-        },
-
-        open() {
-            this.openDropdown();
-        },
-
-        close() {
-            this.closeDropdown();
-        },
-
-        toggle() {
-            this.toggleDropdown();
+      reposition() {
+        if (this.dropInstance && this.dropInstance.popperInstance) {
+          return this.dropInstance.popperInstance.update();
         }
+      },
+      setInstanceOptions(obj) {
+        if (this.dropInstance && obj && typeof obj === "object") {
+          return this.dropInstance.set(obj);
+        }
+      },
+      transformOpenOn() {
+        if (!this.openOn) return false;
+        if (this.openOn === "hover") return "mouseenter";
+        return this.openOn;
+      },
+      initializeDropdown() {
+        try {
+          let $this = this;
+          this.dropInstance = tippy(this.triggerEl, {
+            arrow: false,
+            animation: "fade",
+            trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
+            theme: "custom",
+            boundary: "viewport",
+            animateFill: false,
+            appendTo: this.appendTo ? this.appendTo : document.body,
+            content: this.$el,
+            interactive: true,
+            maxWidth: this.maxWidth,
+            placement: this.placement,
+            distance: 0,
+            delay: [0, 0], //show,hide
+            duration: [0, 0], //show,hide
+            interactiveBorder: 2,
+            flipOnUpdate: true,
+            showOnInit: false,
+            popperOptions: {
+              modifiers: {
+                computeStyle: {
+                  gpuAcceleration: false //Prevent blurry text in Chrome and IE
+                }
+              }
+            },
+            onMount({ reference }) {
+              //Pass in trigger el
+              reference.setAttribute("aria-expanded", "true");
+              $this.$nextTick(() => {
+                classlist.remove($this.$refs["popover-el"], "no-display");
+              });
+              classlist.add($this.triggerEl, "has-dropdown-open");
+              $this.$emit("open");
+            },
+            onHide({ reference }) {
+              reference.setAttribute("aria-expanded", "false");
+              classlist.remove($this.triggerEl, "has-dropdown-open");
+              if (
+                $this.onHideCallback &&
+                typeof $this.onHideCallback === "function"
+              ) {
+                $this.onHideCallback();
+              }
+            },
+            onHidden({ reference }) {
+              $this.$emit("close");
+            }
+          });
+        } catch (e) {
+          console.error(e);
+        }
+      },
+
+      openDropdown() {
+        if (this.dropInstance) {
+          this.dropInstance.show();
+        }
+      },
+
+      closeDropdown() {
+        if (this.dropInstance) {
+          this.dropInstance.hide();
+        }
+      },
+
+      toggleDropdown(e) {
+        if (this.dropInstance) {
+          this.dropInstance.hide(e);
+        }
+      },
+
+      onOpen() {
+        //classlist.add(this.triggerEl, "has-dropdown-open");
+        //this.lastfocusedElement = document.activeElement;
+        //this.$el.focus();
+        //this.$emit("open");
+      },
+
+      onClose() {
+        //classlist.remove(this.triggerEl, "has-dropdown-open");
+        // if (this.lastfocusedElement) {
+        //   this.lastfocusedElement.focus();
+        // }
+        //this.$emit("close");
+      },
+
+      restrictFocus(e) {
+        if (!this.containFocus) {
+          this.closeDropdown();
+          return;
+        }
+        e.stopPropagation();
+        if (this.focusRedirector) {
+          this.focusRedirector(e);
+        } else {
+          this.$el.focus();
+        }
+      },
+
+      open() {
+        this.openDropdown();
+      },
+
+      close() {
+        this.closeDropdown();
+      },
+
+      toggle() {
+        this.toggleDropdown();
+      }
     }
-};
+  };
 </script>
 
 <style lang="scss">
-@import "./styles/imports";
+  @import "./styles/imports";
 
-.tippy-tooltip.custom-theme {
+  .no-display {
+    display: none;
+  }
+
+  .tippy-tooltip.custom-theme {
     background-color: none;
     padding-top: 0;
     height: 100%;
     background: none;
-}
+  }
 
-.tippy-tooltip.custom-theme[data-animatefill] {
+  .tippy-tooltip.custom-theme[data-animatefill] {
     background-color: transparent;
-}
+  }
 
-.tippy-tooltip.custom-theme .tippy-backdrop {
+  .tippy-tooltip.custom-theme .tippy-backdrop {
     background-color: none;
     background: none;
-}
+  }
 
-.ui-popover {
+  .ui-popover {
     background-color: white;
     outline: none;
 
     &.is-raised {
-        box-shadow: 0 2px 4px -1px rgba(black, 0.2),
-            0 4px 5px 0 rgba(black, 0.14), 0 1px 10px 0 rgba(black, 0.12);
+      box-shadow: 0 2px 4px -1px rgba(black, 0.2), 0 4px 5px 0 rgba(black, 0.14),
+        0 1px 10px 0 rgba(black, 0.12);
     }
 
     .ui-menu {
-        border: none;
-        max-height: 98vh;
+      border: none;
+      max-height: 98vh;
     }
-}
+  }
 
-.ui-popover__focus-redirector {
+  .ui-popover__focus-redirector {
     opacity: 0;
     position: absolute;
-}
+  }
 
-.drop-element {
+  .drop-element {
     display: none;
     max-height: 100%;
     max-width: 100%;
@@ -284,15 +281,15 @@ export default {
     & *,
     & *:after,
     & *:before {
-        box-sizing: border-box;
+      box-sizing: border-box;
     }
 
     &.drop-open {
-        display: block;
+      display: block;
     }
 
     &.drop-after-open {
-        opacity: 1;
+      opacity: 1;
     }
-}
+  }
 </style>

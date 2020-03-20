@@ -2397,6 +2397,14 @@ exports.default = {
     showCharCounterLabel: {
       type: Boolean,
       default: true
+    },
+    alwaysShowAllSuggestions: {
+      type: Boolean,
+      default: false
+    },
+    enableClear: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -2444,6 +2452,8 @@ exports.default = {
     },
     matchingSuggestions: function matchingSuggestions() {
       var _this = this;
+
+      if (this.alwaysShowAllSuggestions) return this.suggestions;
 
       return this.suggestions.filter(function (suggestion, index) {
         if (_this.filter) {
@@ -2534,9 +2544,22 @@ exports.default = {
       }
     },
     selectHighlighted: function selectHighlighted(index, e) {
+      var _this3 = this;
+
       if (this.showDropdown && this.$refs.suggestions.length > 0) {
         e.preventDefault();
-        this.selectSuggestion(this.$refs.suggestions[index].suggestion);
+
+        if (this.alwaysShowAllSuggestions) {
+          if (index === -1 && this.value) return this.selectSuggestion(this.value);
+          var valueIsCustom = this.value && !this.suggestions.find(function (x) {
+            return x.value === _this3.value;
+          });
+
+          if (valueIsCustom) return this.selectSuggestion(this.value);
+
+          return this.selectSuggestion(this.$refs.suggestions[index].suggestion);
+        }
+        return this.selectSuggestion(this.$refs.suggestions[index].suggestion);
       }
     },
     openDropdown: function openDropdown() {
@@ -2546,13 +2569,13 @@ exports.default = {
       }
     },
     closeDropdown: function closeDropdown() {
-      var _this3 = this;
+      var _this4 = this;
 
       if (this.showDropdown) {
         this.$nextTick(function () {
-          _this3.showDropdown = false;
-          _this3.highlightedIndex = -1;
-          _this3.$emit("dropdown-close");
+          _this4.showDropdown = false;
+          _this4.highlightedIndex = -1;
+          _this4.$emit("dropdown-close");
         });
       }
     },
@@ -2813,7 +2836,7 @@ exports.default = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _UiCalendarControls = __webpack_require__(215);
@@ -2833,149 +2856,150 @@ var _elementScroll = __webpack_require__(95);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    name: "ui-calendar",
+  name: "ui-calendar",
 
-    props: {
-        value: Date,
-        minDate: Date,
-        maxDate: Date,
-        lang: {
-            type: Object,
-            default: function _default() {
-                return _date2.default.defaultLang;
-            }
-        },
-        yearRange: {
-            type: Array,
-            default: function _default() {
-                var thisYear = new Date().getFullYear();
-
-                return Array.apply(null, Array(200)).map(function (item, index) {
-                    return thisYear - 100 + index;
-                });
-            }
-        },
-        dateFilter: Function,
-        color: {
-            type: String,
-            default: "primary" },
-        orientation: {
-            type: String,
-            default: "portrait" },
-        initWithYearPicker: {
-            type: Boolean,
-            default: false
-        }
+  props: {
+    value: Date,
+    minDate: Date,
+    maxDate: Date,
+    lang: {
+      type: Object,
+      default: function _default() {
+        return _date2.default.defaultLang;
+      }
     },
+    yearRange: {
+      type: Array,
+      default: function _default() {
+        var thisYear = new Date().getFullYear();
 
-    data: function data() {
-        return {
-            today: new Date(),
-            dateInView: this.getDateInRange(this.value, new Date()),
-            showYearPicker: this.initWithYearPicker
-        };
+        return Array.apply(null, Array(200)).map(function (item, index) {
+          return thisYear - 100 + index;
+        });
+      }
     },
-
-
-    computed: {
-        classes: function classes() {
-            return ["ui-calendar--color-" + this.color, "ui-calendar--orientation-" + this.orientation];
-        },
-        headerYear: function headerYear() {
-            return this.value ? this.value.getFullYear() : this.today.getFullYear();
-        },
-        headerDay: function headerDay() {
-            return this.value ? _date2.default.getDayAbbreviated(this.value, this.lang) : _date2.default.getDayAbbreviated(this.today, this.lang);
-        },
-        headerDate: function headerDate() {
-            var date = this.value ? this.value : this.today;
-
-            return _date2.default.getMonthAbbreviated(date, this.lang) + " " + _date2.default.getDayOfMonth(date, this.lang);
-        }
-    },
-
-    watch: {
-        value: function value() {
-            if (this.value) {
-                this.dateInView = _date2.default.clone(this.value);
-            }
-        },
-        showYearPicker: function showYearPicker() {
-            var _this = this;
-
-            if (this.showYearPicker) {
-                this.$nextTick(function () {
-                    var el = _this.$refs.years.querySelector(".is-selected") || _this.$refs.years.querySelector(".is-current-year");
-
-                    (0, _elementScroll.scrollIntoView)(el, { marginTop: 126 });
-                });
-            }
-        }
-    },
-
-    methods: {
-        selectYear: function selectYear(year) {
-            var newDate = _date2.default.clone(this.dateInView);
-            newDate.setFullYear(year);
-
-            this.dateInView = this.getDateInRange(newDate);
-            this.showYearPicker = false;
-        },
-        getDateInRange: function getDateInRange(date, fallback) {
-            date = date || fallback;
-
-            if (this.minDate && date.getTime() < this.minDate.getTime()) {
-                return this.minDate;
-            }
-
-            if (this.maxDate && date.getTime() > this.maxDate.getTime()) {
-                return this.maxDate;
-            }
-
-            return date;
-        },
-        getYearClasses: function getYearClasses(year) {
-            return {
-                "is-current-year": this.isYearCurrent(year),
-                "is-selected": this.isYearSelected(year)
-            };
-        },
-        isYearCurrent: function isYearCurrent(year) {
-            return year === this.today.getFullYear();
-        },
-        isYearSelected: function isYearSelected(year) {
-            return this.value && year === this.value.getFullYear();
-        },
-        isYearOutOfRange: function isYearOutOfRange(year) {
-            if (this.minDate && year < this.minDate.getFullYear()) {
-                return true;
-            }
-
-            if (this.maxDate && year > this.maxDate.getFullYear()) {
-                return true;
-            }
-
-            return false;
-        },
-        onDateSelect: function onDateSelect(date) {
-            this.$emit("input", date);
-            this.$emit("date-select", date);
-        },
-        onGoToDate: function onGoToDate(date) {
-            var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { isForward: true };
-
-            this.$refs.month.goToDate(date, options);
-        },
-        onMonthChange: function onMonthChange(newDate) {
-            this.dateInView = newDate;
-            this.$emit("month-change", newDate);
-        }
-    },
-
-    components: {
-        UiCalendarControls: _UiCalendarControls2.default,
-        UiCalendarMonth: _UiCalendarMonth2.default
+    dateFilter: Function,
+    color: {
+      type: String,
+      default: "primary" },
+    orientation: {
+      type: String,
+      default: "portrait" },
+    initWithYearPicker: {
+      type: Boolean,
+      default: false
     }
+  },
+
+  data: function data() {
+    return {
+      today: new Date(),
+      dateInView: this.getDateInRange(this.value, new Date()),
+      showYearPicker: this.initWithYearPicker
+    };
+  },
+
+
+  computed: {
+    classes: function classes() {
+      return ["ui-calendar--color-" + this.color, "ui-calendar--orientation-" + this.orientation];
+    },
+    headerYear: function headerYear() {
+      return this.value ? this.value.getFullYear() : this.today.getFullYear();
+    },
+    headerDay: function headerDay() {
+      return this.value ? _date2.default.getDayAbbreviated(this.value, this.lang) : _date2.default.getDayAbbreviated(this.today, this.lang);
+    },
+    headerDate: function headerDate() {
+      var date = this.value ? this.value : this.today;
+
+      return _date2.default.getMonthAbbreviated(date, this.lang) + " " + _date2.default.getDayOfMonth(date, this.lang);
+    }
+  },
+
+  watch: {
+    value: function value() {
+      if (this.value) {
+        this.dateInView = _date2.default.clone(this.value);
+      }
+    },
+    showYearPicker: function showYearPicker() {
+      var _this = this;
+
+      if (this.showYearPicker) {
+        this.$nextTick(function () {
+          alert(23);
+          var el = _this.$refs.years.querySelector(".is-selected") || _this.$refs.years.querySelector(".is-current-year");
+
+          (0, _elementScroll.scrollIntoView)(el, { marginTop: 126 });
+        });
+      }
+    }
+  },
+
+  methods: {
+    selectYear: function selectYear(year) {
+      var newDate = _date2.default.clone(this.dateInView);
+      newDate.setFullYear(year);
+
+      this.dateInView = this.getDateInRange(newDate);
+      this.showYearPicker = false;
+    },
+    getDateInRange: function getDateInRange(date, fallback) {
+      date = date || fallback;
+
+      if (this.minDate && date.getTime() < this.minDate.getTime()) {
+        return this.minDate;
+      }
+
+      if (this.maxDate && date.getTime() > this.maxDate.getTime()) {
+        return this.maxDate;
+      }
+
+      return date;
+    },
+    getYearClasses: function getYearClasses(year) {
+      return {
+        "is-current-year": this.isYearCurrent(year),
+        "is-selected": this.isYearSelected(year)
+      };
+    },
+    isYearCurrent: function isYearCurrent(year) {
+      return year === this.today.getFullYear();
+    },
+    isYearSelected: function isYearSelected(year) {
+      return this.value && year === this.value.getFullYear();
+    },
+    isYearOutOfRange: function isYearOutOfRange(year) {
+      if (this.minDate && year < this.minDate.getFullYear()) {
+        return true;
+      }
+
+      if (this.maxDate && year > this.maxDate.getFullYear()) {
+        return true;
+      }
+
+      return false;
+    },
+    onDateSelect: function onDateSelect(date) {
+      this.$emit("input", date);
+      this.$emit("date-select", date);
+    },
+    onGoToDate: function onGoToDate(date) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { isForward: true };
+
+      this.$refs.month.goToDate(date, options);
+    },
+    onMonthChange: function onMonthChange(newDate) {
+      this.dateInView = newDate;
+      this.$emit("month-change", newDate);
+    }
+  },
+
+  components: {
+    UiCalendarControls: _UiCalendarControls2.default,
+    UiCalendarMonth: _UiCalendarMonth2.default
+  }
 };
 
 /***/ }),
@@ -5085,7 +5109,7 @@ exports.default = (_name$props$data$dire = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _typeof2 = __webpack_require__(33);
@@ -5107,191 +5131,194 @@ var _tippy2 = _interopRequireDefault(_tippy);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    name: "ui-popover",
+  name: "ui-popover",
 
-    props: (0, _defineProperty3.default)({
-        trigger: {
-            type: String,
-            required: true
-        },
-        dropdownPosition: {
-            type: String,
-            default: "bottom left"
-        },
-        openOn: {
-            type: String,
-            default: "click" },
-        containFocus: {
-            type: Boolean,
-            default: false
-        },
-        focusRedirector: Function,
-        raised: {
-            type: Boolean,
-            default: true
-        },
-        placement: {
-            type: String,
-            default: "bottom"
-        },
-        appendTo: {
-            type: [String, Boolean, HTMLBodyElement],
-            default: false
-        },
-        maxWidth: {
-            type: [String, Number],
-            default: 400
-        },
-        onHideCallback: Function
-    }, "raised", {
-        type: Boolean,
-        default: function _default() {
-            return true;
-        }
-    }),
-
-    data: function data() {
-        return {
-            dropInstance: null
-        };
+  props: (0, _defineProperty3.default)({
+    trigger: {
+      type: String,
+      required: true
     },
-
-
-    computed: {
-        triggerEl: function triggerEl() {
-            return this.$parent.$refs[this.trigger];
-        }
+    dropdownPosition: {
+      type: String,
+      default: "bottom left"
     },
-
-    mounted: function mounted() {
-        var _this = this;
-
-        if (this.transformOpenOn()) {
-            this.$nextTick(function () {
-                _this.initializeDropdown();
-            });
-        }
+    openOn: {
+      type: String,
+      default: "click" },
+    containFocus: {
+      type: Boolean,
+      default: false
     },
-    beforeDestroy: function beforeDestroy() {
-        try {
-            if (this.dropInstance && typeof this.dropInstance.destroy === "function") {
-                this.dropInstance.destroy(true);
-            }
-        } catch (e) {
-            this.dropInstance = null;
-            console.error(e);
-        }
+    focusRedirector: Function,
+    raised: {
+      type: Boolean,
+      default: true
     },
-
-
-    methods: {
-        reposition: function reposition() {
-            if (this.dropInstance && this.dropInstance.popperInstance) {
-                return this.dropInstance.popperInstance.update();
-            }
-        },
-        setInstanceOptions: function setInstanceOptions(obj) {
-            if (this.dropInstance && obj && (typeof obj === "undefined" ? "undefined" : (0, _typeof3.default)(obj)) === "object") {
-                return this.dropInstance.set(obj);
-            }
-        },
-        transformOpenOn: function transformOpenOn() {
-            if (!this.openOn) return false;
-            if (this.openOn === "hover") return "mouseenter";
-            return this.openOn;
-        },
-        initializeDropdown: function initializeDropdown() {
-            try {
-                var $this = this;
-                this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
-                    arrow: false,
-                    animation: "fade",
-                    trigger: this.transformOpenOn(),
-                    theme: "custom",
-                    boundary: "viewport",
-                    animateFill: false,
-                    appendTo: this.appendTo ? this.appendTo : document.body,
-                    content: this.$el,
-                    interactive: true,
-                    maxWidth: this.maxWidth,
-                    placement: this.placement,
-                    distance: 0,
-                    delay: [0, 0],
-                    duration: [0, 0],
-                    interactiveBorder: 2,
-                    flipOnUpdate: true,
-                    showOnInit: false,
-                    popperOptions: {
-                        modifiers: {
-                            computeStyle: {
-                                gpuAcceleration: false }
-                        }
-                    },
-                    onMount: function onMount(_ref) {
-                        var reference = _ref.reference;
-
-                        reference.setAttribute("aria-expanded", "true");
-                        _classlist2.default.add($this.triggerEl, "has-dropdown-open");
-                        $this.$emit("open");
-                    },
-                    onHide: function onHide(_ref2) {
-                        var reference = _ref2.reference;
-
-                        reference.setAttribute("aria-expanded", "false");
-                        _classlist2.default.remove($this.triggerEl, "has-dropdown-open");
-                        if ($this.onHideCallback && typeof $this.onHideCallback === "function") {
-                            $this.onHideCallback();
-                        }
-                    },
-                    onHidden: function onHidden(_ref3) {
-                        var reference = _ref3.reference;
-
-                        $this.$emit("close");
-                    }
-                });
-            } catch (e) {
-                console.error(e);
-            }
-        },
-        openDropdown: function openDropdown() {
-            if (this.dropInstance) {
-                this.dropInstance.show();
-            }
-        },
-        closeDropdown: function closeDropdown() {
-            if (this.dropInstance) {
-                this.dropInstance.hide();
-            }
-        },
-        toggleDropdown: function toggleDropdown(e) {
-            if (this.dropInstance) {
-                this.dropInstance.hide(e);
-            }
-        },
-        onOpen: function onOpen() {},
-        onClose: function onClose() {},
-        restrictFocus: function restrictFocus(e) {
-            if (!this.containFocus) {
-                this.closeDropdown();
-                return;
-            }
-            e.stopPropagation();
-            if (this.focusRedirector) {
-                this.focusRedirector(e);
-            } else {
-                this.$el.focus();
-            }
-        },
-        open: function open() {
-            this.openDropdown();
-        },
-        close: function close() {
-            this.closeDropdown();
-        },
-        toggle: function toggle() {
-            this.toggleDropdown();
-        }
+    placement: {
+      type: String,
+      default: "bottom"
+    },
+    appendTo: {
+      type: [String, Boolean, HTMLBodyElement],
+      default: false
+    },
+    maxWidth: {
+      type: [String, Number],
+      default: 400
+    },
+    onHideCallback: Function
+  }, "raised", {
+    type: Boolean,
+    default: function _default() {
+      return true;
     }
+  }),
+
+  data: function data() {
+    return {
+      dropInstance: null
+    };
+  },
+
+
+  computed: {
+    triggerEl: function triggerEl() {
+      return this.$parent.$refs[this.trigger];
+    }
+  },
+
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.transformOpenOn()) {
+      this.$nextTick(function () {
+        _this.initializeDropdown();
+      });
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    try {
+      if (this.dropInstance && typeof this.dropInstance.destroy === "function") {
+        this.dropInstance.destroy(true);
+      }
+    } catch (e) {
+      this.dropInstance = null;
+      console.error(e);
+    }
+  },
+
+
+  methods: {
+    reposition: function reposition() {
+      if (this.dropInstance && this.dropInstance.popperInstance) {
+        return this.dropInstance.popperInstance.update();
+      }
+    },
+    setInstanceOptions: function setInstanceOptions(obj) {
+      if (this.dropInstance && obj && (typeof obj === "undefined" ? "undefined" : (0, _typeof3.default)(obj)) === "object") {
+        return this.dropInstance.set(obj);
+      }
+    },
+    transformOpenOn: function transformOpenOn() {
+      if (!this.openOn) return false;
+      if (this.openOn === "hover") return "mouseenter";
+      return this.openOn;
+    },
+    initializeDropdown: function initializeDropdown() {
+      try {
+        var $this = this;
+        this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
+          arrow: false,
+          animation: "fade",
+          trigger: this.transformOpenOn(),
+          theme: "custom",
+          boundary: "viewport",
+          animateFill: false,
+          appendTo: this.appendTo ? this.appendTo : document.body,
+          content: this.$el,
+          interactive: true,
+          maxWidth: this.maxWidth,
+          placement: this.placement,
+          distance: 0,
+          delay: [0, 0],
+          duration: [0, 0],
+          interactiveBorder: 2,
+          flipOnUpdate: true,
+          showOnInit: false,
+          popperOptions: {
+            modifiers: {
+              computeStyle: {
+                gpuAcceleration: false }
+            }
+          },
+          onMount: function onMount(_ref) {
+            var reference = _ref.reference;
+
+            reference.setAttribute("aria-expanded", "true");
+            $this.$nextTick(function () {
+              _classlist2.default.remove($this.$refs["popover-el"], "no-display");
+            });
+            _classlist2.default.add($this.triggerEl, "has-dropdown-open");
+            $this.$emit("open");
+          },
+          onHide: function onHide(_ref2) {
+            var reference = _ref2.reference;
+
+            reference.setAttribute("aria-expanded", "false");
+            _classlist2.default.remove($this.triggerEl, "has-dropdown-open");
+            if ($this.onHideCallback && typeof $this.onHideCallback === "function") {
+              $this.onHideCallback();
+            }
+          },
+          onHidden: function onHidden(_ref3) {
+            var reference = _ref3.reference;
+
+            $this.$emit("close");
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    },
+    openDropdown: function openDropdown() {
+      if (this.dropInstance) {
+        this.dropInstance.show();
+      }
+    },
+    closeDropdown: function closeDropdown() {
+      if (this.dropInstance) {
+        this.dropInstance.hide();
+      }
+    },
+    toggleDropdown: function toggleDropdown(e) {
+      if (this.dropInstance) {
+        this.dropInstance.hide(e);
+      }
+    },
+    onOpen: function onOpen() {},
+    onClose: function onClose() {},
+    restrictFocus: function restrictFocus(e) {
+      if (!this.containFocus) {
+        this.closeDropdown();
+        return;
+      }
+      e.stopPropagation();
+      if (this.focusRedirector) {
+        this.focusRedirector(e);
+      } else {
+        this.$el.focus();
+      }
+    },
+    open: function open() {
+      this.openDropdown();
+    },
+    close: function close() {
+      this.closeDropdown();
+    },
+    toggle: function toggle() {
+      this.toggleDropdown();
+    }
+  }
 };
 
 /***/ }),
@@ -16684,7 +16711,8 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "ui-popover",
+      ref: "popover-el",
+      staticClass: "ui-popover no-display",
       class: { "is-raised": _vm.raised },
       attrs: { "aria-expanded": "false", role: "dialog", tabindex: "-1" },
       on: {
@@ -18029,7 +18057,7 @@ var render = function() {
             }
           }
         },
-        [_vm._v("\n            " + _vm._s(_vm.headerYear) + "\n        ")]
+        [_vm._v("\n      " + _vm._s(_vm.headerYear) + "\n    ")]
       ),
       _vm._v(" "),
       _c(
@@ -18103,7 +18131,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("\n                " + _vm._s(year) + "\n            ")]
+                [_vm._v("\n        " + _vm._s(year) + "\n      ")]
               )
             : _vm._e()
         }),
@@ -18825,8 +18853,9 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: !_vm.disabled && _vm.valueLength > 0,
-                  expression: "!disabled && valueLength > 0"
+                  value:
+                    _vm.enableClear && !_vm.disabled && _vm.valueLength > 0,
+                  expression: "enableClear && !disabled && valueLength > 0"
                 }
               ],
               staticClass: "ui-autocomplete__clear-button",
