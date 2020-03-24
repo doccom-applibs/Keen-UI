@@ -5159,7 +5159,9 @@ exports.default = {
     },
     appendTo: {
       type: [String, Boolean, HTMLBodyElement],
-      default: false
+      default: function _default() {
+        return document.body;
+      }
     },
     maxWidth: {
       type: [String, Number],

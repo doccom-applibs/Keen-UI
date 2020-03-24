@@ -40,7 +40,9 @@
       },
       appendTo: {
         type: [String, Boolean, HTMLBodyElement],
-        default: false
+        default: () => {
+          return document.body;
+        }
       },
       maxWidth: {
         type: [String, Number],
