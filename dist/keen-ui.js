@@ -4952,6 +4952,11 @@ exports.default = (_name$props$data$dire = {
             type: Boolean,
             default: false
         },
+        showLinearProgressLoader: {
+            type: Boolean,
+            required: false,
+            default: false
+        },
         preventRestrictFocus: {
             type: Boolean,
             default: false
@@ -17718,6 +17723,25 @@ var render = function() {
                         2
                       )
                     : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "strip-loader" },
+                    [
+                      _c("ui-progress-linear", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: _vm.showLinearProgressLoader,
+                            expression: "showLinearProgressLoader"
+                          }
+                        ],
+                        attrs: { color: "primary" }
+                      })
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _vm._t("body-head"),
                   _vm._v(" "),

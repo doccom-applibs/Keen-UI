@@ -702,6 +702,9 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
     color: #f44336;
 }
 
+.no-display {
+  display: none;
+}
 .tippy-tooltip.custom-theme {
   background-color: none;
   padding-top: 0;
@@ -1723,6 +1726,9 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
 }
 .ui-modal__footer .ui-button:first-child {
       margin-left: 0;
+}
+.strip-loader {
+  min-height: 3.25px;
 }
 .ui-modal--size-large .ui-modal__container {
   width: 53rem;

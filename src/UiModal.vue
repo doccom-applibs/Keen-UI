@@ -41,6 +41,12 @@
                             ></ui-close-button>
                         </div>
                     </div>
+                    <div class="strip-loader">
+                        <ui-progress-linear
+                            v-show="showLinearProgressLoader"
+                            color="primary"
+                        ></ui-progress-linear>
+                    </div>
                     <slot name="body-head"></slot>
                     <div v-dragscroll="dragScroll" class="ui-modal__body">
                         <slot></slot>
@@ -122,6 +128,11 @@ export default {
         },
         dragScroll: {
             type: Boolean,
+            default: false
+        },
+        showLinearProgressLoader: {
+            type: Boolean,
+            required: false,
             default: false
         },
         preventRestrictFocus: {
@@ -419,6 +430,10 @@ $ui-modal-header-font-size: rem-calc(18px);
             margin-left: 0;
         }
     }
+}
+
+.strip-loader {
+    min-height: 3.25px;
 }
 
 // ================================================
