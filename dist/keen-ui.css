@@ -702,9 +702,6 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
     color: #f44336;
 }
 
-.no-display {
-  display: none;
-}
 .tippy-tooltip.custom-theme {
   background-color: none;
   padding-top: 0;
@@ -1629,7 +1626,7 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
   font-size: 0.875rem;
 }
 .ui-modal.has-footer .ui-modal__body {
-    max-height: calc( 100vh - 7.875rem);
+    max-height: calc( 100vh - 7.875rem);
 }
 .ui-modal:not(.has-footer) .ui-modal__body {
     padding: 1rem 1.5rem 1.5rem;
