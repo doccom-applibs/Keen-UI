@@ -5254,7 +5254,7 @@ exports.default = {
                         var reference = _ref.reference;
 
                         reference.setAttribute("aria-expanded", "true");
-                        $this.$refs["popover-el"].style.display = null;
+                        $this.$refs["popover-el"].removeAttribute("style");
                         _classlist2.default.add($this.triggerEl, "has-dropdown-open");
                         $this.$emit("open");
 

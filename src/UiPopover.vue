@@ -150,7 +150,7 @@ export default {
                     onMount({ reference }) {
                         //Pass in trigger el
                         reference.setAttribute("aria-expanded", "true");
-                        $this.$refs["popover-el"].style.display = null;
+                        $this.$refs["popover-el"].removeAttribute("style");
                         classlist.add($this.triggerEl, "has-dropdown-open");
                         $this.$emit("open");
                         //Mounted, remove init handler
