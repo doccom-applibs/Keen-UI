@@ -5136,7 +5136,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: "ui-popover",
-
     props: (0, _defineProperty3.default)({
         trigger: {
             type: String,
@@ -5194,13 +5193,7 @@ exports.default = {
     },
 
     mounted: function mounted() {
-        var _this = this;
-
-        if (this.transformOpenOn()) {
-            this.$nextTick(function () {
-                _this.initializeDropdown();
-            });
-        }
+        this.$parent.$refs[this.trigger].addEventListener(this.transformOpenOn(), this.initializeDropdown);
     },
     beforeDestroy: function beforeDestroy() {
         try {
@@ -5250,7 +5243,7 @@ exports.default = {
                     duration: [0, 0],
                     interactiveBorder: 2,
                     flipOnUpdate: true,
-                    showOnInit: false,
+                    showOnInit: true,
                     popperOptions: {
                         modifiers: {
                             computeStyle: {
@@ -5261,9 +5254,11 @@ exports.default = {
                         var reference = _ref.reference;
 
                         reference.setAttribute("aria-expanded", "true");
-
+                        $this.$refs["popover-el"].style.display = null;
                         _classlist2.default.add($this.triggerEl, "has-dropdown-open");
                         $this.$emit("open");
+
+                        $this.$parent.$refs[$this.trigger].removeEventListener($this.transformOpenOn(), $this.initializeDropdown);
                     },
                     onHide: function onHide(_ref2) {
                         var reference = _ref2.reference;
@@ -16718,6 +16713,7 @@ var render = function() {
       ref: "popover-el",
       staticClass: "ui-popover",
       class: { "is-raised": _vm.raised },
+      staticStyle: { display: "none" },
       attrs: { "aria-expanded": "false", role: "dialog", tabindex: "-1" },
       on: {
         keydown: function($event) {

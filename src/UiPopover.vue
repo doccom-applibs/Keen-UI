@@ -5,6 +5,7 @@
         aria-expanded="false"
         role="dialog"
         tabindex="-1"
+        style="display:none"
         :class="{ 'is-raised': raised }"
         @keydown.esc="closeDropdown"
     >
@@ -23,7 +24,6 @@ import tippy from "tippy.js";
 
 export default {
     name: "ui-popover",
-
     props: {
         trigger: {
             type: String,
@@ -83,11 +83,10 @@ export default {
     },
 
     mounted() {
-        if (this.transformOpenOn()) {
-            this.$nextTick(() => {
-                this.initializeDropdown();
-            });
-        }
+        this.$parent.$refs[this.trigger].addEventListener(
+            this.transformOpenOn(),
+            this.initializeDropdown
+        );
     },
 
     beforeDestroy() {
@@ -140,7 +139,7 @@ export default {
                     duration: [0, 0], //show,hide
                     interactiveBorder: 2,
                     flipOnUpdate: true,
-                    showOnInit: false,
+                    showOnInit: true,
                     popperOptions: {
                         modifiers: {
                             computeStyle: {
@@ -151,11 +150,14 @@ export default {
                     onMount({ reference }) {
                         //Pass in trigger el
                         reference.setAttribute("aria-expanded", "true");
-                        //   $this.$nextTick(() => {
-                        //     classlist.remove($this.$refs["popover-el"], "no-display");
-                        //   });
+                        $this.$refs["popover-el"].style.display = null;
                         classlist.add($this.triggerEl, "has-dropdown-open");
                         $this.$emit("open");
+                        //Mounted, remove init handler
+                        $this.$parent.$refs[$this.trigger].removeEventListener(
+                            $this.transformOpenOn(),
+                            $this.initializeDropdown
+                        );
                     },
                     onHide({ reference }) {
                         reference.setAttribute("aria-expanded", "false");
@@ -194,20 +196,9 @@ export default {
             }
         },
 
-        onOpen() {
-            //classlist.add(this.triggerEl, "has-dropdown-open");
-            //this.lastfocusedElement = document.activeElement;
-            //this.$el.focus();
-            //this.$emit("open");
-        },
+        onOpen() {},
 
-        onClose() {
-            //classlist.remove(this.triggerEl, "has-dropdown-open");
-            // if (this.lastfocusedElement) {
-            //   this.lastfocusedElement.focus();
-            // }
-            //this.$emit("close");
-        },
+        onClose() {},
 
         restrictFocus(e) {
             if (!this.containFocus) {
@@ -239,10 +230,6 @@ export default {
 
 <style lang="scss">
 @import "./styles/imports";
-
-//   .no-display {
-//     display: none;
-//   }
 
 .tippy-tooltip.custom-theme {
     background-color: none;
