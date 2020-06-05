@@ -5250,7 +5250,7 @@ exports.default = {
                     trigger: this.transformOpenOn(),
                     theme: "custom",
                     boundary: this.boundary,
-                    appendTo: document.body,
+                    appendTo: this.appendTo,
                     content: this.$el,
                     interactive: true,
                     maxWidth: this.maxWidth,
@@ -5887,7 +5887,7 @@ var _elementScroll = __webpack_require__(95);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    name: 'ui-select',
+    name: "ui-select",
 
     props: {
         name: String,
@@ -5905,7 +5905,7 @@ exports.default = {
         icon: String,
         iconPosition: {
             type: String,
-            default: 'left' },
+            default: "left" },
         label: String,
         floatingLabel: {
             type: Boolean,
@@ -5913,14 +5913,14 @@ exports.default = {
         },
         type: {
             type: String,
-            default: 'basic' },
+            default: "basic" },
         multiple: {
             type: Boolean,
             default: false
         },
         multipleDelimiter: {
             type: String,
-            default: ', '
+            default: ", "
         },
         hasSearch: {
             type: Boolean,
@@ -5928,7 +5928,7 @@ exports.default = {
         },
         searchPlaceholder: {
             type: String,
-            default: 'Search'
+            default: "Search"
         },
         filter: Function,
         disableFilter: {
@@ -5963,7 +5963,7 @@ exports.default = {
 
     data: function data() {
         return {
-            query: '',
+            query: "",
             isActive: false,
             isTouched: false,
             selectedIndex: -1,
@@ -5976,12 +5976,12 @@ exports.default = {
 
     computed: {
         classes: function classes() {
-            return ['ui-select--type-' + this.type, 'ui-select--icon-position-' + this.iconPosition, { 'is-active': this.isActive }, { 'is-invalid': this.invalid }, { 'is-touched': this.isTouched }, { 'is-disabled': this.disabled }, { 'is-multiple': this.multiple }, { 'has-label': this.hasLabel }, { 'has-floating-label': this.hasFloatingLabel }];
+            return ["ui-select--type-" + this.type, "ui-select--icon-position-" + this.iconPosition, { "is-active": this.isActive }, { "is-invalid": this.invalid }, { "is-touched": this.isTouched }, { "is-disabled": this.disabled }, { "is-multiple": this.multiple }, { "has-label": this.hasLabel }, { "has-floating-label": this.hasFloatingLabel }];
         },
         labelClasses: function labelClasses() {
             return {
-                'is-inline': this.hasFloatingLabel && this.isLabelInline,
-                'is-floating': this.hasFloatingLabel && !this.isLabelInline
+                "is-inline": this.hasFloatingLabel && this.isLabelInline,
+                "is-floating": this.hasFloatingLabel && !this.isLabelInline
             };
         },
         hasLabel: function hasLabel() {
@@ -6027,10 +6027,10 @@ exports.default = {
                     }).join(this.multipleDelimiter);
                 }
 
-                return '';
+                return "";
             }
 
-            return this.value ? this.value[this.keys.label] || this.value : '';
+            return this.value ? this.value[this.keys.label] || this.value : "";
         },
         hasDisplayText: function hasDisplayText() {
             return Boolean(this.displayText.length);
@@ -6052,7 +6052,7 @@ exports.default = {
             if (Array.isArray(this.value)) {
                 return this.value.map(function (option) {
                     return option[_this3.keys.value] || option;
-                }).join(',');
+                }).join(",");
             }
 
             return this.value[this.keys.value] || this.value;
@@ -6067,36 +6067,36 @@ exports.default = {
         showDropdown: function showDropdown() {
             if (this.showDropdown) {
                 this.onOpen();
-                this.$emit('dropdown-open');
+                this.$emit("dropdown-open");
             } else {
                 this.onClose();
-                this.$emit('dropdown-close');
+                this.$emit("dropdown-close");
             }
         },
         query: function query() {
-            this.$emit('query-change', this.query);
+            this.$emit("query-change", this.query);
         }
     },
 
     created: function created() {
-        if (!this.value || this.value === '') {
+        if (!this.value || this.value === "") {
             this.setValue(null);
         }
     },
     mounted: function mounted() {
-        document.addEventListener('click', this.onExternalClick);
+        document.addEventListener("click", this.onExternalClick);
     },
     beforeDestroy: function beforeDestroy() {
-        document.removeEventListener('click', this.onExternalClick);
+        document.removeEventListener("click", this.onExternalClick);
     },
 
 
     methods: {
         setValue: function setValue(value) {
-            value = value ? value : this.multiple ? [] : '';
+            value = value ? value : this.multiple ? [] : "";
 
-            this.$emit('input', value);
-            this.$emit('change', value);
+            this.$emit("input", value);
+            this.$emit("change", value);
         },
         highlightOption: function highlightOption(index) {
             var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { autoScroll: true };
@@ -6129,7 +6129,7 @@ exports.default = {
         selectOption: function selectOption(option, index) {
             var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : { autoClose: true };
 
-            if (option.hasOwnProperty('isDisabled') && option.isDisabled) return;
+            if (option.hasOwnProperty("isDisabled") && option.isDisabled) return;
 
             var shouldSelect = this.multiple && !this.isOptionSelected(option);
 
@@ -6140,7 +6140,7 @@ exports.default = {
                 this.selectedIndex = index;
             }
 
-            this.$emit('select', option, {
+            this.$emit("select", option, {
                 selected: this.multiple ? shouldSelect : true
             });
 
@@ -6183,17 +6183,17 @@ exports.default = {
             var query = this.query.toLowerCase();
             var text = option[this.keys.label] || option;
 
-            if (typeof text === 'string') {
+            if (typeof text === "string") {
                 text = text.toLowerCase();
             }
 
             return (0, _fuzzysearch2.default)(query, text);
         },
         clearQuery: function clearQuery() {
-            this.query = '';
+            this.query = "";
         },
         toggleDropdown: function toggleDropdown() {
-            this[this.showDropdown ? 'closeDropdown' : 'openDropdown']();
+            this[this.showDropdown ? "closeDropdown" : "openDropdown"]();
         },
         openDropdown: function openDropdown() {
             if (this.disabled) {
@@ -6213,7 +6213,7 @@ exports.default = {
 
             if (!this.isTouched) {
                 this.isTouched = true;
-                this.$emit('touch');
+                this.$emit("touch");
             }
 
             if (options.autoBlur) {
@@ -6228,11 +6228,11 @@ exports.default = {
             }
 
             this.isActive = true;
-            this.$emit('focus', e);
+            this.$emit("focus", e);
         },
         onBlur: function onBlur(e) {
             this.isActive = false;
-            this.$emit('blur', e);
+            this.$emit("blur", e);
 
             if (this.showDropdown) {
                 this.closeDropdown({ autoBlur: true });
@@ -6242,8 +6242,8 @@ exports.default = {
             var _this4 = this;
 
             this.$nextTick(function () {
-                _this4.$refs[_this4.hasSearch ? 'searchInput' : 'dropdown'].focus();
-                _this4.scrollOptionIntoView(_this4.$refs.optionsList.querySelector('.is-selected'));
+                _this4.$refs[_this4.hasSearch ? "searchInput" : "dropdown"].focus();
+                _this4.scrollOptionIntoView(_this4.$refs.optionsList.querySelector(".is-selected"));
             });
         },
         onClose: function onClose() {

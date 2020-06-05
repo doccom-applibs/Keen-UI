@@ -140,7 +140,7 @@ export default {
                     trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
                     theme: "custom",
                     boundary: this.boundary,
-                    appendTo: document.body,
+                    appendTo: this.appendTo,
                     content: this.$el,
                     interactive: true,
                     maxWidth: this.maxWidth,
