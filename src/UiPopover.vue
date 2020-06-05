@@ -10,11 +10,6 @@
         @keydown.esc="closeDropdown"
     >
         <slot></slot>
-        <div
-            class="ui-popover__focus-redirector"
-            tabindex="0"
-            @focus="restrictFocus"
-        ></div>
     </div>
 </template>
 
@@ -26,7 +21,7 @@ export default {
     name: "ui-popover",
     props: {
         trigger: {
-            type: String,
+            type: [String, HTMLElement],
             required: true
         },
         dropdownPosition: {
@@ -41,7 +36,7 @@ export default {
             type: Boolean,
             default: false
         },
-        focusRedirector: Function,
+
         raised: {
             type: Boolean,
             default: true
@@ -55,6 +50,14 @@ export default {
             default: () => {
                 return document.body;
             }
+        },
+        boundary: {
+            type: [String],
+            default: "viewport"
+        },
+        triggerOnInit: {
+            type: Boolean,
+            default: false
         },
         maxWidth: {
             type: [String, Number],
@@ -78,25 +81,26 @@ export default {
 
     computed: {
         triggerEl() {
-            return this.$parent.$refs[this.trigger];
+            //String or HTML el
+            if (typeof this.trigger === "string")
+                return this.$parent.$refs[this.trigger];
+            return this.trigger;
         }
     },
 
     mounted() {
-        this.$parent.$refs[this.trigger].addEventListener(
-            this.transformOpenOn(),
-            this.initializeDropdown
-        );
+        const el =
+            typeof this.trigger === "string"
+                ? this.$parent.$refs[this.trigger]
+                : this.trigger;
+
+        el.addEventListener(this.transformOpenOn(), this.initializeDropdown);
+        if (this.triggerOnInit) this.initializeDropdown();
     },
 
     beforeDestroy() {
         try {
-            if (
-                this.dropInstance &&
-                typeof this.dropInstance.destroy === "function"
-            ) {
-                this.dropInstance.destroy(true);
-            }
+            if (this.dropInstance) this.dropInstance.destroy();
         } catch (e) {
             this.dropInstance = null;
             console.error(e);
@@ -111,35 +115,42 @@ export default {
         },
         setInstanceOptions(obj) {
             if (this.dropInstance && obj && typeof obj === "object") {
-                return this.dropInstance.set(obj);
+                return this.dropInstance.setProps(obj);
             }
         },
         transformOpenOn() {
-            if (!this.openOn) return false;
+            if (!this.openOn) return "click";
             if (this.openOn === "hover") return "mouseenter";
             return this.openOn;
         },
         initializeDropdown() {
             try {
+                if (this.dropInstance) return;
                 let $this = this;
+                console.log("initializeDropdown");
+                $this.$refs["popover-el"].style.display = null;
+                //https://atomiks.github.io/tippyjs/v5/all-props/
                 this.dropInstance = tippy(this.triggerEl, {
                     arrow: false,
+                    showOnCreate: true,
+                    hideOnClick: true,
+                    triggerTarget: this.triggerEl,
+                    lazy: false,
                     animation: "fade",
                     trigger: this.transformOpenOn(), //https://atomiks.github.io/tippyjs/all-options/
                     theme: "custom",
-                    boundary: "viewport",
-                    animateFill: false,
-                    appendTo: this.appendTo ? this.appendTo : document.body,
+                    boundary: this.boundary,
+                    appendTo: document.body,
                     content: this.$el,
                     interactive: true,
                     maxWidth: this.maxWidth,
                     placement: this.placement,
                     distance: 0,
+                    offset: 0,
                     delay: [0, 0], //show,hide
                     duration: [0, 0], //show,hide
                     interactiveBorder: 2,
                     flipOnUpdate: true,
-                    showOnInit: true,
                     popperOptions: {
                         modifiers: {
                             computeStyle: {
@@ -147,21 +158,21 @@ export default {
                             }
                         }
                     },
+                    onTrigger({ reference }) {
+                        classlist.add($this.triggerEl, "has-dropdown-open");
+                    },
+                    onShow({ reference }) {
+                        reference.setAttribute("aria-expanded", "true");
+                        $this.$emit("open");
+                    },
                     onMount({ reference }) {
                         //Pass in trigger el
-                        reference.setAttribute("aria-expanded", "true");
-                        $this.$refs["popover-el"].removeAttribute("style");
-                        classlist.add($this.triggerEl, "has-dropdown-open");
-                        $this.$emit("open");
-                        //Mounted, remove init handler
-                        $this.$parent.$refs[$this.trigger].removeEventListener(
-                            $this.transformOpenOn(),
-                            $this.initializeDropdown
-                        );
                     },
                     onHide({ reference }) {
                         reference.setAttribute("aria-expanded", "false");
                         classlist.remove($this.triggerEl, "has-dropdown-open");
+                        $this.$emit("close");
+                        console.log("tippy-hidden");
                         if (
                             $this.onHideCallback &&
                             typeof $this.onHideCallback === "function"
@@ -170,7 +181,20 @@ export default {
                         }
                     },
                     onHidden({ reference }) {
-                        $this.$emit("close");
+                        //  $this.dropInstance.destroy();
+                    },
+                    onDestroy({ reference }) {
+                        const el =
+                            typeof $this.trigger === "string"
+                                ? $this.$parent.$refs[$this.trigger]
+                                : $this.trigger;
+
+                        if (el)
+                            el.removeEventListener(
+                                $this.transformOpenOn(),
+                                $this.initializeDropdown
+                            );
+                        console.log("tippy.js destroyed " + reference);
                     }
                 });
             } catch (e) {
@@ -199,19 +223,6 @@ export default {
         onOpen() {},
 
         onClose() {},
-
-        restrictFocus(e) {
-            if (!this.containFocus) {
-                this.closeDropdown();
-                return;
-            }
-            e.stopPropagation();
-            if (this.focusRedirector) {
-                this.focusRedirector(e);
-            } else {
-                this.$el.focus();
-            }
-        },
 
         open() {
             this.openDropdown();
