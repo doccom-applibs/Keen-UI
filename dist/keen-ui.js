@@ -5237,8 +5237,8 @@ exports.default = {
             try {
                 if (this.dropInstance) return;
                 var $this = this;
-                console.log("initializeDropdown");
-                $this.$refs["popover-el"].style.display = null;
+                console.log("initializeDropdown ui-popover");
+                $this.$refs["popover-el"].style.display = "block";
 
                 this.dropInstance = (0, _tippy2.default)(this.triggerEl, {
                     arrow: false,

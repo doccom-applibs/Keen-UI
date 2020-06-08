@@ -127,8 +127,8 @@ export default {
             try {
                 if (this.dropInstance) return;
                 let $this = this;
-                console.log("initializeDropdown");
-                $this.$refs["popover-el"].style.display = null;
+                console.log("initializeDropdown ui-popover");
+                $this.$refs["popover-el"].style.display = "block";
                 //https://atomiks.github.io/tippyjs/v5/all-props/
                 this.dropInstance = tippy(this.triggerEl, {
                     arrow: false,
