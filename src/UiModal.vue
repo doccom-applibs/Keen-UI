@@ -19,7 +19,7 @@
                 <div
                     class="ui-modal__container"
                     ref="container"
-                    tabindex="-1"
+                    :tabindex="tabindex"
                     @keydown.esc="dismissOnEsc && closeModal($event)"
                 >
                     <div class="ui-modal__header" v-if="!removeHeader">
@@ -138,6 +138,13 @@ export default {
         preventRestrictFocus: {
             type: Boolean,
             default: false
+        },
+        tabindex: {
+            type: [Number, String],
+            required: false,
+            default: () => {
+                return -1;
+            }
         }
     },
 

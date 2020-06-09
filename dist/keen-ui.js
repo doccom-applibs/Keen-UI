@@ -4960,6 +4960,13 @@ exports.default = (_name$props$data$dire = {
         preventRestrictFocus: {
             type: Boolean,
             default: false
+        },
+        tabindex: {
+            type: [Number, String],
+            required: false,
+            default: function _default() {
+                return -1;
+            }
         }
     },
 
@@ -18601,7 +18608,7 @@ var render = function() {
                 {
                   ref: "container",
                   staticClass: "ui-modal__container",
-                  attrs: { tabindex: "-1" },
+                  attrs: { tabindex: _vm.tabindex },
                   on: {
                     keydown: function($event) {
                       if (
