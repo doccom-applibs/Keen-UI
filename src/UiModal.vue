@@ -140,7 +140,7 @@ export default {
             default: false
         },
         tabindex: {
-            type: [Number, String],
+            type: [Number, String, Boolean],
             required: false,
             default: () => {
                 return -1;
