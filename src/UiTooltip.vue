@@ -74,7 +74,7 @@
 
           this.tippyTooltip = tippy(triggerEl, {
             content: this.$refs.tooltip,
-            interactive: true,
+            interactive: false,
             theme: "custom",
             inertia: true,
             animation: 'shift-away',

@@ -7963,7 +7963,7 @@ exports.default = {
 
         this.tippyTooltip = (0, _tippy2.default)(triggerEl, {
           content: this.$refs.tooltip,
-          interactive: true,
+          interactive: false,
           theme: "custom",
           inertia: true,
           animation: 'shift-away',
