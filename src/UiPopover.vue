@@ -159,7 +159,7 @@ export default {
                         }
                     },
                     onTrigger({ reference }) {
-                        classlist.add($this.triggerEl, "has-dropdown-open");
+
                     },
                     onShow({ reference }) {
                         reference.setAttribute("aria-expanded", "true");
@@ -167,6 +167,7 @@ export default {
                     },
                     onMount({ reference }) {
                         //Pass in trigger el
+                        classlist.add($this.triggerEl, "has-dropdown-open");
                     },
                     onHide({ reference }) {
                         reference.setAttribute("aria-expanded", "false");
@@ -242,11 +243,14 @@ export default {
 <style lang="scss">
 @import "./styles/imports";
 
+
+
 .tippy-tooltip.custom-theme {
     background-color: none;
     padding-top: 0;
     height: 100%;
     background: none;
+        transform: none;
 }
 
 .tippy-tooltip.custom-theme[data-animatefill] {

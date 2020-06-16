@@ -5276,8 +5276,6 @@ exports.default = {
                     },
                     onTrigger: function onTrigger(_ref) {
                         var reference = _ref.reference;
-
-                        _classlist2.default.add($this.triggerEl, "has-dropdown-open");
                     },
                     onShow: function onShow(_ref2) {
                         var reference = _ref2.reference;
@@ -5287,6 +5285,8 @@ exports.default = {
                     },
                     onMount: function onMount(_ref3) {
                         var reference = _ref3.reference;
+
+                        _classlist2.default.add($this.triggerEl, "has-dropdown-open");
                     },
                     onHide: function onHide(_ref4) {
                         var reference = _ref4.reference;
