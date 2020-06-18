@@ -325,6 +325,11 @@ export default {
             if (this.autosizeInitialized) {
                 autosize.update(this.$refs.textarea);
             }
+        },
+
+        focus() {
+           if (!this.multiLine) return this.$refs['input'].focus()
+           this.$refs['textarea'].focus()
         }
     },
 
