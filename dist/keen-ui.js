@@ -7550,6 +7550,10 @@ exports.default = {
         focus: function focus() {
             if (!this.multiLine) return this.$refs['input'].focus();
             this.$refs['textarea'].focus();
+        },
+        blur: function blur() {
+            if (!this.multiLine) return this.$refs['input'].blur();
+            this.$refs['textarea'].blur();
         }
     },
 

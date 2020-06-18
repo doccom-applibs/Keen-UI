@@ -330,6 +330,11 @@ export default {
         focus() {
            if (!this.multiLine) return this.$refs['input'].focus()
            this.$refs['textarea'].focus()
+        },
+
+        blur() {
+            if (!this.multiLine) return this.$refs['input'].blur()
+            this.$refs['textarea'].blur()
         }
     },
 
