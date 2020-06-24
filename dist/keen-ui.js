@@ -4701,6 +4701,11 @@ exports.default = {
             if (this.$refs.dropdown) {
                 this.$refs.dropdown.toggle();
             }
+        },
+        repositionDropdown: function repositionDropdown() {
+            if (this.$refs.dropdown) {
+                this.$refs.dropdown.reposition();
+            }
         }
     },
 
