@@ -707,6 +707,8 @@ body[modality="keyboard"] .ui-close-button--color-white:focus .ui-close-button__
   padding-top: 0;
   height: 100%;
   background: none;
+  -webkit-transform: none;
+          transform: none;
 }
 .tippy-tooltip.custom-theme[data-animatefill] {
   background-color: transparent;
@@ -1626,7 +1628,7 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
   font-size: 0.875rem;
 }
 .ui-modal.has-footer .ui-modal__body {
-    max-height: calc( 100vh - 7.875rem);
+    max-height: calc( 100vh - 7.875rem);
 }
 .ui-modal:not(.has-footer) .ui-modal__body {
     padding: 1rem 1.5rem 1.5rem;
@@ -1704,6 +1706,9 @@ body[modality="keyboard"] .ui-checkbox__input:focus + .ui-checkbox__checkmark .u
   max-height: calc(100vh - 3.5rem);
   overflow-y: auto;
   padding: 1rem 1.5rem;
+}
+.ui-modal__body.scroll-x {
+    overflow-x: auto;
 }
 .ui-modal__footer {
   -webkit-box-align: center;

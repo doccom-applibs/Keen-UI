@@ -48,7 +48,7 @@
                         ></ui-progress-linear>
                     </div>
                     <slot name="body-head"></slot>
-                    <div v-dragscroll="dragScroll" class="ui-modal__body">
+                    <div v-dragscroll="dragScroll" :class="{'ui-modal__body':true, 'scroll-x':scrollX}">
                         <slot></slot>
                     </div>
 
@@ -145,6 +145,11 @@ export default {
             default: () => {
                 return -1;
             }
+        },
+        scrollX: {
+            type: Boolean,
+            default: false,
+            required: false,
         }
     },
 
@@ -421,6 +426,9 @@ $ui-modal-header-font-size: rem-calc(18px);
     max-height: calc(100vh - #{$ui-modal-header-height});
     overflow-y: auto;
     padding: rem-calc(16px 24px);
+    &.scroll-x {
+		overflow-x: auto;
+	}
 }
 
 .ui-modal__footer {

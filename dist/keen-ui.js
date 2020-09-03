@@ -4972,6 +4972,11 @@ exports.default = (_name$props$data$dire = {
             default: function _default() {
                 return -1;
             }
+        },
+        scrollX: {
+            type: Boolean,
+            default: false,
+            required: false
         }
     },
 
@@ -18704,7 +18709,7 @@ var render = function() {
                           expression: "dragScroll"
                         }
                       ],
-                      staticClass: "ui-modal__body"
+                      class: { "ui-modal__body": true, "scroll-x": _vm.scrollX }
                     },
                     [_vm._t("default")],
                     2
